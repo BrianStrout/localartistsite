@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+:root {
+  --font-titles: "Aboreto", cursive;
+}
+
+.filler {
+  width: 100%;
+  height: 300vh;
+  background-color: darkorchid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#launch {
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  width: 100px;
+  height: 20px;
+}
+
+.site--shell {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.landing--image {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  background-image: url("./src/images/alanhero1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header--container {
+  position: absolute;
+  bottom: -10%;
+  bottom: -25%;
+  /* UPDATE */
+
+  width: 100%;
+  height: 50%;
+  background-color: gray;
+}
+.header--sticky {
+  position: sticky;
+  top: 40px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-titles);
+  font-size: 10vw;
+  /* margin-top: calc(); */
+}
+.dot {
+  font-size: 1vw;
+  margin-top: 8vw;
+}
+.papermation--landscape {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.papermation--plot {
+  width: 10vw;
+  height: 10vw;
+  background-color: rgba(255, 0, 0, 0.235);
+  border: 3px solid red;
+  overflow: hidden;
+}
+
+.papermation--plot > div {
+  width: 100%;
+  height: 100%;
+}
+
+.pl1 > div {
+  background-color: orange;
+  transform-origin: top left;
+  transform: rotate(90deg) translateY(5px);
+}
+.pl1 > div.normalize {
+  transform: rotate(-0deg);
+  transition: transform 0.75s ease-out 0s;
+}
+
+.pl2 > div {
+  background-color: red;
+  transform: translateY(100%);
+}
+.pl2 > div.normalize {
+  transform: translateY(0%);
+  transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.15s;
+}
+
+.pl4 > div {
+  background-color: blue;
+  transform: translateY(100%);
+}
+
+.pl4 > div.normalize {
+  transform: translateY(0%);
+  transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.25s;
+}
+.pl5 > div {
+  background-color: green;
+  transform-origin: center right;
+  transform: rotate(-180deg);
+}
+.pl5 > div.normalize {
+  transform: rotate(-0deg);
+  transition: transform 0.75s ease-out 0.25s;
+}
+.pl6 > div {
+  background-color: yellow;
+  transform-origin: top right;
+  transform: rotate(-90deg);
+}
+.pl6 > div.normalize {
+  transform: rotate(-0deg);
+  transition: transform 0.75s ease-out 0s;
+}
+
+.pl7 > div {
+  background-color: yellow;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+.pl7 > div.normalize {
+  transform: rotate(-0deg);
+  transition: transform 0.75s ease-out 0s;
+}
+.pl8 > div {
+  background-color: green;
+  transform-origin: top left;
+  transform: rotate(90deg);
+}
+.pl8 > div.normalize {
+  transform: rotate(-0deg);
+
+  transition: transform 0.75s ease-out 0.25s;
+}
+
+.pl9 > div {
+  background-color: blue;
+  transform: translateY(100%);
+}
+
+.pl9 > div.normalize {
+  transform: translateY(0%);
+  transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.25s;
+}
+.pl10 > div {
+  background-color: purple;
+  transform: translateY(100%);
+}
+
+.pl10 > div.normalize {
+  transform: translateY(0%);
+  transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.25s;
+}
+.pl11 > div {
+  background-color: red;
+  transform: translateY(100%);
+}
+.pl11 > div.normalize {
+  transform: translateY(0%);
+
+  transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.15s;
+}
+
+.pl12 > div {
+  background-color: orange;
+  transform-origin: top right;
+  transform: rotate(-90deg) translateY(5px);
+}
+.pl12 > div.normalize {
+  transform: rotate(-0deg);
+
+  transition: transform 0.75s ease-out 0s;
+}
