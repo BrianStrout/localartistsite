@@ -47,7 +47,7 @@
 
   width: 100%;
   height: 50%;
-  background-color: gray;
+  /* background-color: gray; */
 }
 .header--sticky {
   position: sticky;
@@ -141,8 +141,8 @@
 }
 .pl8 > div {
   background-color: green;
-  transform-origin: top left;
-  transform: rotate(90deg);
+  transform-origin: center left;
+  transform: rotate(180deg);
 }
 .pl8 > div.normalize {
   transform: rotate(-0deg);
@@ -187,4 +187,37 @@
   transform: rotate(-0deg);
 
   transition: transform 0.75s ease-out 0s;
+}
+
+.studio {
+  width: 100%;
+  height: 100vh;
+  /* padding-top: 25vh; */
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: lawngreen;
+  background-image: url("./src/images/alanmaple.jpeg");
+  background-size: cover;
+}
+.studio-header {
+  width: 100%;
+  height: 25vh;
+  /* background-color: #dcf4f467; */
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}
+.slide-case {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.slide-case > div {
+  border: 3px solid black;
+  height: 75vh;
+}
+.display-left {
+}
+.display-right {
+}
+.button-case {
 }
