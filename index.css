@@ -7,7 +7,7 @@
 .filler {
   width: 100%;
   height: 300vh;
-  background-color: darkorchid;
+  /* background-color: darkorchid; */
 }
 
 * {
@@ -71,31 +71,43 @@
 }
 
 .papermation--plot {
+  position: relative;
   width: 10vw;
   height: 10vw;
-  background-color: rgba(255, 0, 0, 0.235);
-  border: 3px solid red;
+  /* background-color: rgba(255, 0, 0, 0.235); */
+  /* border: 3px solid red; */
+
   overflow: hidden;
 }
 
 .papermation--plot > div {
   width: 100%;
   height: 100%;
+  background-image: url("./src/images/test\ tree.png");
+  background-size: cover;
 }
 
 .pl1 > div {
-  background-color: orange;
+  position: absolute;
+  z-index: 2;
+  /* background-color: orange; */
   transform-origin: top left;
   transform: rotate(90deg) translateY(5px);
+  background-image: url("./src/images/ats-outerleft.png");
+
+  -webkit-filter: drop-shadow(5px 5px 0px #666666);
+  filter: drop-shadow(5px 5px 0px #666666);
 }
 .pl1 > div.normalize {
   transform: rotate(-0deg);
-  transition: transform 0.75s ease-out 0s;
+  transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0s;
 }
 
 .pl2 > div {
-  background-color: red;
+  /* background-color: red; */
   transform: translateY(100%);
+  background-image: url("./src/images/treescape2.png");
+  /* box-shadow: 50px 50px black; */
 }
 .pl2 > div.normalize {
   transform: translateY(0%);
@@ -103,7 +115,7 @@
 }
 
 .pl4 > div {
-  background-color: blue;
+  /* background-color: blue; */
   transform: translateY(100%);
 }
 
@@ -112,7 +124,7 @@
   transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.25s;
 }
 .pl5 > div {
-  background-color: green;
+  /* background-color: green; */
   transform-origin: center right;
   transform: rotate(-180deg);
 }
@@ -121,7 +133,7 @@
   transition: transform 0.75s ease-out 0.25s;
 }
 .pl6 > div {
-  background-color: yellow;
+  /* background-color: yellow; */
   transform-origin: top right;
   transform: rotate(-90deg);
 }
@@ -131,7 +143,7 @@
 }
 
 .pl7 > div {
-  background-color: yellow;
+  /* background-color: yellow; */
   transform-origin: top left;
   transform: rotate(90deg);
 }
@@ -140,7 +152,7 @@
   transition: transform 0.75s ease-out 0s;
 }
 .pl8 > div {
-  background-color: green;
+  /* background-color: green; */
   transform-origin: center left;
   transform: rotate(180deg);
 }
@@ -151,7 +163,7 @@
 }
 
 .pl9 > div {
-  background-color: blue;
+  /* background-color: blue; */
   transform: translateY(100%);
 }
 
@@ -160,7 +172,7 @@
   transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.25s;
 }
 .pl10 > div {
-  background-color: purple;
+  /* background-color: purple; */
   transform: translateY(100%);
 }
 
@@ -169,7 +181,7 @@
   transition: transform 0.75s cubic-bezier(1, -0.01, 0.33, 1.24) 0.25s;
 }
 .pl11 > div {
-  background-color: red;
+  /* background-color: red; */
   transform: translateY(100%);
 }
 .pl11 > div.normalize {
@@ -179,9 +191,10 @@
 }
 
 .pl12 > div {
-  background-color: orange;
+  /* background-color: orange; */
   transform-origin: top right;
   transform: rotate(-90deg) translateY(5px);
+  background-image: url("./src/images/ats-outerright.png");
 }
 .pl12 > div.normalize {
   transform: rotate(-0deg);
@@ -195,14 +208,14 @@
   /* padding-top: 25vh; */
   padding-left: 100px;
   padding-right: 100px;
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   background-image: url("./src/images/alanmaple.jpeg");
   background-size: cover;
 }
 .studio-header {
   width: 100%;
   height: 25vh;
-  /* background-color: #dcf4f467; */
+  background-color: #dcf4f467;
   filter: blur(100px);
   -webkit-filter: blur(100px);
 }
