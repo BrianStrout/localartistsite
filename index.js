@@ -3,6 +3,9 @@ let treeplots = Array.from(document.querySelectorAll(".plant"));
 let farmsurvey = Array.from(document.querySelectorAll(".farm"));
 
 const blanket = document.getElementById("blanket");
+const fallingLeavesContainer = document.getElementById(
+  "fallingLeavesContainer"
+);
 const titleTrack = document.getElementById("titleTrack");
 const interval = 50;
 const animateInTreescape = () => {
@@ -20,6 +23,8 @@ const animateInTreescape = () => {
     farmsurvey.forEach(function (tree, index) {
       tree.classList.add("grow");
     });
+
+    fallingLeavesContainer.classList.remove("transparent");
   }, 6000);
 
   setTimeout(() => {
@@ -27,6 +32,12 @@ const animateInTreescape = () => {
       tree.classList.add("normalize");
     });
   }, 5000);
+
+  setTimeout(() => {
+    farmsurvey.forEach((farm, index) => {
+      farm.classList.add("farmlandbob");
+    });
+  }, 7500);
 };
 
 launch.addEventListener("click", () => {
