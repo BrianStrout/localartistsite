@@ -40,9 +40,11 @@ const animateInTreescape = () => {
   }, 7500);
 };
 
-launch.addEventListener("click", () => {
+window.onload = (event) => {
   animateInTreescape();
-});
+};
+
+launch.addEventListener("click", () => {});
 
 const leafFront = document.getElementById("leafFront");
 const leafBack = document.getElementById("leafBack");
