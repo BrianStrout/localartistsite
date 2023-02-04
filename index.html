@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Winter Boy • Art</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./src/scss/index.css" />
   </head>
   <body>
     <div class="site--shell">
@@ -82,7 +82,7 @@
           </div>
 
           <div id="blanket" class="landing--blanket"></div>
-          <!-- <button id="launch"></button> -->
+
           <div class="header--container">
             <div class="header--sticky">
               <h1 id="titleTrack">
@@ -131,11 +131,23 @@
         <div class="studio">
           <div class="studio-header"></div>
           <div class="slide-case">
-            <div class="display-left">picture left</div>
-            <div class="display-right">picture right</div>
-            <div class="button-case">
-              <button>"<"</button><button>">"</button>
+            <div id="slider-disp-top" class="slider-display">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
             </div>
+            <div id="slider-disp-bottom" class="slider-display">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+            <!-- <div class="button-case">
+              <button>"<"</button><button>">"</button>
+            </div> -->
           </div>
         </div>
         <div class="rock--bottom">
@@ -244,4 +256,4 @@
   </body>
 </html>
 
-<script src="./index.js"></script>
+<script src="./index.js" type="module"></script>

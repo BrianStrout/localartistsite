@@ -1,0 +1,25 @@
+:root {
+  --font-titles: "Aboreto", cursive;
+  --color-back: #d0cfca;
+  --timing: cubic-bezier(1, -0.01, 0.33, 1.24);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#launch {
+  position: absolute;
+  top: 0;
+  z-index: 90;
+  left: 50vw;
+  width: 100px;
+  height: 20px;
+}
+
+.site--shell {
+  width: 100vw;
+  min-height: 100vh;
+}

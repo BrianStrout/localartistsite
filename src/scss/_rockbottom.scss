@@ -1,0 +1,119 @@
+.rock--bottom {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/Final-ONLINE-Grove.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottom--linker--box {
+  position: absolute;
+  right: 0;
+  top: 10vh;
+  height: 40vh;
+  border: 5px solid white;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.link--clickable {
+  font-size: 2rem;
+  font-family: var(--font-titles);
+  background-color: aliceblue;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.artist--box {
+  position: absolute;
+  z-index: 20;
+  bottom: 0vh;
+  right: 0;
+  width: 50vh;
+  height: 50vh;
+  /* border-top: 5px solid white;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white; */
+}
+
+.artist--portrait {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-image: url("../images/artistplaceholder.png");
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.artist--bg {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* height: 100%; */
+  background-image: url("../images/artistbg.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.artist--fg {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* background-color: wheat; */
+}
+
+.afg--plant {
+  width: 25%;
+  aspect-ratio: 1/1;
+  /* border: 3px solid yellow; */
+  background-image: url("../images/treescapefg2.png");
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 15vh;
+  width: 100vw;
+  border-top: 5px solid white;
+  background-color: rgba(237, 237, 237, 0.359);
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.socials > div {
+  /* border: 5px solid black; */
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+  .footer > divs {
+    background-color: darkblue;
+  } */

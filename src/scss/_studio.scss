@@ -1,0 +1,20 @@
+@use "slider";
+
+.studio {
+  width: 100%;
+  height: 100vh;
+  /* padding-top: 25vh; */
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: rgb(29, 29, 29);
+  /* background-image: url("./src/images/alanmaple.jpeg"); */
+  background-size: cover;
+}
+.studio-header {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  /* background-color: #dcf4f467; */
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}

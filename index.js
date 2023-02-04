@@ -1,3 +1,5 @@
+// import { upandrunning } from "./src/modules/module1";
+
 const launch = document.getElementById("launch");
 let treeplots = Array.from(document.querySelectorAll(".plant"));
 let farmsurvey = Array.from(document.querySelectorAll(".farm"));
@@ -6,6 +8,8 @@ const blanket = document.getElementById("blanket");
 const fallingLeavesContainer = document.getElementById(
   "fallingLeavesContainer"
 );
+const sliderDispTop = document.getElementById("slider-disp-top");
+const sliderDispBottom = document.getElementById("slider-disp-bottom");
 const titleTrack = document.getElementById("titleTrack");
 const interval = 50;
 const animateInTreescape = () => {
@@ -40,12 +44,6 @@ const animateInTreescape = () => {
   }, 7500);
 };
 
-window.onload = (event) => {
-  animateInTreescape();
-};
-
-launch.addEventListener("click", () => {});
-
 const leafFront = document.getElementById("leafFront");
 const leafBack = document.getElementById("leafBack");
 
@@ -59,16 +57,45 @@ let leafFlipper1 = [leaf1];
 let leafFlipper2 = [leaf3, leaf4];
 const lFront = Array.from(document.querySelectorAll(".leaf--front"));
 
-// function animateFrames1() {
-//   if (++currentPos1 >= leafFlipper1.length) currentPos1 = 0;
-//   lFront.forEach((leaf) => {
-//     leaf.src = leafFlipper1[currentPos1];
-//   });
-// }
-// setInterval(animateFrames1, 1600);
+const imph1 = "./src/images/array-images/imageplaceholder1.jpg";
+const imph2 = "./src/images/array-images/imageplaceholder2.jpg";
+const imph3 = "./src/images/array-images/imageplaceholder3.jpg";
+const imph4 = "./src/images/array-images/imageplaceholder4.jpg";
+const imph5 = "./src/images/array-images/imageplaceholder5.jpg";
 
-// function animateFrames2() {
-//   if (++currentPos2 >= leafFlipper1.length) currentPos2 = 0;
-//   leafBack.src = leafFlipper2[currentPos2];
-// }
-// setInterval(animateFrames2, 1600);
+const slidesTopArray = [imph1, imph2, imph3, imph4, imph5];
+const slidesBottomArray = [imph1, imph2, imph3, imph4, imph5];
+
+const sliderShowTimeLaunch = (hemisphere) => {
+  if (hemisphere === "top") {
+    console.log("top");
+  }
+  if (hemisphere === "bottom") {
+    console.log("bottom");
+  }
+};
+
+sliderDispTop.addEventListener("click", () => {
+  sliderDispTop.classList.add("show-time");
+  sliderDispTop.classList.remove("passive");
+  sliderDispBottom.classList.remove("show-time");
+  sliderDispBottom.classList.add("passive");
+  sliderShowTimeLaunch("top");
+});
+
+sliderDispBottom.addEventListener("click", () => {
+  sliderDispBottom.classList.add("show-time");
+  sliderDispBottom.classList.remove("passive");
+  sliderDispTop.classList.remove("show-time");
+  sliderDispTop.classList.add("passive");
+  sliderShowTimeLaunch("bottom");
+});
+
+window.onload = (event) => {
+  animateInTreescape();
+};
+
+// three visible images
+// one leaving to the left     one in focus     one coming in
+
+// generated from an Array
