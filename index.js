@@ -63,17 +63,72 @@ const imph3 = "./src/images/array-images/imageplaceholder3.jpg";
 const imph4 = "./src/images/array-images/imageplaceholder4.jpg";
 const imph5 = "./src/images/array-images/imageplaceholder5.jpg";
 
-const slidesTopArray = [imph1, imph2, imph3, imph4, imph5];
+const slidesTopDivArray = Array.from(document.querySelectorAll(".top-slides"));
+const slidesTopImagesArray = [imph1, imph2, imph3, imph4, imph5];
+let topShowHasStarted = false;
+const slidesTopTitle = document.getElementById("top--slide--title");
+
 const slidesBottomArray = [imph1, imph2, imph3, imph4, imph5];
+
+const moveTopSlides = (i) => {
+  let linkToSlide;
+
+  if (!topShowHasStarted) {
+    linkToSlide = i;
+  } else {
+    linkToSlide++;
+  }
+
+  topShowHasStarted = true;
+  // let slideHand = 0;
+  // console.log(i);
+  slidesTopDivArray[0].classList.add("slide-unseen-far-right");
+  slidesTopDivArray[0].classList.remove("slide-unseen-far-left");
+
+  slidesTopDivArray[1].classList.add("slide-unseen-far-left");
+  slidesTopDivArray[1].classList.remove("slide-left");
+
+  slidesTopDivArray[2].classList.add("slide-left");
+  slidesTopDivArray[2].classList.remove("slide-center");
+
+  slidesTopDivArray[3].classList.add("slide-center");
+  slidesTopDivArray[3].classList.remove("slide-right");
+
+  slidesTopDivArray[4].classList.add("slide-right");
+  slidesTopDivArray[4].classList.remove("slide-unseen-far-right");
+
+  let shiftingSlide = slidesTopDivArray.shift();
+  slidesTopDivArray.push(shiftingSlide);
+  slidesTopDivArray[4].style.backgroundImage = `url(${slidesTopImagesArray[i]})`;
+  // slideHand++;
+};
 
 const sliderShowTimeLaunch = (hemisphere) => {
   if (hemisphere === "top") {
-    console.log("top");
+    if (!topShowHasStarted) {
+      slidesTopTitle.style = "display: none";
+
+      setTimeout(() => {
+        slidesTopDivArray[2].style.backgroundImage =
+          "url('./src/images/array-images/imageplaceholder1.jpg')";
+        slidesTopDivArray[3].style.backgroundImage =
+          "url('./src/images/array-images/imageplaceholder2.jpg')";
+        slidesTopDivArray[2].classList.add("slide-center");
+
+        // moveTopSlides();
+      }, 1500);
+
+      setTimeout(() => {
+        setInterval(moveTopSlides(2), 1000);
+      }, 2000);
+    }
   }
   if (hemisphere === "bottom") {
     console.log("bottom");
   }
 };
+
+// The setInterval() method returns an interval ID which uniquely identifies the interval. You can pass this interval ID to the global clearInterval() method to cancel or stop setInterval() call.
 
 sliderDispTop.addEventListener("click", () => {
   sliderDispTop.classList.add("show-time");
@@ -94,8 +149,3 @@ sliderDispBottom.addEventListener("click", () => {
 window.onload = (event) => {
   animateInTreescape();
 };
-
-// three visible images
-// one leaving to the left     one in focus     one coming in
-
-// generated from an Array
