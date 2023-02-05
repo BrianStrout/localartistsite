@@ -6,10 +6,17 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 10vh;
 }
 .rock--bottom--monitor {
   width: 100px;
-  height: 100px;
+  height: 65vh;
+  width: 70vw;
   border: 3px solid white;
 }
 
