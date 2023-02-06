@@ -721,7 +721,7 @@
 .slide-case {
   position: absolute;
   z-index: 20;
-  width: calc(100% - 200px);
+  width: 100%;
   height: 85vh;
   display: flex;
   flex-direction: column;
@@ -731,7 +731,7 @@
 .slider-display {
   position: relative;
   opacity: 0.7;
-  height: 40vh;
+  height: 80vh;
   border: 3px solid black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -748,7 +748,7 @@
 }
 
 .slider-display:nth-child(1) {
-  background-image: url("../images/Final-ONLINE-Grove.jpeg");
+  background-color: black;
 }
 
 .slider-display:nth-child(2) {
@@ -773,53 +773,97 @@
 
 .slide {
   position: absolute;
-  left: 120%;
+  left: 100%;
   height: 100%;
   width: 40vw;
-  opacity: 0;
+  opacity: 1;
+  color: white;
+  border: 3px solid white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: opacity 0.75s ease-out;
+  transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
+  -webkit-animation: 16s linear infinite forwards slideShow;
+          animation: 16s linear infinite forwards slideShow;
+}
+.slide:nth-child(3n+1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.slide:nth-child(3n+2) {
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+}
+.slide:nth-child(3n+3) {
+  -webkit-animation-delay: 10.7s;
+          animation-delay: 10.7s;
 }
 
+@-webkit-keyframes slideShow {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -60%;
+  }
+}
+
+@keyframes slideShow {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -60%;
+  }
+}
 .slide-unseen-far-left {
   opacity: 0;
-  left: -20vw;
+  left: -20%;
+  scale: 0.5;
+  transform-origin: center left;
 }
 
 .slide-left {
   z-index: 1;
-  opacity: 0.8;
-  left: 10%;
+  opacity: 0.6;
+  left: 0px;
+  scale: 0.85;
+  transform-origin: center left;
 }
 
 .slide-center {
   z-index: 10;
   opacity: 1;
   left: 30%;
+  scale: 1;
+  transform-origin: center center;
 }
 
 .slide-right {
   z-index: 1;
-  opacity: 0.8;
-  left: 10vw;
+  opacity: 0.6;
+  left: 60%;
+  scale: 0.85;
+  transform-origin: center right;
 }
 
 .slide-unseen-far-right {
   opacity: 0;
-  left: 120vw;
+  left: 120%;
+  scale: 0.5;
+  transform-origin: center right;
 }
 
 .studio {
   width: 100%;
   height: 100vh;
-  /* padding-top: 25vh; */
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-top: 10vh;
   background-color: rgb(29, 29, 29);
   /* background-image: url("./src/images/alanmaple.jpeg"); */
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .studio-header {
@@ -839,11 +883,31 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10vh;
+}
+
+.rock1 {
+  display: none;
+}
+
+.rock2 {
+  background-image: url("../images/ph-portraitwide.png");
+  display: none;
+}
+.rock2 .artist--box {
+  display: none;
+}
+.rock2 .footer {
+  background-color: rgba(237, 237, 237, 0.859);
 }
 
 .rock--bottom--monitor {
   width: 100px;
-  height: 100px;
+  height: 65vh;
+  width: 70vw;
   border: 3px solid white;
 }
 
@@ -852,7 +916,6 @@
   right: 0;
   top: 10vh;
   height: 40vh;
-  border: 5px solid white;
   border-right: none;
   display: flex;
   flex-direction: column;
@@ -868,6 +931,9 @@
   color: black;
   margin-left: 10px;
   margin-right: 10px;
+}
+.link--clickable:hover {
+  scale: 1.05;
 }
 
 .artist--box {
@@ -955,6 +1021,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.8;
+}
+.socials > div:hover {
+  scale: 1.15;
+  opacity: 1;
 }
 
 /* 

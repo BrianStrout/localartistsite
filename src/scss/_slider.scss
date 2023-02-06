@@ -1,40 +1,39 @@
 .slide-case {
   position: absolute;
   z-index: 20;
-  width: calc(100% - 200px);
+  // width: calc(100% - 200px);
+  width: 100%;
   height: 85vh;
   display: flex;
   flex-direction: column;
-  // background-color: brown;
   gap: 20px;
 }
 .slider-display {
   position: relative;
   opacity: 0.7;
-  height: 40vh;
+  height: 80vh;
   border: 3px solid black;
   background-size: cover;
   background-repeat: no-repeat;
+
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
-
   transition: height 1.2s ease-in-out, opacity 1.2s ease-in-out;
-
   > h2 {
     font-size: 3rem;
     color: white;
   }
 }
 .slider-display:nth-child(1) {
-  background-image: url("../images/Final-ONLINE-Grove.jpeg");
+  // background-image: url("../images/Final-ONLINE-Grove.jpeg");
+  background-color: black;
 }
 .slider-display:nth-child(2) {
   background-image: url("../images/alanmaple.jpeg");
 }
-
 .show-time {
   opacity: 1;
   height: 70vh;
@@ -51,40 +50,68 @@
 
 .slide {
   position: absolute;
-  left: 120%;
+  left: 100%;
   height: 100%;
   width: 40vw;
-  opacity: 0;
+  opacity: 1;
+  color: white;
+  border: 3px solid white;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  transition: opacity 0.75s ease-out;
+  transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
+  animation: 16s linear infinite forwards slideShow;
+  $delays: 0s, 5.25s, 10.7s;
+  @for $i from 1 through length($delays) {
+    &:nth-child(#{length($delays)}n + #{$i}) {
+      animation-delay: nth($delays, $i);
+    }
+  }
+}
+
+// animation-delay: nth($delays, $i);
+
+@keyframes slideShow {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -60%;
+  }
 }
 
 .slide-unseen-far-left {
   opacity: 0;
-  left: -20vw;
+  left: -20%;
+  scale: 0.5;
+  transform-origin: center left;
 }
-
 .slide-left {
   z-index: 1;
-  opacity: 0.8;
-  left: 10%;
+  opacity: 0.6;
+  // opacity: 0.8;
+  left: 0px;
+  scale: 0.85;
+  transform-origin: center left;
 }
-
 .slide-center {
   z-index: 10;
   opacity: 1;
-  left: calc(30%);
+  left: 30%;
+  // border: 3px solid white;
+  scale: 1;
+  transform-origin: center center;
 }
-
 .slide-right {
   z-index: 1;
-  opacity: 0.8;
-  left: 10vw;
+  opacity: 0.6;
+  left: 60%;
+  scale: 0.85;
+  transform-origin: center right;
 }
-
 .slide-unseen-far-right {
   opacity: 0;
-  left: 120vw;
+  left: 120%;
+  scale: 0.5;
+  transform-origin: center right;
 }
