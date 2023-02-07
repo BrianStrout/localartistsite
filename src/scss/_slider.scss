@@ -54,6 +54,7 @@
 .slide {
   position: absolute;
   left: 100%;
+  // left: 50%;
   height: 100%;
   width: 40vw;
   opacity: 0.7;
@@ -70,6 +71,10 @@
       animation-delay: nth($delays, $i);
     }
   }
+  &.paused {
+    animation-play-state: paused;
+  }
+
   &:hover {
     opacity: 1;
   }

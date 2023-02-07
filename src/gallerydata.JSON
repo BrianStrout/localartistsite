@@ -1,14 +1,17 @@
 [
   {
     "galleryname": "treescapes",
+    "mainImage": "./src/images/array-images/imageplaceholder1.jpg",
     "value": "#f00"
   },
   {
     "galleryname": "fowl",
+    "mainImage": "./src/images/array-images/fowl.jpeg",
     "value": "#0f0"
   },
   {
     "galleryname": "insects",
+    "mainImage": "../src/images/array-images/insects.jpeg",
     "value": "#00f"
   }
 ]

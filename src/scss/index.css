@@ -799,6 +799,10 @@
   -webkit-animation-delay: 10.7s;
           animation-delay: 10.7s;
 }
+.slide.paused {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 .slide:hover {
   opacity: 1;
 }
@@ -872,7 +876,6 @@
   height: 105vh;
   padding-top: 10vh;
   background-color: rgb(29, 29, 29);
-  /* background-image: url("./src/images/alanmaple.jpeg"); */
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -883,9 +886,33 @@
   position: relative;
   width: 100%;
   height: 10vh;
-  /* background-color: #dcf4f467; */
   filter: blur(100px);
   -webkit-filter: blur(100px);
+}
+
+.pop-up-gallery-case {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.pop-up-gallery-case .pop-up-gallery-left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.pop-up-gallery-case .pop-up-gallery-left .exit-sign {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  aspect-ratio: 1/1;
+  background-color: white;
+  padding: 5px;
+  border: 5px solid black;
+  border-radius: 50%;
 }
 
 .rock--bottom {
