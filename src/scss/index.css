@@ -31,7 +31,7 @@
   height: 100vh;
   background-image: url("../images/alanhero1.jpeg");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
 }
 
@@ -450,7 +450,7 @@
 }
 .header--container {
   position: absolute;
-  bottom: -20vh;
+  bottom: -18vh;
   /* bottom: 0px; */
   /* background-color: orangered; */
   /* UPDATE */
@@ -482,10 +482,6 @@
   /* transition: text-shadow 5.75s ease-out; */
 }
 
-.lit-with-shadow {
-  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px -20px 0px rgba(0, 0, 0, 0.396);
-}
-
 .dot {
   font-size: 1vw;
   margin-top: 8vw;
@@ -494,7 +490,7 @@
 .papermation--landscape {
   position: absolute;
   /* top: 10vh; */
-  bottom: 20vh;
+  bottom: 18vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(transparent, darkslategray);
@@ -504,6 +500,7 @@
 .farmland {
   position: absolute;
   left: 0;
+  bottom: 0;
   z-index: 30;
   display: flex;
   width: 100%;
@@ -730,11 +727,12 @@
 
 .slider-display {
   position: relative;
-  opacity: 0.7;
-  height: 80vh;
+  opacity: 1;
+  height: 70vh;
   border: 3px solid black;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -742,13 +740,16 @@
   gap: 40px;
   transition: height 1.2s ease-in-out, opacity 1.2s ease-in-out;
 }
+.slider-display:hover {
+  height: 80vh;
+}
 .slider-display > h2 {
   font-size: 3rem;
   color: white;
 }
 
 .slider-display:nth-child(1) {
-  background-color: black;
+  background-color: rgba(32, 30, 30, 0.543);
 }
 
 .slider-display:nth-child(2) {
@@ -776,10 +777,10 @@
   left: 100%;
   height: 100%;
   width: 40vw;
-  opacity: 1;
+  opacity: 0.7;
   color: white;
   border: 3px solid white;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
@@ -797,6 +798,18 @@
 .slide:nth-child(3n+3) {
   -webkit-animation-delay: 10.7s;
           animation-delay: 10.7s;
+}
+.slide:hover {
+  opacity: 1;
+}
+.slide#treescapes {
+  background-image: url("../images/alanhero1.jpeg");
+}
+.slide#fowl {
+  background-image: url("../images/array-images/fowl.jpeg");
+}
+.slide#insects {
+  background-image: url("../images/array-images/insects.jpeg");
 }
 
 @-webkit-keyframes slideShow {
@@ -856,7 +869,7 @@
 
 .studio {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   padding-top: 10vh;
   background-color: rgb(29, 29, 29);
   /* background-image: url("./src/images/alanmaple.jpeg"); */
@@ -895,7 +908,6 @@
 
 .rock2 {
   background-image: url("../images/ph-portraitwide.png");
-  display: none;
 }
 .rock2 .artist--box {
   display: none;
@@ -908,7 +920,31 @@
   width: 100px;
   height: 65vh;
   width: 70vw;
+  background-color: rgba(169, 169, 169, 0.51);
   border: 3px solid white;
+  padding: 25px;
+}
+.rock--bottom--monitor p {
+  margin-top: 25px;
+}
+
+.rock--comm--quotes {
+  display: flex;
+  gap: 10%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 50px;
+}
+
+.rock--comm--quotes > p {
+  position: relative;
+  border: 3px solid black;
+  height: 100px;
+}
+.rock--comm--quotes > p.quoter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .bottom--linker--box {
@@ -993,6 +1029,10 @@
   background-repeat: no-repeat;
 }
 
+/* 
+  .footer > divs {
+    background-color: darkblue;
+  } */
 .footer {
   position: absolute;
   bottom: 0;
@@ -1007,6 +1047,10 @@
   grid-template-columns: 30% 70%;
 }
 
+.business--card > ul {
+  list-style: none;
+}
+
 .socials {
   display: flex;
   flex-direction: row;
@@ -1014,7 +1058,6 @@
 }
 
 .socials > div {
-  /* border: 5px solid black; */
   width: 80px;
   height: 80px;
   border-radius: 15px;
@@ -1028,7 +1071,6 @@
   opacity: 1;
 }
 
-/* 
-  .footer > divs {
-    background-color: darkblue;
-  } *//*# sourceMappingURL=index.css.map */
+* {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=index.css.map */

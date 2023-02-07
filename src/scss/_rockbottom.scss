@@ -19,7 +19,7 @@
 }
 .rock2 {
   background-image: url("../images/ph-portraitwide.png");
-  display: none;
+  // display: none;
   .artist--box {
     display: none;
   }
@@ -31,7 +31,31 @@
   width: 100px;
   height: 65vh;
   width: 70vw;
+  background-color: rgba(169, 169, 169, 0.51);
   border: 3px solid white;
+  padding: 25px;
+  p {
+    margin-top: 25px;
+  }
+}
+.rock--comm--quotes {
+  display: flex;
+  gap: 10%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 50px;
+}
+.rock--comm--quotes > p {
+  position: relative;
+
+  border: 3px solid black;
+
+  height: 100px;
+  &.quoter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .bottom--linker--box {
@@ -115,38 +139,6 @@
   background-repeat: no-repeat;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  height: 15vh;
-  width: 100vw;
-  border-top: 5px solid white;
-  background-color: rgba(237, 237, 237, 0.359);
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 10px;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-.socials {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-.socials > div {
-  /* border: 5px solid black; */
-  width: 80px;
-  height: 80px;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.8;
-  &:hover {
-    scale: 1.15;
-    opacity: 1;
-  }
-}
 /* 
   .footer > divs {
     background-color: darkblue;
