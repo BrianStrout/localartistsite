@@ -1,17 +1,36 @@
 [
   {
+    "galleryname": "showcase",
+    "officialtitle": "Fowl Series",
+    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "seriesDescription": "hi",
+    "galleryArray": ["hello"]
+  },
+  {
     "galleryname": "treescapes",
+    "officialtitle": "Treescape Series",
     "mainImage": "./src/images/array-images/imageplaceholder1.jpg",
-    "value": "#f00"
+    "seriesDescription": "Behind everything we see and experience in the universe is an amazing mix of chaos and mathematical unity. There’s intense and meaningful beauty in both. I’m usually trying to express some aspect of that beauty in my paintings.",
+    "galleryArray": [
+      { "addy": "gp1.jpg", "title": "title one", "desc": "description one" },
+      { "addy": "gp1.jpg", "title": "title two", "desc": "description one" },
+      { "addy": "gp1.jpg", "title": "title three", "desc": "description one" },
+      { "addy": "gp1.jpg", "title": "title one", "desc": "description one" },
+      { "addy": "gp1.jpg", "title": "title one", "desc": "description one" }
+    ]
   },
   {
     "galleryname": "fowl",
+    "officialtitle": "Fowl Series",
     "mainImage": "./src/images/array-images/fowl.jpeg",
-    "value": "#0f0"
+    "seriesDescription": "hi",
+    "galleryArray": ["hello"]
   },
   {
     "galleryname": "insects",
+    "officialtitle": "Winged Series",
     "mainImage": "../src/images/array-images/insects.jpeg",
-    "value": "#00f"
+    "seriesDescription": "hi",
+    "galleryArray": ["hey"]
   }
 ]
