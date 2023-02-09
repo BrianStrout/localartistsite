@@ -11,7 +11,7 @@
 .slider-display {
   position: relative;
   opacity: 1;
-  height: 70vh;
+  height: 78vh;
   border: 3px solid black;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,9 +22,9 @@
   align-items: center;
   gap: 40px;
   transition: height 1.2s ease-in-out, opacity 1.2s ease-in-out;
-  &:hover {
-    height: 80vh;
-  }
+  // &:hover {
+  //   height: 80vh;
+  // }
   > h2 {
     font-size: 3rem;
     color: white;
@@ -32,11 +32,9 @@
 }
 .slider-display:nth-child(1) {
   // background-image: url("../images/Final-ONLINE-Grove.jpeg");
-  background-color: rgba(32, 30, 30, 0.543);
+  background-color: rgba(32, 30, 30, 0.721);
 }
-.slider-display:nth-child(2) {
-  background-image: url("../images/alanmaple.jpeg");
-}
+
 .show-time {
   opacity: 1;
   height: 70vh;
@@ -56,7 +54,7 @@
   left: 100%;
   // left: 50%;
   height: 100%;
-  width: 40vw;
+  width: 50vw;
   opacity: 0.7;
   color: white;
   border: 3px solid white;
@@ -64,8 +62,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
-  animation: 16s linear infinite forwards slideShow;
-  $delays: 0s, 5.25s, 10.7s;
+  animation: 20s linear infinite forwards slideShow;
+  // 4s with 1s
+  $delays: 0s, 5s, 10s, 15s;
   @for $i from 1 through length($delays) {
     &:nth-child(#{length($delays)}n + #{$i}) {
       animation-delay: nth($delays, $i);
@@ -73,65 +72,31 @@
   }
   &.paused {
     animation-play-state: paused;
+    opacity: 0.1;
   }
 
   &:hover {
     opacity: 1;
   }
-  &#treescapes {
-    background-image: url("../images/alanhero1.jpeg");
+  &#showcase {
+    background-image: url("../images/galleries/showcase/showcase1.jpg");
   }
-  &#fowl {
+  &#treescapes {
+    background-image: url("../images/galleries/treescapes/treescape13.jpg");
+  }
+  &#wings {
     background-image: url("../images/array-images/fowl.jpeg");
   }
-  &#insects {
+  &#dewdrops {
     background-image: url("../images/array-images/insects.jpeg");
   }
 }
-
-// animation-delay: nth($delays, $i);
 
 @keyframes slideShow {
   0% {
     left: 100%;
   }
   100% {
-    left: -60%;
+    left: -100%;
   }
-}
-
-.slide-unseen-far-left {
-  opacity: 0;
-  left: -20%;
-  scale: 0.5;
-  transform-origin: center left;
-}
-.slide-left {
-  z-index: 1;
-  opacity: 0.6;
-  // opacity: 0.8;
-  left: 0px;
-  scale: 0.85;
-  transform-origin: center left;
-}
-.slide-center {
-  z-index: 10;
-  opacity: 1;
-  left: 30%;
-  // border: 3px solid white;
-  scale: 1;
-  transform-origin: center center;
-}
-.slide-right {
-  z-index: 1;
-  opacity: 0.6;
-  left: 60%;
-  scale: 0.85;
-  transform-origin: center right;
-}
-.slide-unseen-far-right {
-  opacity: 0;
-  left: 120%;
-  scale: 0.5;
-  transform-origin: center right;
 }

@@ -4,33 +4,246 @@
     "officialtitle": "Fowl Series",
     "mainImage": "./src/images/array-images/fowl.jpeg",
     "seriesDescription": "hi",
-    "galleryArray": ["hello"]
+    "galleryArray": [
+      {
+        "addy": "showcase1.jpg",
+        "title": "The Audience",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase2.jpg",
+        "title": "Finlandia",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase3.jpg",
+        "title": "Shadow of Time",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase4.jpg",
+        "title": "Owlivia",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase5.jpg",
+        "title": "The Gloaming",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase6.jpg",
+        "title": "Confettit Autumn",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase7.jpg",
+        "title": "Orb Origins",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase8.jpg",
+        "title": "Sky Gods",
+        "desc": "description one"
+      }
+    ]
   },
   {
     "galleryname": "treescapes",
     "officialtitle": "Treescape Series",
-    "mainImage": "./src/images/array-images/imageplaceholder1.jpg",
+    "mainImage": "./src/images/galleries/treescapes/treescape13.jpg",
     "seriesDescription": "Behind everything we see and experience in the universe is an amazing mix of chaos and mathematical unity. There’s intense and meaningful beauty in both. I’m usually trying to express some aspect of that beauty in my paintings.",
     "galleryArray": [
-      { "addy": "gp1.jpg", "title": "title one", "desc": "description one" },
-      { "addy": "gp1.jpg", "title": "title two", "desc": "description one" },
-      { "addy": "gp1.jpg", "title": "title three", "desc": "description one" },
-      { "addy": "gp1.jpg", "title": "title one", "desc": "description one" },
-      { "addy": "gp1.jpg", "title": "title one", "desc": "description one" }
+      {
+        "addy": "treescape1.jpg",
+        "title": "The Three Within",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape2.jpg",
+        "title": "Fiboncaccis Mirror",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape3.jpg",
+        "title": "Aubergine Mirror",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape4.jpg",
+        "title": "Indras Net",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape5.jpg",
+        "title": "I'll Hang You a Moon",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape6.jpg",
+        "title": "The Embrace",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape7.jpg",
+        "title": "Vail Divide",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape8.jpg",
+        "title": "Beech Tree Cathedral",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape9.jpg",
+        "title": "Blue-Agave",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape10.jpg",
+        "title": "Vermillion Divide",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape11.jpg",
+        "title": "Web of Life",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape12.jpg",
+        "title": "Blue Moon Tree",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape13.jpg",
+        "title": "Tree Rabbit Glow",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape14.jpg",
+        "title": "The Pearl",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape15.jpg",
+        "title": "Blue Sentinels of IO",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape16.jpg",
+        "title": "Silver Falls",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape17.jpg",
+        "title": "Third Path",
+        "desc": "description one"
+      },
+      {
+        "addy": "treescape18.jpg",
+        "title": "Tree of Love",
+        "desc": "description one"
+      }
     ]
   },
   {
-    "galleryname": "fowl",
-    "officialtitle": "Fowl Series",
+    "galleryname": "wings",
+    "officialtitle": "With Wings Series",
     "mainImage": "./src/images/array-images/fowl.jpeg",
     "seriesDescription": "hi",
-    "galleryArray": ["hello"]
+    "galleryArray": [
+      {
+        "addy": "wings1.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings2.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings3.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings4.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings5.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings6.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings7.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings8.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings9.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings10.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings11.jpg",
+        "title": "",
+        "desc": "description one"
+      },
+      {
+        "addy": "wings12.jpg",
+        "title": "",
+        "desc": "description one"
+      }
+    ]
   },
   {
-    "galleryname": "insects",
-    "officialtitle": "Winged Series",
+    "galleryname": "dewdrops",
+    "officialtitle": "Dewdrops",
     "mainImage": "../src/images/array-images/insects.jpeg",
     "seriesDescription": "hi",
-    "galleryArray": ["hey"]
+    "galleryArray": [
+      {
+        "addy": "dewdrops1.jpg",
+        "title": "Humility",
+        "desc": "description one"
+      },
+      {
+        "addy": "dewdrops2.jpg",
+        "title": "Hope",
+        "desc": "description one"
+      },
+      {
+        "addy": "dewdrops3.jpg",
+        "title": "Healing",
+        "desc": "description one"
+      },
+      {
+        "addy": "dewdrops4.jpg",
+        "title": "Heavens",
+        "desc": "description one"
+      },
+      {
+        "addy": "dewdrops5.jpg",
+        "title": "Happiness",
+        "desc": "description one"
+      }
+    ]
   }
 ]

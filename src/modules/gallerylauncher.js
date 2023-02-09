@@ -6,7 +6,6 @@ async function getData() {
 }
 
 const slidesToPause = Array.from(document.querySelectorAll(".slide"));
-// const galleriesOpen = Array.from(document.querySelectorAll(".pop-elem"));
 const galleryFrame = document.getElementById("slider-disp");
 let paused = false;
 
@@ -33,23 +32,23 @@ const slideController = () => {
   }
 };
 
-// const exitSignF = () => {
-//   console.log("ecit?");
-//   let sign = document.querySelectorAll(".exit-sign");
-//   sign.addEventListener("click", () => {
-//     slideController;
-//   });
-// };
+const callGallerySlideUp = (slide, index) => {
+  let pushTo = document.querySelector(".pop-up-gallery-left");
+  let pushToTitle = document.querySelector(".pop-up-slide-title");
+  let pushToDesc = document.querySelector(".pop-up-slide-desc");
+  console.log(pushTo);
+  // pushTo.style.opacity = "50%";
+  pushTo.style.backgroundImage = `url("./src/images/galleries/${slide.galleryname}/${slide.galleryArray[index].addy}")`;
+  pushToTitle.innerHTML = `${slide.galleryArray[index].title}`;
+  pushToDesc.innerHTML = `${slide.galleryArray[index].desc}`;
+  console.log(slide.galleryArray[index]);
+};
 
 const populateGallery = (called) => {
   Array.from(document.querySelectorAll(".pop-elem")).forEach((gallery) => {
     gallery.remove();
   });
-
   slideController();
-
-  console.log("pop " + called);
-
   let popUpGalleryCase = document.createElement("div");
   popUpGalleryCase.classList.add("pop-up-gallery-case");
   popUpGalleryCase.classList.add("pop-elem");
@@ -66,17 +65,11 @@ const populateGallery = (called) => {
   let exitSign = document.createElement("div");
   exitSign.classList.add("exit-sign");
   exitSign.classList.add("pop-elem");
-  exitSign.innerHTML = "<h2>X</h2>";
+  exitSign.innerHTML = "<h2>&#x2715</h2>";
   popUpGalleryLeft.appendChild(exitSign);
   exitSign.addEventListener("click", () => {
     slideController();
   });
-
-  let popUpGalleryRight = document.createElement("div");
-  popUpGalleryRight.classList.add("pop-up-gallery-right");
-  popUpGalleryRight.classList.add("pop-elem");
-  popUpGalleryRight.innerHTML = ``;
-  popUpGalleryCase.appendChild(popUpGalleryRight);
 
   let popUpGalleryHero = document.createElement("div");
   popUpGalleryHero.classList.add("pop-up-gallery-hero");
@@ -87,9 +80,48 @@ const populateGallery = (called) => {
   let popUpGalleryTitle = document.createElement("h1");
   popUpGalleryTitle.classList.add("pop-up-gallery-title");
   popUpGalleryTitle.classList.add("pop-elem");
-  popUpGalleryTitle.innerHTML = `${called.galleryname}`;
+  popUpGalleryTitle.innerHTML = `${called.officialtitle}`;
   popUpGalleryLeft.appendChild(popUpGalleryTitle);
 
+  let popUpSlideBox = document.createElement("div");
+  popUpSlideBox.classList.add("popUpSlideBox");
+  popUpSlideBox.classList.add("pop-elem");
+  popUpSlideBox.innerHTML = "";
+  popUpGalleryLeft.appendChild(popUpSlideBox);
+
+  let popUpSlideTitle = document.createElement("h4");
+  popUpSlideTitle.classList.add("pop-up-slide-title");
+  popUpSlideTitle.classList.add("pop-elem");
+  popUpSlideTitle.innerHTML = ``;
+  popUpSlideBox.appendChild(popUpSlideTitle);
+  let popUpSlideDesc = document.createElement("p");
+  popUpSlideDesc.classList.add("pop-up-slide-desc");
+  popUpSlideDesc.classList.add("pop-elem");
+  popUpSlideDesc.innerHTML = ``;
+  popUpSlideBox.appendChild(popUpSlideDesc);
+
+  let popUpGalleryRight = document.createElement("div");
+  popUpGalleryRight.classList.add("pop-up-gallery-right");
+  popUpGalleryRight.classList.add("pop-elem");
+  popUpGalleryRight.innerHTML = ``;
+  popUpGalleryCase.appendChild(popUpGalleryRight);
+
+  for (let i = 0; i < 20; i++) {
+    if (called.galleryArray[i]) {
+      let popUpGalleryThumb = document.createElement("div");
+      popUpGalleryThumb.classList.add("pop-up-gallery-thumb");
+      popUpGalleryThumb.classList.add("pop-elem");
+      popUpGalleryThumb.style.backgroundImage = `url( "./src/images/galleries/${called.galleryname}/${called.galleryArray[i].addy}")`;
+      popUpGalleryRight.appendChild(popUpGalleryThumb);
+      let screen = document.createElement("div");
+      screen.classList.add("screen");
+      popUpGalleryThumb.appendChild(screen);
+
+      popUpGalleryThumb.addEventListener("click", () => {
+        callGallerySlideUp(called, i);
+      });
+    }
+  }
   let popUpGalleryDisp = document.createElement("div");
   popUpGalleryDisp.classList.add("pop-up-gallery-disp");
   popUpGalleryDisp.classList.add("pop-elem");

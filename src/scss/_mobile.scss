@@ -1,0 +1,57 @@
+@media only screen and (max-width: 1000px) {
+  .site--shell {
+    max-width: 600px;
+  }
+  .no-mobile {
+    display: none;
+  }
+
+  .header--container {
+    height: 28vh;
+  }
+
+  .papermation--plot {
+    width: 12.5vw;
+    max-width: 75px;
+    height: 80px;
+    background-size: contain;
+  }
+
+  .farmland > .farm {
+    max-width: 60px;
+  }
+
+  .pop-up-gallery-case {
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 60%;
+  }
+
+  .bottom--linker--box {
+    position: absolute;
+    right: 0;
+    top: 1vh;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .link--clickable {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: 10px;
+    grid-template-columns: 40% 60%;
+  }
+  .socials {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .socials > div {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .site--shell {
+  }
+}

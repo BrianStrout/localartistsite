@@ -13,7 +13,6 @@ rockBottomButtons.forEach((rock) => {
   });
 });
 
-// upandrunning();
 const launch = document.getElementById("launch");
 let treeplots = Array.from(document.querySelectorAll(".plant"));
 let farmsurvey = Array.from(document.querySelectorAll(".farm"));
@@ -86,7 +85,9 @@ slidesDivArray.forEach((slide) => {
 let linkToSlide = 2;
 
 window.onload = (event) => {
+  console.log("window loaded");
   animateInTreescape();
+  controller(rockBottomButtons[0]);
 };
 
 // sliderDispTop.addEventListener("click", () => {
