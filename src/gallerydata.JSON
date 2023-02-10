@@ -1,7 +1,7 @@
 [
   {
     "galleryname": "showcase",
-    "officialtitle": "Fowl Series",
+    "officialtitle": "Showcase",
     "mainImage": "./src/images/array-images/fowl.jpeg",
     "seriesDescription": "hi",
     "galleryArray": [

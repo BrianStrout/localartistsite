@@ -63,6 +63,7 @@
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
   animation: 20s linear infinite forwards slideShow;
+  animation-play-state: paused;
   // 4s with 1s
   $delays: 0s, 5s, 10s, 15s;
   @for $i from 1 through length($delays) {
@@ -70,6 +71,10 @@
       animation-delay: nth($delays, $i);
     }
   }
+  .slide-moving {
+    animation-play-state: running;
+  }
+
   &.paused {
     animation-play-state: paused;
     opacity: 0.1;

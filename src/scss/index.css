@@ -660,6 +660,7 @@
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
   animation: 20s linear infinite forwards slideShow;
+  animation-play-state: paused;
 }
 .slide:nth-child(4n+1) {
   animation-delay: 0s;
@@ -672,6 +673,9 @@
 }
 .slide:nth-child(4n+4) {
   animation-delay: 15s;
+}
+.slide .slide-moving {
+  animation-play-state: running;
 }
 .slide.paused {
   animation-play-state: paused;
@@ -829,6 +833,10 @@
   top: 10px;
   right: 10px;
   border-radius: 3px;
+}
+
+.abouth1 {
+  margin-top: 1rem;
 }
 
 .rock2 {

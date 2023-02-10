@@ -46,7 +46,7 @@ const controller = (e) => {
       </section>
       
       <section>
-      <h1>Commission</h1>
+      <h1 class="abouth1" >Commission</h1>
        <p>
        Whether you’re looking to recapture the tone of one of my paintings that is no longer available, or you are looking to explore new visual territory, it is a continuing pleasure to be able to offer commission paintings as a private service. All of my paintings are painted in oil, and I am happy to discuss what canvas size makes sense for your interior decoration needs. Please reach out to start the conversation that ends with you holding a piece of art you love.
 <span class="sig">
@@ -54,7 +54,7 @@ const controller = (e) => {
 </p>
       </section>
       <section>
-      <h1>Pricing</h1>
+      <h1 class="abouth1">Pricing</h1>
       <p>All existing paintings and prints are available for private sale, please reach out directly and I will happily discuss pricing and shipping (if applicable) with you.
       </p>
       </span>

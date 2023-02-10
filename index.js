@@ -12,7 +12,6 @@ const linkSocial = [
   document.getElementById("linkyt"),
   document.getElementById("linkfb"),
 ];
-console.log("!", linkSocial);
 
 const rockBottomButtons = Array.from(
   document.querySelectorAll(".link--clickable")
@@ -70,6 +69,10 @@ const animateInTreescape = () => {
   setTimeout(() => {
     farmsurvey.forEach((farm, index) => {
       farm.classList.add("farmlandbob");
+    });
+
+    slidesDivArray.forEach((slide) => {
+      slide.style.animationPlayState = "running";
     });
   }, 7500);
 };
