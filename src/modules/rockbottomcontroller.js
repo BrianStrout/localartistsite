@@ -1,28 +1,50 @@
 const rockMonitor = document.getElementById("rock--bottom--monitor");
+const hamburger = document.getElementById("mobileShower");
+const linkListArray = Array.from(document.querySelectorAll(".link--clickable"));
+let hamHit = false;
 
 const controller = (e) => {
-  console.log("control");
-  console.log(e.id);
-  // console.log(rockMonitor);
-  //   rockMonitor.innerHTML = "!";
+  console.log(linkListArray);
+
+  if (hamHit === true) {
+    hamburger.classList.remove("mobile-hider");
+    linkListArray.forEach((link) => {
+      link.classList.add("mobile-hider");
+    });
+    hamHit = false;
+  }
+
   switch (e.id) {
+    case "mobileShower":
+      console.log("mobile function!");
+      hamburger.classList.add("mobile-hider");
+      linkListArray.forEach((link) => {
+        console.log("link", link);
+        link.classList.remove("mobile-hider");
+        hamHit = true;
+        // console.log(hamHit);
+      });
+      break;
     case "commission":
-      rockMonitor.innerHTML = `<h1>Commission</h1>
+      rockMonitor.innerHTML = `
       <section class="rock--comm--quotes">
         <div class="quote">
           <p>
-            Quote1 by some person who is happy about whatever
-            <span class="quoter">JOhn Bodys</span>
+          “I love what Alan Winter’s work evokes in me…”
+            <span class="quoter">Erin W.</span>
           </p>
         </div>
+        <div></div>
         <div class="quote">
           <p>
-            Quote1 by some person who is happy about whatever
-            <span class="quoter">JOhn Bodys</span>
+           "My heart squeezes every time I see his work! Truly beautiful."
+            <span class="quoter">Amanda O</span>
           </p>
         </div>
       </section>
+      
       <section>
+      <h1>Commission</h1>
        <p>
        Whether you’re looking to recapture the tone of one of my paintings that is no longer available, or you are looking to explore new visual territory, it is a continuing pleasure to be able to offer commission paintings as a private service. All of my paintings are painted in oil, and I am happy to discuss what canvas size makes sense for your interior decoration needs. Please reach out to start the conversation that ends with you holding a piece of art you love.
 <span class="sig">
@@ -36,7 +58,6 @@ const controller = (e) => {
       </span>
       `;
       break;
-
     case "about":
       rockMonitor.innerHTML = `
       <h1>About</h1>
@@ -55,8 +76,6 @@ const controller = (e) => {
       </p>
       
      `;
-    default:
-      break;
     case "exhibits":
       rockMonitor.innerHTML = `
       <h1>  EXHIBITIONS</h1>
@@ -95,9 +114,9 @@ const controller = (e) => {
         
         `;
       break;
+    default:
+      break;
   }
-
-  //   console.log(rockMonitor.innerHTML);
 };
 
-export { controller, rockMonitor };
+export { controller, rockMonitor, hamHit, hamburger, linkListArray };

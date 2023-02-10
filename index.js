@@ -1,14 +1,21 @@
 // import { upandrunning } from "./src/modules/module1.js";
 import { galleryLauncher } from "./src/modules/gallerylauncher.js";
-import { controller, rockMonitor } from "./src/modules/rockbottomcontroller.js";
+import {
+  controller,
+  rockMonitor,
+  hamHit,
+  hamburger,
+  linkListArray,
+} from "./src/modules/rockbottomcontroller.js";
 
 const rockBottomButtons = Array.from(
   document.querySelectorAll(".link--clickable")
 );
-
+hamburger.addEventListener("click", (e) => {
+  controller(e.target);
+});
 rockBottomButtons.forEach((rock) => {
   rock.addEventListener("click", () => {
-    // console.log(rock);
     controller(rock);
   });
 });

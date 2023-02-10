@@ -792,6 +792,7 @@
   position: relative;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
   border: 3px solid black;
   background-position: center;
   background-size: 80%;
@@ -822,8 +823,12 @@
   padding-top: 10vh;
 }
 
-.rock1 {
-  display: none;
+#mobileShower {
+  position: absolute;
+  z-index: 90;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
 }
 
 .rock2 {
@@ -837,7 +842,6 @@
 }
 
 .rock--bottom--monitor {
-  width: 100px;
   height: 65vh;
   width: 70vw;
   background-color: rgba(169, 169, 169, 0.51);
@@ -862,7 +866,8 @@
   border: 3px solid black;
   height: 100px;
 }
-.rock--comm--quotes > p.quoter {
+
+.quoter {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1015,15 +1020,72 @@
     grid-template-columns: 100%;
     grid-template-rows: 40% 60%;
   }
+  .rock--comm--quotes {
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    gap: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    background-color: chocolate;
+    overflow-x: hidden;
+  }
+  .rock--comm--quotes .quote {
+    width: 100%;
+  }
+  .rock--comm--quotes > * {
+    animation: swing 4s ease-in-out 0s infinite alternate;
+  }
+  @keyframes swing {
+    0% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  .rock--comm--quotes > p {
+    position: relative;
+    border: 3px solid black;
+    height: 100px;
+  }
+  .rock--comm--quotes > p.quoter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
   .bottom--linker--box {
     position: absolute;
     right: 0;
     top: 1vh;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 30px;
+    overflow-x: hidden;
   }
   .link--clickable {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  #mobileShower {
+    pointer-events: all;
+    background-color: var(--color-back);
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/menubg.png");
+    background-size: cover;
+  }
+  #mobileShower:hover {
+    scale: 1.05;
+    border: 1px solid black;
+  }
+  .mobile-hider {
+    transform: translateX(100vw);
   }
   .footer {
     padding: 10px;

@@ -1,3 +1,4 @@
+@use "root";
 @media only screen and (max-width: 1000px) {
   .site--shell {
     max-width: 600px;
@@ -26,15 +27,79 @@
     grid-template-rows: 40% 60%;
   }
 
+  .rock--comm--quotes {
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    gap: 0%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    background-color: chocolate;
+    overflow-x: hidden;
+
+    .quote {
+      width: 100%;
+      // opacity: 0.4;
+    }
+    & > * {
+      // box-sizing: border-box;
+      // border: 3px solid black;
+      animation: swing 4s ease-in-out 0s infinite alternate;
+    }
+  }
+  @keyframes swing {
+    0% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(0%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+  .rock--comm--quotes > p {
+    position: relative;
+    border: 3px solid black;
+    height: 100px;
+
+    &.quoter {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
   .bottom--linker--box {
     position: absolute;
     right: 0;
     top: 1vh;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 30px;
+    overflow-x: hidden;
   }
   .link--clickable {
-    font-size: 1rem;
+    font-size: 2rem;
+  }
+  #mobileShower {
+    pointer-events: all;
+    // display: block;
+    background-color: var(--color-back);
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/menubg.png");
+    background-size: cover;
+  }
+  #mobileShower:hover {
+    // opacity: 0.1;
+    scale: 1.05;
+    border: 1px solid black;
+  }
+  .mobile-hider {
+    transform: translateX(100vw);
   }
 
   .footer {
