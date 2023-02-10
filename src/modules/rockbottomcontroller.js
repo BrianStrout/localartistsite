@@ -1,11 +1,13 @@
 const rockMonitor = document.getElementById("rock--bottom--monitor");
 const hamburger = document.getElementById("mobileShower");
 const linkListArray = Array.from(document.querySelectorAll(".link--clickable"));
+
 let hamHit = false;
 
 const controller = (e) => {
-  console.log(linkListArray);
+  // console.log(linkListArray);
 
+  console.log(e.id);
   if (hamHit === true) {
     hamburger.classList.remove("mobile-hider");
     linkListArray.forEach((link) => {
@@ -76,43 +78,42 @@ const controller = (e) => {
       </p>
       
      `;
+      break;
     case "exhibits":
       rockMonitor.innerHTML = `
       <h1>  EXHIBITIONS</h1>
         <ul style=" list-style: none">
-     
-     <li> 2022  “Abundance” juried exhibit, Art For the People Gallery. Austin, TX</li>
-      
-     <li> 2022  “Art Spree” juried exhibit, Art For the People Gallery. Austin, TX</li>
-      
-     <li> 2021  “reIMAGINE” juried exhibit, Round Rocks Art Association. Round Rock, TX</li>
-      
-     <li> 2020  Member Exhibit, The Hive Gallery.
+     <li> <span class="year">2022</span>  “Abundance” juried exhibit, Art For the People Gallery. Austin, TX</li>
+     <li> <span class="year">2022</span>  “Art Spree” juried exhibit, Art For the People Gallery. Austin, TX</li>
+     <li> <span class="year">2021</span>  “reIMAGINE” juried exhibit, Round Rocks Art Association. Round Rock, TX</li>
+     <li> <span class="year">2020</span>  Member Exhibit, The Hive Gallery.
       Bee Cave, TX</li>
-      
-      <li> 2018  “The October Trees” solo exhibit, Lake Travis Community Library.
+      <li> <span class="year">2018</span>  “The October Trees” solo exhibit, Lake Travis Community Library.
       Lakeway, TX</li>
-      
-      <li>  2016  “The Loving Trees”  solo exhibit, Adams Gallery.
+      <li>  <span class="year">2016</span>  “The Loving Trees”  solo exhibit, Adams Gallery.
       Lakeway, TX</li>
-      
-      <li> 2014  “Dreamscapes” solo exhibit, Salem Film Festival.
-      Salem, MA</li>
-      
-      <li> 2014  “NE Regional Juried Exhibit”  Marblehead Arts Association.
+      <li> <span class="year">2014</span> “Dreamscapes” solo exhibit, Salem Film Festival.
+      Salem, MA</li> 
+      <li> <span class="year">2014</span>  “NE Regional Juried Exhibit”  Marblehead Arts Association.
       Marblehead, MA</li>
-      
-      <li> 2014  “Alan Winter’s Color World” solo exhibit, Atomic Gallery. Marblehead, MA</li>
-      
-      <li> 2013  “Marblehead Festival of the Arts Juried Exhibit.”
+      <li> <span class="year">2014</span>  “Alan Winter’s Color World” solo exhibit, Atomic Gallery. Marblehead, MA</li>
+      <li> <span class="year">2013</span>  “Marblehead Festival of the Arts Juried Exhibit.”
       Marblehead, MA</li>
-      
-      <li> 2012  “Marblehead Festival of the Arts Juried Exhibit.”
+      <li> <span class="year">2012</span>  “Marblehead Festival of the Arts Juried Exhibit.”
       Marblehead, MA</li>
       </ul>
-        
-        
         `;
+      break;
+    case "linkig":
+      window.location.href = `https://www.instagram.com`;
+      break;
+
+    case "linkyt":
+      window.location.href = `https://www.youtube.com`;
+      break;
+
+    case "linkfb":
+      window.location.href = `https://www.facebook.com`;
       break;
     default:
       break;

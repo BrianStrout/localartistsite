@@ -853,6 +853,10 @@
   margin-top: 25px;
 }
 
+.year {
+  text-decoration: underline;
+}
+
 .rock--comm--quotes {
   display: flex;
   gap: 10%;
@@ -995,6 +999,9 @@
 .socials > div:hover {
   scale: 1.15;
   opacity: 1;
+}
+.socials > div > svg {
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 1000px) {

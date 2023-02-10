@@ -7,6 +7,12 @@ import {
   hamburger,
   linkListArray,
 } from "./src/modules/rockbottomcontroller.js";
+const linkSocial = [
+  document.getElementById("linkig"),
+  document.getElementById("linkyt"),
+  document.getElementById("linkfb"),
+];
+console.log("!", linkSocial);
 
 const rockBottomButtons = Array.from(
   document.querySelectorAll(".link--clickable")
@@ -17,6 +23,11 @@ hamburger.addEventListener("click", (e) => {
 rockBottomButtons.forEach((rock) => {
   rock.addEventListener("click", () => {
     controller(rock);
+  });
+});
+linkSocial.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    controller(link);
   });
 });
 
