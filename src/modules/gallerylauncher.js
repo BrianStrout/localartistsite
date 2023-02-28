@@ -1,9 +1,10 @@
-async function getData() {
-  console.log("Get called");
-  let jsonFile = "./src/galleryData.JSON";
-  let res = await fetch(jsonFile);
-  return res.json();
-}
+// async function getData() {
+//   console.log("Get called");
+//   let jsonFile = "./src/galleryData.JSON";
+//   let res = await fetch(jsonFile);
+//   return res.json();
+// }
+import data from "../galleryData.JSON" assert { type: "json" };
 
 const slidesToPause = Array.from(document.querySelectorAll(".slide"));
 const galleryFrame = document.getElementById("slider-disp");
@@ -13,7 +14,7 @@ const slideController = () => {
   console.log("paused " + paused);
   if (!paused) {
     slidesToPause.forEach((slide) => {
-      slide.classList.add("paused");
+      slide.style.animationPlayState = "paused";
     });
     paused = true;
 
@@ -22,7 +23,7 @@ const slideController = () => {
     console.log(Array.from(document.querySelectorAll(".pop-elem")));
 
     slidesToPause.forEach((slide) => {
-      slide.classList.remove("paused");
+      slide.style.animationPlayState = "running";
     });
     Array.from(document.querySelectorAll(".pop-elem")).forEach((gallery) => {
       gallery.remove();
@@ -129,7 +130,8 @@ const populateGallery = (called) => {
   popUpGalleryRight.appendChild(popUpGalleryDisp);
 };
 // exitSignF();
-const sheetData = await getData();
+// const sheetData = await getData();
+const sheetData = data;
 
 // const data = require("../gallerydata.JSON");
 const galleryLauncher = (door) => {
