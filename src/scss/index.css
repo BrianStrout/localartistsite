@@ -1059,6 +1059,7 @@
   }
   .header--container {
     height: 28vh;
+    bottom: 0;
   }
   .papermation--plot {
     width: 12.5vw;
@@ -1066,29 +1067,93 @@
     height: 80px;
     background-size: contain;
   }
-  .farmland > .farm {
+  .farmland {
+    bottom: 18vh;
+  }
+  .farmland .farm {
     max-width: 60px;
+  }
+  .mobile--lander--pad {
+    position: absolute;
+    bottom: -1vh;
+    height: 19vh;
+    width: 100%;
+    background: linear-gradient(darkslategray, rgb(29, 29, 29));
+  }
+  .mobile--lander--pad .mobile--gallery--sign {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile--lander--pad .mobile--gallery--sign :nth-child(2) {
+    margin-left: 4rem;
+  }
+  .mobile--lander--pad .mobile--gallery--sign :nth-child(3) {
+    margin-left: 10rem;
+  }
+  .mobile--lander--pad .mobile--gallery--sign .g-sign {
+    color: var(--color-back);
+    font-size: 3rem;
+    opacity: 40%;
+  }
+  .studio {
+    align-content: flex-start;
+    padding-top: 0;
   }
   .pop-up-gallery-case {
     grid-template-columns: 100%;
     grid-template-rows: 40% 60%;
   }
+  .slider-display {
+    border: 0px;
+    align-items: flex-start;
+  }
+  .slide {
+    height: 400px;
+  }
+  .slide h1 {
+    font-size: 1.5rem;
+    color: black;
+  }
+  .rock--bottom--monitor {
+    padding: 10px 0px;
+    width: 90vw;
+  }
   .rock--comm--quotes {
     display: grid;
     grid-template-columns: 100% 100% 100%;
     gap: 0%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    background-color: chocolate;
+    background-image: url("../images/commissioned.jpg");
+    background-size: cover;
+    background-position: center;
     overflow-x: hidden;
+  }
+  .rock--comm--quotes .imageshere {
+    background-color: transparent;
+    opacity: 0;
   }
   .rock--comm--quotes .quote {
     width: 100%;
+    padding: 5px;
   }
   .rock--comm--quotes > * {
-    animation: swing 4s ease-in-out 0s infinite alternate;
+    animation: swing 7s ease-in-out 0s infinite alternate;
+  }
+  .rock--comm--quotes p {
+    position: relative;
+    border: 0px solid black;
+    height: 100px;
+  }
+  .rock--comm--quotes p .quoter {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
   }
   @keyframes swing {
     0% {
@@ -1103,16 +1168,6 @@
     100% {
       transform: translateX(-200%);
     }
-  }
-  .rock--comm--quotes > p {
-    position: relative;
-    border: 3px solid black;
-    height: 100px;
-  }
-  .rock--comm--quotes > p.quoter {
-    position: absolute;
-    bottom: 0;
-    right: 0;
   }
   .bottom--linker--box {
     position: absolute;
@@ -1142,12 +1197,14 @@
   }
   .footer {
     padding: 10px;
+    padding-top: 0px;
     grid-template-columns: 40% 60%;
   }
   .socials {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: center;
   }
   .socials > div {
     width: 40px;
