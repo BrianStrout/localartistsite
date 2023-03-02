@@ -48,9 +48,140 @@
     ]
   },
   {
-    "galleryname": "treescapes",
-    "officialtitle": "Treescape Series",
-    "mainImage": "./src/images/galleries/treescapes/treescape13.jpg",
+    "galleryname": "available",
+    "officialtitle": "Available",
+    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "seriesDescription": "hi",
+    "galleryArray": [
+      {
+        "addy": "avail1.jpg",
+        "title": "The Audience",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail2.jpg",
+        "title": "Finlandia",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail3.jpg",
+        "title": "Shadow of Time",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail4.jpg",
+        "title": "Owlivia",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail5.jpg",
+        "title": "The Gloaming",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail6.jpg",
+        "title": "Confettit Autumn",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail7.jpg",
+        "title": "Orb Origins",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail8.jpg",
+        "title": "Sky Gods",
+        "desc": "description one"
+      }
+    ]
+  },
+  {
+    "galleryname": "earthtrees",
+    "officialtitle": "Trees Our World",
+    "mainImage": "./src/images/galleries/earthtrees/earthtrees1.jpg",
+    "seriesDescription": "Behind everything we see and experience in the universe is an amazing mix of chaos and mathematical unity. There’s intense and meaningful beauty in both. I’m usually trying to express some aspect of that beauty in my paintings.",
+    "galleryArray": [
+      {
+        "addy": "earthtrees1.jpg",
+        "title": "The Birches",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees2.jpg",
+        "title": "Second Path",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees3.jpg",
+        "title": "Thirteen Stones",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees4.jpg",
+        "title": "Heartwood Hollow",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees5.jpg",
+        "title": "Yellow Hill",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees6.jpg",
+        "title": "Vitrum Lignum Tree of Glass",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees7.jpg",
+        "title": "Amber Sunset",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees8.jpg",
+        "title": "The Dance",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees9.jpg",
+        "title": "Heartwood",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees10.jpg",
+        "title": "The Madrone",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees11.jpg",
+        "title": "Texas Tall",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees12.jpg",
+        "title": "Montana Skyline",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees13.jpg",
+        "title": "Ghost Bison of El Morro",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees14.jpg",
+        "title": "Blue Moon Bamboo",
+        "desc": "description one"
+      },
+      {
+        "addy": "earthtrees15.jpg",
+        "title": "Path to Mount Resting",
+        "desc": "description one"
+      }
+    ]
+  },
+  {
+    "galleryname": "outertrees",
+    "officialtitle": "Trees Other Worlds",
+    "mainImage": "./src/images/galleries/outertrees/treescape1.jpg",
     "seriesDescription": "Behind everything we see and experience in the universe is an amazing mix of chaos and mathematical unity. There’s intense and meaningful beauty in both. I’m usually trying to express some aspect of that beauty in my paintings.",
     "galleryArray": [
       {
@@ -148,67 +279,57 @@
   {
     "galleryname": "wings",
     "officialtitle": "With Wings Series",
-    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "mainImage": "./src/images/galleries/wings/wings1.jpg",
     "seriesDescription": "hi",
     "galleryArray": [
       {
         "addy": "wings1.jpg",
-        "title": "",
+        "title": "Henrietta",
         "desc": "description one"
       },
       {
         "addy": "wings2.jpg",
-        "title": "",
+        "title": "Cosmo",
         "desc": "description one"
       },
       {
         "addy": "wings3.jpg",
-        "title": "",
+        "title": "Dragonfly Nebula",
         "desc": "description one"
       },
       {
         "addy": "wings4.jpg",
-        "title": "",
+        "title": "Angels",
         "desc": "description one"
       },
       {
         "addy": "wings5.jpg",
-        "title": "",
+        "title": "The Family",
         "desc": "description one"
       },
       {
         "addy": "wings6.jpg",
-        "title": "",
+        "title": "Luna",
         "desc": "description one"
       },
       {
         "addy": "wings7.jpg",
-        "title": "",
+        "title": "Monarch",
         "desc": "description one"
       },
       {
         "addy": "wings8.jpg",
-        "title": "",
+        "title": "Bunting VanGogh",
         "desc": "description one"
       },
       {
         "addy": "wings9.jpg",
-        "title": "",
+        "title": "Orb Origins",
         "desc": "description one"
       },
       {
         "addy": "wings10.jpg",
-        "title": "",
-        "desc": "description one"
-      },
-      {
-        "addy": "wings11.jpg",
-        "title": "",
-        "desc": "description one"
-      },
-      {
-        "addy": "wings12.jpg",
-        "title": "",
+        "title": "Sky Gods",
         "desc": "description one"
       }
     ]
@@ -216,7 +337,7 @@
   {
     "galleryname": "dewdrops",
     "officialtitle": "Dewdrops",
-    "mainImage": "../src/images/array-images/insects.jpeg",
+    "mainImage": "../src/images/galleries/dewdrops/dewdrops1.jpg",
     "seriesDescription": "hi",
     "galleryArray": [
       {

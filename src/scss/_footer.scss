@@ -11,7 +11,6 @@
   display: grid;
   grid-template-columns: 30% 70%;
 }
-
 .business--card > ul {
   list-style: none;
 }
@@ -33,7 +32,6 @@
     opacity: 1;
   }
   > svg {
-    // opacity: 0.2;
     pointer-events: none;
   }
 }

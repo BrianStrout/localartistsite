@@ -28,19 +28,19 @@ const controller = (e) => {
       });
       break;
     case "commission":
-      rockMonitor.innerHTML = `
+      rockMonitor.innerHTML = `<div class="commission">
       <section class="rock--comm--quotes">
         <div class="quote">
           <p>
           “I love what Alan Winter’s work evokes in me…”
-            <span class="quoter">Erin W.</span>
+            <span class="quoter">-Erin W.</span>
           </p>
         </div>
-        <div></div>
+        <div class="imageshere"></div>
         <div class="quote">
           <p>
            "My heart squeezes every time I see his work! Truly beautiful."
-            <span class="quoter">Amanda O</span>
+            <span class="quoter">-Amanda O</span>
           </p>
         </div>
       </section>
@@ -49,19 +49,22 @@ const controller = (e) => {
       <h1 class="abouth1" >Commission</h1>
        <p>
        Whether you’re looking to recapture the tone of one of my paintings that is no longer available, or you are looking to explore new visual territory, it is a continuing pleasure to be able to offer commission paintings as a private service. All of my paintings are painted in oil, and I am happy to discuss what canvas size makes sense for your interior decoration needs. Please reach out to start the conversation that ends with you holding a piece of art you love.
-<span class="sig">
--Alan</span>
-</p>
+      <span class="sig">
+      -Alan</span>
+      </p>
       </section>
       <section>
       <h1 class="abouth1">Pricing</h1>
       <p>All existing paintings and prints are available for private sale, please reach out directly and I will happily discuss pricing and shipping (if applicable) with you.
       </p>
       </span>
-      `;
+      </section>
+      </div>`;
       break;
     case "about":
       rockMonitor.innerHTML = `
+      <div class="about">
+      <div class="about-photo"></div>
       <h1>About</h1>
       <p>I’m a naturalist artist living in the Hill Country of Texas. My work is informed by parallels between human physiology and evolutionary processes evident in the world, and by my love of astronomy, physics, and the search for ultimate meaning in the universe.
 
@@ -75,7 +78,7 @@ const controller = (e) => {
       
       For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. What we focus on grows. My art focus and service is to demonstrate that beautiful divine unity between ourselves and the universe.
       
-      </p>
+      </p></div>
       
      `;
       break;

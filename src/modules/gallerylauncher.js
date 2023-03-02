@@ -1,11 +1,3 @@
-// async function getData() {
-//   console.log("Get called");
-//   let jsonFile = "./src/galleryData.JSON";
-//   let res = await fetch(jsonFile);
-//   return res.json();
-// }
-import data from "../galleryData.JSON" assert { type: "json" };
-
 const slidesToPause = Array.from(document.querySelectorAll(".slide"));
 const galleryFrame = document.getElementById("slider-disp");
 let paused = false;
@@ -129,19 +121,21 @@ const populateGallery = (called) => {
   popUpGalleryDisp.innerHTML = ``;
   popUpGalleryRight.appendChild(popUpGalleryDisp);
 };
-// exitSignF();
-// const sheetData = await getData();
-const sheetData = data;
 
-// const data = require("../gallerydata.JSON");
-const galleryLauncher = (door) => {
-  //   console.log(door, typeof door);
+async function galleryLauncher(door) {
+  const response = await fetch("./src/galleryData.json");
+  const sheetData = await response.json();
 
   for (const gallery of sheetData) {
+    console.log(gallery.galleryname, +"gallllll");
+
     if (gallery.galleryname === door) {
+      console.log("gallery open for business");
       populateGallery(gallery);
 
       return;
+    } else {
+      console.log("door called: " + door);
     }
 
     // console.log("json file " + gallery.galleryname);
@@ -152,6 +146,6 @@ const galleryLauncher = (door) => {
   //   console.log(doorOpened);
   //   let responser = json;
   //   console.log("following is response variable", responser);
-};
+}
 
 export { galleryLauncher };

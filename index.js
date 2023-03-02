@@ -1,12 +1,20 @@
-// import { upandrunning } from "./src/modules/module1.js";
 import { galleryLauncher } from "./src/modules/gallerylauncher.js";
-import {
-  controller,
-  rockMonitor,
-  hamHit,
-  hamburger,
-  linkListArray,
-} from "./src/modules/rockbottomcontroller.js";
+import { controller, hamburger } from "./src/modules/rockbottomcontroller.js";
+// import { jt } from ;
+
+// const again = import("./src/test.json", { assert: { type: "json" } });
+
+// setTimeout(() => {
+//   console.log(again);
+// }, 2000);
+
+(async () => {
+  const modi = await import("./src/modules/jsontest.js");
+  console.log(modi);
+  const foobar = await modi.json;
+  console.log(foobar, "is foo");
+})();
+
 const linkSocial = [
   document.getElementById("linkig"),
   document.getElementById("linkyt"),
@@ -41,6 +49,26 @@ const sliderDispTop = document.getElementById("slider-disp-top");
 const sliderDispBottom = document.getElementById("slider-disp-bottom");
 const titleTrack = document.getElementById("titleTrack");
 const interval = 50;
+const leafFront = document.getElementById("leafFront");
+const leafBack = document.getElementById("leafBack");
+const leaf1 = "./src/images/flippableleaf.png";
+const leaf2 = "./src/images/leaf2.png";
+const leaf3 = "./src/images/leaf3.png";
+const leaf4 = "./src/images/leaf4.png";
+let currentPos1 = 0;
+let currentPos2 = 0;
+let leafFlipper1 = [leaf1];
+let leafFlipper2 = [leaf3, leaf4];
+const lFront = Array.from(document.querySelectorAll(".leaf--front"));
+const imph1 = "./src/images/array-images/imageplaceholder1.jpg";
+const imph2 = "./src/images/array-images/imageplaceholder2.jpg";
+const imph3 = "./src/images/array-images/imageplaceholder3.jpg";
+const imph4 = "./src/images/array-images/imageplaceholder4.jpg";
+const imph5 = "./src/images/array-images/imageplaceholder5.jpg";
+const slidesDivArray = Array.from(document.querySelectorAll(".slide"));
+const slidesTopImagesArray = [imph1, imph2, imph3, imph4, imph5];
+
+let topShowHasStarted = false;
 const animateInTreescape = () => {
   setTimeout(() => {
     titleTrack.classList.add("outlined");
@@ -77,26 +105,6 @@ const animateInTreescape = () => {
   }, 7500);
 };
 
-const leafFront = document.getElementById("leafFront");
-const leafBack = document.getElementById("leafBack");
-const leaf1 = "./src/images/flippableleaf.png";
-const leaf2 = "./src/images/leaf2.png";
-const leaf3 = "./src/images/leaf3.png";
-const leaf4 = "./src/images/leaf4.png";
-let currentPos1 = 0;
-let currentPos2 = 0;
-let leafFlipper1 = [leaf1];
-let leafFlipper2 = [leaf3, leaf4];
-const lFront = Array.from(document.querySelectorAll(".leaf--front"));
-const imph1 = "./src/images/array-images/imageplaceholder1.jpg";
-const imph2 = "./src/images/array-images/imageplaceholder2.jpg";
-const imph3 = "./src/images/array-images/imageplaceholder3.jpg";
-const imph4 = "./src/images/array-images/imageplaceholder4.jpg";
-const imph5 = "./src/images/array-images/imageplaceholder5.jpg";
-const slidesDivArray = Array.from(document.querySelectorAll(".slide"));
-const slidesTopImagesArray = [imph1, imph2, imph3, imph4, imph5];
-
-let topShowHasStarted = false;
 slidesDivArray.forEach((slide) => {
   slide.addEventListener("click", (e) => {
     galleryLauncher(e.target.id);
@@ -105,10 +113,44 @@ slidesDivArray.forEach((slide) => {
 
 let linkToSlide = 2;
 
-window.onload = (event) => {
+let url1 = "src/test.json";
+
+async function getData(url) {
+  console.log(url);
+  const response = await fetch(url);
+  console.log(typeof response);
+  console.log(response);
+  // return response.json();
+  // let data = JSON.parse(response.json);
+  // console.log(data);
+  // let face = data[0];
+  // console.log(face);
+}
+// console.log("?");
+// getData(url1);
+
+// console.log({ data });
+
+// const punch = () => {
+//   let face = data[0];
+//   console.log(face);
+// };
+
+async function fetchMoviesJSON() {
+  const response = await fetch("./src/test.json");
+  const movies = await response.json();
+  return movies;
+}
+fetchMoviesJSON().then((movies) => {
+  // console.log(",movie time!");
+  console.log(movies);
+});
+
+window.onload = () => {
   console.log("window loaded");
   animateInTreescape();
   controller(rockBottomButtons[0]);
+  // punch();
 };
 
 // sliderDispTop.addEventListener("click", () => {

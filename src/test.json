@@ -1,0 +1,98 @@
+[
+  {
+    "galleryname": "showcase",
+    "officialtitle": "Showcase",
+    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "seriesDescription": "hi",
+    "galleryArray": [
+      {
+        "addy": "showcase1.jpg",
+        "title": "The Audience",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase2.jpg",
+        "title": "Finlandia",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase3.jpg",
+        "title": "Shadow of Time",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase4.jpg",
+        "title": "Owlivia",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase5.jpg",
+        "title": "The Gloaming",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase6.jpg",
+        "title": "Confettit Autumn",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase7.jpg",
+        "title": "Orb Origins",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase8.jpg",
+        "title": "Sky Gods",
+        "desc": "description one"
+      }
+    ]
+  },
+  {
+    "galleryname": "available",
+    "officialtitle": "Available",
+    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "seriesDescription": "hi",
+    "galleryArray": [
+      {
+        "addy": "avail1.jpg",
+        "title": "The Audience",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail2.jpg",
+        "title": "Finlandia",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail3.jpg",
+        "title": "Shadow of Time",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail4.jpg",
+        "title": "Owlivia",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail5.jpg",
+        "title": "The Gloaming",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail6.jpg",
+        "title": "Confettit Autumn",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail7.jpg",
+        "title": "Orb Origins",
+        "desc": "description one"
+      },
+      {
+        "addy": "avail8.jpg",
+        "title": "Sky Gods",
+        "desc": "description one"
+      }
+    ]
+  }
+]

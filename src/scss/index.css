@@ -651,7 +651,7 @@
   position: absolute;
   left: 100%;
   height: 100%;
-  width: 50vw;
+  width: 46vw;
   opacity: 0.7;
   color: white;
   border: 3px solid white;
@@ -659,20 +659,26 @@
   background-repeat: no-repeat;
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
-  animation: 20s linear infinite forwards slideShow;
+  animation: 30s linear infinite forwards slideShow;
   animation-play-state: paused;
 }
-.slide:nth-child(4n+1) {
+.slide:nth-child(6n+1) {
   animation-delay: 0s;
 }
-.slide:nth-child(4n+2) {
+.slide:nth-child(6n+2) {
   animation-delay: 5s;
 }
-.slide:nth-child(4n+3) {
+.slide:nth-child(6n+3) {
   animation-delay: 10s;
 }
-.slide:nth-child(4n+4) {
+.slide:nth-child(6n+4) {
   animation-delay: 15s;
+}
+.slide:nth-child(6n+5) {
+  animation-delay: 20s;
+}
+.slide:nth-child(6n+6) {
+  animation-delay: 25s;
 }
 .slide .slide-moving {
   animation-play-state: running;
@@ -687,14 +693,20 @@
 .slide#showcase {
   background-image: url("../images/galleries/showcase/showcase1.jpg");
 }
-.slide#treescapes {
-  background-image: url("../images/galleries/treescapes/treescape13.jpg");
+.slide#available {
+  background-image: url("../images/galleries/available/avail1.jpg");
+}
+.slide#outertrees {
+  background-image: url("../images/galleries/outertrees/treescape1.jpg");
+}
+.slide#earthtrees {
+  background-image: url("../images/galleries/earthtrees/earthtrees1.jpg");
 }
 .slide#wings {
-  background-image: url("../images/array-images/fowl.jpeg");
+  background-image: url("../images/galleries/wings/wings1.jpg");
 }
 .slide#dewdrops {
-  background-image: url("../images/array-images/insects.jpeg");
+  background-image: url("../images/galleries/dewdrops/dewdrops1.jpg");
 }
 
 @keyframes slideShow {
@@ -702,7 +714,7 @@
     left: 100%;
   }
   100% {
-    left: -100%;
+    left: -200%;
   }
 }
 .studio {
@@ -817,9 +829,8 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: url("../images/Final-ONLINE-Grove.jpeg");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: right;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -835,12 +846,15 @@
   border-radius: 3px;
 }
 
-.abouth1 {
+.about {
+  width: 70%;
+}
+.about h1 {
   margin-top: 1rem;
 }
 
 .rock2 {
-  background-image: url("../images/ph-portraitwide.png");
+  background-image: url("../images/Alanbw.jpg");
 }
 .rock2 .artist--box {
   display: none;
@@ -852,7 +866,7 @@
 .rock--bottom--monitor {
   height: 65vh;
   width: 70vw;
-  background-color: rgba(169, 169, 169, 0.51);
+  background-color: rgba(169, 169, 169, 0.735);
   border: 3px solid white;
   padding: 25px;
   overflow-y: scroll;
@@ -865,12 +879,28 @@
   text-decoration: underline;
 }
 
-.rock--comm--quotes {
+.commission {
   display: flex;
-  gap: 10%;
-  padding-left: 25px;
-  padding-right: 25px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.commission > section {
+  width: 70%;
+}
+
+.rock--comm--quotes {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 200px;
   margin-bottom: 50px;
+}
+
+.imageshere {
+  height: 200px;
+  background-image: url("../images/commissioned.jpg");
+  background-size: cover;
 }
 
 .rock--comm--quotes > p {
@@ -879,10 +909,17 @@
   height: 100px;
 }
 
+.quote {
+  position: relative;
+  background-color: rgba(169, 169, 169, 0.747);
+  padding: 8px;
+  border: 3px solid black;
+}
+
 .quoter {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 30%;
+  right: 8px;
 }
 
 .bottom--linker--box {
@@ -908,6 +945,9 @@
 }
 .link--clickable:hover {
   scale: 1.05;
+}
+.link--clickable > p {
+  pointer-events: none;
 }
 
 .artist--box {
@@ -954,13 +994,11 @@
   display: flex;
   width: 100%;
   height: 100%;
-  /* background-color: wheat; */
 }
 
 .afg--plant {
   width: 25%;
   aspect-ratio: 1/1;
-  /* border: 3px solid yellow; */
   background-image: url("../images/treescapefg2.png");
   background-size: contain;
   background-position: right bottom;
