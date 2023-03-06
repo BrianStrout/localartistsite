@@ -30,7 +30,7 @@ const callGallerySlideUp = (slide, index) => {
   let pushToTitle = document.querySelector(".pop-up-slide-title");
   let pushToDesc = document.querySelector(".pop-up-slide-desc");
   console.log(pushTo);
-  // pushTo.style.opacity = "50%";
+
   pushTo.style.backgroundImage = `url("./src/images/galleries/${slide.galleryname}/${slide.galleryArray[index].addy}")`;
   pushToTitle.innerHTML = `${slide.galleryArray[index].title}`;
   pushToDesc.innerHTML = `${slide.galleryArray[index].desc}`;
@@ -70,11 +70,11 @@ const populateGallery = (called) => {
   popUpGalleryHero.innerHTML = ``;
   popUpGalleryLeft.appendChild(popUpGalleryHero);
 
-  let popUpGalleryTitle = document.createElement("h1");
-  popUpGalleryTitle.classList.add("pop-up-gallery-title");
-  popUpGalleryTitle.classList.add("pop-elem");
-  popUpGalleryTitle.innerHTML = `${called.officialtitle}`;
-  popUpGalleryLeft.appendChild(popUpGalleryTitle);
+  // let popUpGalleryTitle = document.createElement("h1");
+  // popUpGalleryTitle.classList.add("pop-up-gallery-title");
+  // popUpGalleryTitle.classList.add("pop-elem");
+  // popUpGalleryTitle.innerHTML = `${called.officialtitle}`;
+  // popUpGalleryLeft.appendChild(popUpGalleryTitle);
 
   let popUpSlideBox = document.createElement("div");
   popUpSlideBox.classList.add("popUpSlideBox");

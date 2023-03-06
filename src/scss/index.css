@@ -749,7 +749,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-size: 95%;
+  background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -791,30 +791,32 @@
 .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-title,
 .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox p {
   color: white;
-  margin: 10px;
 }
 .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-title {
+  position: absolute;
+  bottom: 0px;
+  z-index: 50;
   font-size: 2rem;
   background-color: black;
+  padding: 10px;
+  border: 1px solid white;
 }
 .pop-up-gallery-case .pop-up-gallery-right {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-width: 100vw;
   padding: 15px;
   gap: 15px;
+  overflow: scroll;
 }
 .pop-up-gallery-case .pop-up-gallery-right .pop-up-gallery-thumb {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 150px;
   aspect-ratio: 1/1;
   border: 3px solid black;
   background-position: center;
   background-size: 80%;
-}
-.pop-up-gallery-case .pop-up-gallery-right .pop-up-gallery-thumb:hover {
-  scale: 1.05;
 }
 .pop-up-gallery-case .pop-up-gallery-right .pop-up-gallery-thumb .screen {
   width: 100%;
@@ -1096,15 +1098,32 @@
   .mobile--lander--pad .mobile--gallery--sign .g-sign {
     color: var(--color-back);
     font-size: 3rem;
-    opacity: 40%;
+    opacity: 2%;
   }
   .studio {
     align-content: flex-start;
     padding-top: 0;
+    max-height: 800px;
   }
   .pop-up-gallery-case {
     grid-template-columns: 100%;
     grid-template-rows: 40% 60%;
+    padding: 0;
+  }
+  .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-title {
+    font-size: 16px;
+    bottom: -20px;
+  }
+  .pop-up-gallery-case .pop-up-gallery-right {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .pop-up-gallery-case .pop-up-gallery-right .pop-up-gallery-thumb {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pop-up-gallery-title {
+    transform: translateY(-50px);
   }
   .slider-display {
     border: 0px;
