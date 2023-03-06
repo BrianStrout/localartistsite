@@ -560,3 +560,8 @@
 
   transition: transform 0.75s ease-out 0s;
 }
+
+.mobile--lander--pad .mobile--gallery--sign .g-sign {
+  opacity: 0;
+  pointer-events: none;
+}
