@@ -7,42 +7,47 @@
     "galleryArray": [
       {
         "addy": "showcase1.jpg",
-        "title": "The Audience",
+        "title": "San Miguel de Allenda",
         "desc": "description one"
       },
       {
         "addy": "showcase2.jpg",
-        "title": "Finlandia",
+        "title": "Plum Island Crab",
         "desc": "description one"
       },
       {
         "addy": "showcase3.jpg",
-        "title": "Shadow of Time",
+        "title": "The Gathering",
         "desc": "description one"
       },
       {
         "addy": "showcase4.jpg",
-        "title": "Owlivia",
+        "title": "Gold Coast",
         "desc": "description one"
       },
       {
         "addy": "showcase5.jpg",
-        "title": "The Gloaming",
+        "title": "Evolution",
         "desc": "description one"
       },
       {
         "addy": "showcase6.jpg",
-        "title": "Confettit Autumn",
+        "title": "Stevens Barn",
         "desc": "description one"
       },
       {
         "addy": "showcase7.jpg",
-        "title": "Orb Origins",
+        "title": "Emerald-Isle",
         "desc": "description one"
       },
       {
         "addy": "showcase8.jpg",
-        "title": "Sky Gods",
+        "title": "Night, The River",
+        "desc": "description one"
+      },
+      {
+        "addy": "showcase9.jpg",
+        "title": "Skogofoss Falls",
         "desc": "description one"
       }
     ]
