@@ -116,16 +116,16 @@ slidesDivArray.forEach((slide) => {
   });
 });
 
-let linkToSlide = 2;
+// let linkToSlide = 2;
 
-let url1 = "src/test.json";
+// let url1 = "src/test.json";
 
-async function getData(url) {
-  console.log(url);
-  const response = await fetch(url);
-  console.log(typeof response);
-  console.log(response);
-}
+// async function getData(url) {
+//   console.log(url);
+//   const response = await fetch(url);
+//   console.log(typeof response);
+//   console.log(response);
+// }
 
 // async function fetchMoviesJSON() {
 //   const response = await fetch("./src/test.json");
@@ -140,7 +140,6 @@ async function getData(url) {
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("cta")) {
     rockBottom.scrollIntoView({ behavior: "smooth" });
-
     document.getElementById(
       "rock--bottom--monitor"
     ).innerHTML = `<div class="commission">
@@ -182,6 +181,7 @@ document.addEventListener("click", (e) => {
         </div>`;
     return;
   }
+
   if (e.target.classList.contains("toAvail")) {
     document.getElementById("studio").scrollIntoView({ behavior: "smooth" });
     galleryLauncher("available");

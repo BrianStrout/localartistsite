@@ -3,7 +3,7 @@ const galleryFrame = document.getElementById("slider-disp");
 let paused = false;
 
 const slideController = () => {
-  console.log("paused starts as..." + paused);
+  // console.log("paused starts as..." + paused);
   if (!paused) {
     slidesToPause.forEach((slide) => {
       slide.style.animationPlayState = "paused";
@@ -11,7 +11,7 @@ const slideController = () => {
     paused = true;
     return;
   } else if (paused) {
-    console.log(Array.from(document.querySelectorAll(".pop-elem")));
+    // console.log(Array.from(document.querySelectorAll(".pop-elem")));
 
     slidesToPause.forEach((slide) => {
       slide.style.animationPlayState = "running";
@@ -28,16 +28,16 @@ const callGallerySlideUp = (slide, index) => {
   let pushTo = document.querySelector(".pop-up-gallery-left");
   let pushToTitle = document.querySelector(".pop-up-slide-title");
   let pushToDesc = document.querySelector(".pop-up-slide-desc");
-  console.log(pushTo);
+  // console.log(pushTo);
 
   pushTo.style.backgroundImage = `url("./src/images/galleries/${slide.galleryname}/${slide.galleryArray[index].addy}")`;
   pushToTitle.innerHTML = `${slide.galleryArray[index].title}`;
   pushToDesc.innerHTML = `${slide.galleryArray[index].desc}`;
-  console.log(slide.galleryArray[index]);
+  // console.log(slide.galleryArray[index]);
 };
 
 const populateGallery = (called) => {
-  console.log("popppin");
+  // console.log("popppin");
   Array.from(document.querySelectorAll(".pop-elem")).forEach((gallery) => {
     gallery.remove();
   });
@@ -140,7 +140,7 @@ const populateGallery = (called) => {
 };
 
 async function galleryLauncher(door) {
-  console.log("door called: " + door);
+  // console.log("door called: " + door);
   const response = await fetch("./src/galleryData.json");
   const sheetData = await response.json();
 
@@ -150,7 +150,8 @@ async function galleryLauncher(door) {
 
       return;
     } else {
-      console.log("door called: " + door);
+      // console.log("door called: " + door);
+      console.log("error with gallery launch");
     }
   }
 

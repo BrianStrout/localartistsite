@@ -7,7 +7,7 @@ let hamHit = false;
 const controller = (e) => {
   // console.log(linkListArray);
 
-  console.log(e.id);
+  // console.log(e.id);
   if (hamHit === true) {
     hamburger.classList.remove("mobile-hider");
     linkListArray.forEach((link) => {
@@ -18,10 +18,10 @@ const controller = (e) => {
 
   switch (e.id) {
     case "mobileShower":
-      console.log("mobile function!");
+      // console.log("mobile function!");
       hamburger.classList.add("mobile-hider");
       linkListArray.forEach((link) => {
-        console.log("link", link);
+        // console.log("link", link);
         link.classList.remove("mobile-hider");
         hamHit = true;
         // console.log(hamHit);
