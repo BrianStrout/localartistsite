@@ -1,15 +1,19 @@
 .rock--bottom {
-  // display: none;
   position: relative;
   height: 100vh;
   width: 100vw;
+  // background: linear-gradient(black, white);
   background-size: contain;
-  background-position: right;
+  background-position: right bottom 10vh;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   padding-top: 10vh;
+  overflow: hidden;
+  // background-color: chartreuse;
+
+  background-image: url("/src/images/Alanbwex.png");
 }
 #mobileShower {
   position: absolute;
@@ -25,7 +29,7 @@
   }
 }
 .rock2 {
-  background-image: url("../images/Alanbw.jpg");
+  // background-image: url("/src/images/Alanbwcropped.png");
   .artist--box {
     display: none;
   }
@@ -34,12 +38,12 @@
   }
 }
 .rock--bottom--monitor {
-  // width: 100px;
   height: 65vh;
-  width: 70vw;
+  width: 60vw;
   background-color: rgba(169, 169, 169, 0.735);
   border: 3px solid white;
   padding: 25px;
+  margin-left: 20vw;
   overflow-y: scroll;
   p {
     margin-top: 25px;
@@ -54,7 +58,10 @@
   align-items: center;
   flex-direction: column;
   > section {
-    width: 70%;
+    width: 90%;
+  }
+  > h1 {
+    text-decoration: underline;
   }
 }
 
@@ -62,21 +69,27 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  // gap: 10%;
   height: 200px;
-
-  // padding-left: 25px;
-  // padding-right: 25px;
   margin-bottom: 50px;
-  // background-color: pink;
-  // background-position: center;
 }
 
 .imageshere {
   height: 200px;
-  // width: 600px;
-  background-image: url("../images/commissioned.jpg");
   background-size: cover;
+}
+
+.ih-comm {
+  background-image: url("/src/images/rockbottombgs/ih-comm.jpg");
+}
+.ih-purch {
+  background-image: url("/src/images/rockbottombgs/ih-purch.jpg");
+}
+.ih-about {
+  background-image: url("/src/images/rockbottombgs/ih-about.png");
+}
+
+.ih-contact {
+  background-image: url("/src/images/rockbottombgs/");
 }
 
 .rock--comm--quotes > p {
@@ -101,7 +114,6 @@
   right: 0;
   top: 10vh;
   height: 40vh;
-  // border: 5px solid white;
   border-right: none;
   display: flex;
   flex-direction: column;
@@ -116,7 +128,7 @@
   background-color: aliceblue;
   color: black;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   &:hover {
     scale: 1.05;
   }
@@ -132,9 +144,6 @@
   right: 0;
   width: 50vh;
   height: 50vh;
-  /* border-top: 5px solid white;
-    border-left: 5px solid white;
-    border-bottom: 5px solid white; */
 }
 
 .artist--portrait {
@@ -143,7 +152,7 @@
   right: 0;
   width: 80%;
   height: 100%;
-  background-image: url("../images/artistplaceholder.png");
+  background-image: url("/src/images/artistplaceholder.png");
   background-size: contain;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -153,15 +162,14 @@
   right: 0;
   width: 100%;
   aspect-ratio: 1/1;
-  /* height: 100%; */
-  background-image: url("../images/artistbg.png");
+  background-image: url("/src/images/artistbg.png");
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
 }
 .artist--fg {
   position: absolute;
-  z-index: 10;
+  z-index: 11;
   right: 0;
   bottom: 0;
   display: flex;
@@ -172,13 +180,67 @@
 .afg--plant {
   width: 25%;
   aspect-ratio: 1/1;
-  background-image: url("../images/treescapefg2.png");
+  background-image: url("/src/images/treescapefg2.png");
   background-size: contain;
   background-position: right bottom;
   background-repeat: no-repeat;
 }
 
-/* 
-  .footer > divs {
-    background-color: darkblue;
-  } */
+// ass "phone-div"><div class="phone-icon"></div><h2>
+a {
+  color: black;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.phone-div {
+  // background-color: pink;
+  width: fit-content;
+  // padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.phone-icon {
+  width: 40px;
+  height: 40px;
+  background-image: url("/src/images/rockbottombgs/telephone.png");
+  background-size: cover;
+  margin-right: 10px;
+  //   margin-left: 22px;
+  // }}
+}
+#myForm {
+  position: relative;
+  width: 50%;
+  padding: 1rem;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  input {
+    font-size: 16px;
+    height: 30px;
+    width: 300px;
+  }
+  > .form-group {
+    // border: 3px solid black;
+    display: flex;
+    align-content: flex-start;
+    margin: 1rem;
+    > label {
+      width: 110px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-family: var(--header-font);
+    }
+    > textarea {
+      width: 80%;
+      resize: none;
+      font-size: 16px;
+    }
+  }
+  #submit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

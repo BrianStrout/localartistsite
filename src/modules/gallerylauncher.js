@@ -3,13 +3,12 @@ const galleryFrame = document.getElementById("slider-disp");
 let paused = false;
 
 const slideController = () => {
-  console.log("paused " + paused);
+  console.log("paused starts as..." + paused);
   if (!paused) {
     slidesToPause.forEach((slide) => {
       slide.style.animationPlayState = "paused";
     });
     paused = true;
-
     return;
   } else if (paused) {
     console.log(Array.from(document.querySelectorAll(".pop-elem")));
@@ -38,10 +37,12 @@ const callGallerySlideUp = (slide, index) => {
 };
 
 const populateGallery = (called) => {
+  console.log("popppin");
   Array.from(document.querySelectorAll(".pop-elem")).forEach((gallery) => {
     gallery.remove();
   });
   slideController();
+
   let popUpGalleryCase = document.createElement("div");
   popUpGalleryCase.classList.add("pop-up-gallery-case");
   popUpGalleryCase.classList.add("pop-elem");
@@ -82,11 +83,25 @@ const populateGallery = (called) => {
   popUpSlideBox.innerHTML = "";
   popUpGalleryLeft.appendChild(popUpSlideBox);
 
+  let popUpSlideHeader = document.createElement("h4");
+  popUpSlideHeader.classList.add("pop-up-slide-header");
+  popUpSlideHeader.classList.add("pop-elem");
+  popUpSlideHeader.innerHTML = ``;
+  popUpSlideBox.appendChild(popUpSlideHeader);
+
   let popUpSlideTitle = document.createElement("h4");
   popUpSlideTitle.classList.add("pop-up-slide-title");
   popUpSlideTitle.classList.add("pop-elem");
   popUpSlideTitle.innerHTML = ``;
-  popUpSlideBox.appendChild(popUpSlideTitle);
+  popUpSlideHeader.appendChild(popUpSlideTitle);
+
+  let popUpSlideCTA = document.createElement("div");
+  popUpSlideCTA.classList.add("pop-up-slide");
+  popUpSlideCTA.classList.add("cta");
+  popUpSlideCTA.classList.add("pop-elem");
+  popUpSlideCTA.innerHTML = ``;
+  popUpSlideHeader.appendChild(popUpSlideCTA);
+
   let popUpSlideDesc = document.createElement("p");
   popUpSlideDesc.classList.add("pop-up-slide-desc");
   popUpSlideDesc.classList.add("pop-elem");
@@ -120,25 +135,23 @@ const populateGallery = (called) => {
   popUpGalleryDisp.classList.add("pop-elem");
   popUpGalleryDisp.innerHTML = ``;
   popUpGalleryRight.appendChild(popUpGalleryDisp);
+
+  callGallerySlideUp(called, 0);
 };
 
 async function galleryLauncher(door) {
+  console.log("door called: " + door);
   const response = await fetch("./src/galleryData.json");
   const sheetData = await response.json();
 
   for (const gallery of sheetData) {
-    console.log(gallery.galleryname, +"gallllll");
-
     if (gallery.galleryname === door) {
-      console.log("gallery open for business");
       populateGallery(gallery);
 
       return;
     } else {
       console.log("door called: " + door);
     }
-
-    // console.log("json file " + gallery.galleryname);
   }
 
   // let doorOpened = JSON.parse(data);
@@ -148,4 +161,4 @@ async function galleryLauncher(door) {
   //   console.log("following is response variable", responser);
 }
 
-export { galleryLauncher };
+export { galleryLauncher, slideController };

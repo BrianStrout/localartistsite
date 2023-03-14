@@ -1,4 +1,7 @@
-import { galleryLauncher } from "./src/modules/gallerylauncher.js";
+import {
+  galleryLauncher,
+  slideController,
+} from "./src/modules/gallerylauncher.js";
 import { controller, hamburger } from "./src/modules/rockbottomcontroller.js";
 // import { jt } from ;
 
@@ -8,17 +11,18 @@ import { controller, hamburger } from "./src/modules/rockbottomcontroller.js";
 //   console.log(again);
 // }, 2000);
 
-(async () => {
-  const modi = await import("./src/modules/jsontest.js");
-  console.log(modi);
-  const foobar = await modi.json;
-  console.log(foobar, "is foo");
-})();
+// (async () => {
+//   const modi = await import("./src/modules/jsontest.js");
+//   console.log(modi);
+//   const foobar = await modi.json;
+//   console.log(foobar, "is foo");
+// })();
 
 const linkSocial = [
   document.getElementById("linkig"),
   document.getElementById("linkyt"),
   document.getElementById("linkfb"),
+  document.getElementById("linkstroutco"),
 ];
 
 const rockBottomButtons = Array.from(
@@ -67,6 +71,7 @@ const imph4 = "./src/images/array-images/imageplaceholder4.jpg";
 const imph5 = "./src/images/array-images/imageplaceholder5.jpg";
 const slidesDivArray = Array.from(document.querySelectorAll(".slide"));
 const slidesTopImagesArray = [imph1, imph2, imph3, imph4, imph5];
+const rockBottom = document.getElementById("rockBottom");
 
 let topShowHasStarted = false;
 const animateInTreescape = () => {
@@ -120,32 +125,68 @@ async function getData(url) {
   const response = await fetch(url);
   console.log(typeof response);
   console.log(response);
-  // return response.json();
-  // let data = JSON.parse(response.json);
-  // console.log(data);
-  // let face = data[0];
-  // console.log(face);
 }
-// console.log("?");
-// getData(url1);
 
-// console.log({ data });
+// async function fetchMoviesJSON() {
+//   const response = await fetch("./src/test.json");
+//   const movies = await response.json();
+//   return movies;
+// }
+// fetchMoviesJSON().then((movies) => {
+//   // console.log(",movie time!");
+//   console.log(movies);
+// });
 
-// const punch = () => {
-//   let face = data[0];
-//   console.log(face);
-// };
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("cta")) {
+    rockBottom.scrollIntoView({ behavior: "smooth" });
 
-async function fetchMoviesJSON() {
-  const response = await fetch("./src/test.json");
-  const movies = await response.json();
-  return movies;
-}
-fetchMoviesJSON().then((movies) => {
-  // console.log(",movie time!");
-  console.log(movies);
+    document.getElementById(
+      "rock--bottom--monitor"
+    ).innerHTML = `<div class="commission">
+       <h1>Contact</h1>
+
+<div class = "phone-div"><div class="phone-icon"></div><h2>617 501 5838</h2></div>
+
+
+          <form id="myForm">
+          <!-- name -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="name"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="enter your name"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+    
+        </div>`;
+    return;
+  }
+  if (e.target.classList.contains("toAvail")) {
+    document.getElementById("studio").scrollIntoView({ behavior: "smooth" });
+    galleryLauncher("available");
+  }
 });
-
 window.onload = () => {
   console.log("window loaded");
   animateInTreescape();

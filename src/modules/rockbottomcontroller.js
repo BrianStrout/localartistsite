@@ -27,7 +27,7 @@ const controller = (e) => {
         // console.log(hamHit);
       });
       break;
-    case "commission":
+    case "commissions":
       rockMonitor.innerHTML = `<div class="commission">
       <section class="rock--comm--quotes">
         <div class="quote">
@@ -36,7 +36,7 @@ const controller = (e) => {
             <span class="quoter">-Erin W.</span>
           </p>
         </div>
-        <div class="imageshere"></div>
+        <div class="imageshere ih-comm"></div>
         <div class="quote">
           <p>
            "My heart squeezes every time I see his work! Truly beautiful."
@@ -48,41 +48,144 @@ const controller = (e) => {
       <section>
       <h1 class="abouth1" >Commission</h1>
        <p>
-       Whether you’re looking to recapture the tone of one of my paintings that is no longer available, or you are looking to explore new visual territory, it is a continuing pleasure to be able to offer commission paintings as a private service. All of my paintings are painted in oil, and I am happy to discuss what canvas size makes sense for your interior decoration needs. Please reach out to start the conversation that ends with you holding a piece of art you love.
-      <span class="sig">
-      -Alan</span>
+       I Can Paint <I>For</I> You <br>
+       Whether you’re seeking your own version of Winterboy art that's already been collected, or hope to recapture the light and energy of a treasured moment or place, you can commission me to paint it for you. I'll bring your vision to life, or lend you mine. <I>$3 per sq canvas size; acrylic/oil, murals, too; turnaround about 4 weeks.</I> <span class="cta u"> Contact me</span> to start the conversation that leads to a beloved piece of WB art in your home.
+       <span class="sig">
+      -Alan Winter</span>
       </p>
       </section>
-      <section>
-      <h1 class="abouth1">Pricing</h1>
-      <p>All existing paintings and prints are available for private sale, please reach out directly and I will happily discuss pricing and shipping (if applicable) with you.
-      </p>
-      </span>
-      </section>
+     
       </div>`;
       break;
-    case "about":
-      rockMonitor.innerHTML = `
-      <div class="about">
-      <div class="about-photo"></div>
-      <h1>About</h1>
-      <p>I’m a naturalist artist living in the Hill Country of Texas. My work is informed by parallels between human physiology and evolutionary processes evident in the world, and by my love of astronomy, physics, and the search for ultimate meaning in the universe.
-
-      My current Stained-Glass Tree and Orb series straddle the line between representation and abstraction of our unity with the natural world. The trunks and branches of my trees, rendered as counterparts to the human body and its circulatory and pulmonary systems, generally appear solid and visually 3D. But the trees’ twigs, leaves, flowers and fruit flatten into two dimensions, morphing into ‘stained-glass’ cells– tiny, individualized bits of color and emotion that surround the tree like a halo. And in the Orb series, energy lines transcend earthly bounds and become astral, hinting at divine interconnections.
-      
-      Unity is also reflected in my creative process. I begin each new piece alone in my studio, working from reference images. But I don’t see painting as a solo sport. I often interact with other people via technology while I paint, or listen to podcasts, lectures, debates. The transformational energy of human words and ideas guides composition and color, even the actual brush strokes, of a piece. They add rhythm and vibrancy to the work, and make each piece a reflection of my life at the moment.
-      
-      I share progressions of my paintings through social media, too, which allows me to unite with viewer experiences in almost realtime. People forever see things in my work that I don’t, and when I’m stuck, their feedback often helps me view my work with new eyes.
-      
-      In the final stages of a painting, I’m again alone in the studio, leaving and returning, listening carefully to the Muse. At this point, the process becomes a meditative reflection, a personal connection to my own non-religious divine.
-      
-      For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. What we focus on grows. My art focus and service is to demonstrate that beautiful divine unity between ourselves and the universe.
-      
-      </p></div>
-      
-     `;
+    case "purchase":
+      rockMonitor.innerHTML = `<div class="commission">
+        <section class="rock--comm--quotes">
+          <div class="quote">
+            <p>
+            “I love what Alan Winter’s work evokes in me…”
+              <span class="quoter">-Erin W.</span>
+            </p>
+          </div>
+          <div class="imageshere ih-purch"></div>
+          <div class="quote">
+            <p>
+             "My heart squeezes every time I see his work! Truly beautiful."
+              <span class="quoter">-Amanda O</span>
+            </p>
+          </div>
+        </section>
+        
+        <section>
+        <h1 class="abouth1">Purchase</h1>
+         <p>
+         All of my sales are direct to customer. Please <span class="u cta">get in touch</span> with any questions you might have, or check out my <span class="toAvail u"> Available paintings gallery.</span>
+         <br><br>
+         Dominated by the Muse,  sometimes trees, sometimes orbs, sometimes dragonflies. Right now I'm painting chickens.
+        </p>
+        </section>
+       
+        </div>`;
       break;
-    case "exhibits":
+    case "about":
+      rockMonitor.innerHTML = `<div class="commission">
+          <section class="rock--comm--quotes">
+            <div class="quote">
+              <p>
+              “I love what Alan Winter’s work evokes in me…”
+                <span class="quoter">-Erin W.</span>
+              </p>
+            </div>
+            <div class="imageshere ih-about"></div>
+            <div class="quote">
+              <p>
+               "My heart !squeezes every time I see his work! Truly beautiful."
+                <span class="quoter">-Amanda O</span>
+              </p>
+            </div>
+          </section>
+          
+          <section>
+          <h1 class="abouth1">About the Artist</h1>
+           <p>
+       
+
+           Alan Winter, aka Winterboy, is a professional artist recently returned from Texas to the North Shore of Boston. He began painting as a hobby in college, becoming more serious about it in 2010. Since 2016, he's made his living exclusively as an artist, producing up to 40 pieces in oil or acrylic per year and finding collectors for most of them. He says,
+           
+           "My work is informed by love of trees, astronomy, physics, and flying things. 
+           
+           "To me, art is not a solo sport. I share my work on social media because people forever show me things that I don’t see, lead me in new directions, and help me view my canvases with new eyes if I'm stuck.
+           
+           "What we focus on grows. For every ugly thing demanding our attention 24×7, there are a thousand beautiful things just as real. I paint to focus on beautiful things, and hopefully to help others do the same."
+          <span class="sig">
+          -Alan</span>
+          </p>
+          </section>
+          
+          </div>`;
+      break;
+    case "contact":
+      rockMonitor.innerHTML = `<div class="commission">
+       <h1>Contact</h1>
+          <form id="myForm">
+          <!-- name -->
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="name"
+              name="name"
+              class="form-control"
+              id="name"
+              placeholder="enter your name"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="email"
+              placeholder="enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br>
+        <a href="tel:617-501-5838">
+        <div class = "phone-div"><div class="phone-icon"></div><h2>(617)501-5838</h2></div>
+        </a>
+        
+    
+        </div>`;
+      break;
+
+      // case "about":
+      //   rockMonitor.innerHTML = `
+      //   <div class="about">
+      //   <div class="about-photo"></div>
+      //   <h1>About</h1>
+      //   <p>I’m a naturalist artist living in the Hill Country of Texas. My work is informed by parallels between human physiology and evolutionary processes evident in the world, and by my love of astronomy, physics, and the search for ultimate meaning in the universe.
+
+      //   My current Stained-Glass Tree and Orb series straddle the line between representation and abstraction of our unity with the natural world. The trunks and branches of my trees, rendered as counterparts to the human body and its circulatory and pulmonary systems, generally appear solid and visually 3D. But the trees’ twigs, leaves, flowers and fruit flatten into two dimensions, morphing into ‘stained-glass’ cells– tiny, individualized bits of color and emotion that surround the tree like a halo. And in the Orb series, energy lines transcend earthly bounds and become astral, hinting at divine interconnections.
+
+      //   Unity is also reflected in my creative process. I begin each new piece alone in my studio, working from reference images. But I don’t see painting as a solo sport. I often interact with other people via technology while I paint, or listen to podcasts, lectures, debates. The transformational energy of human words and ideas guides composition and color, even the actual brush strokes, of a piece. They add rhythm and vibrancy to the work, and make each piece a reflection of my life at the moment.
+
+      //   I share progressions of my paintings through social media, too, which allows me to unite with viewer experiences in almost realtime. People forever see things in my work that I don’t, and when I’m stuck, their feedback often helps me view my work with new eyes.
+
+      //   In the final stages of a painting, I’m again alone in the studio, leaving and returning, listening carefully to the Muse. At this point, the process becomes a meditative reflection, a personal connection to my own non-religious divine.
+
+      //   For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. What we focus on grows. My art focus and service is to demonstrate that beautiful divine unity between ourselves and the universe.
+
+      //   </p></div>
+
+      //  `;
+      //   break;
+      // case "exhibits":
       rockMonitor.innerHTML = `
       <h1>  EXHIBITIONS</h1>
         <ul style=" list-style: none">
@@ -108,15 +211,16 @@ const controller = (e) => {
         `;
       break;
     case "linkig":
-      window.location.href = `https://www.instagram.com`;
+      window.open("http://www.instagram.com/winterboy76", "_blank");
       break;
-
     case "linkyt":
-      window.location.href = `https://www.youtube.com`;
+      window.open("http://www.instagram.com/winterboy76", "_blank");
       break;
-
     case "linkfb":
-      window.location.href = `https://www.facebook.com`;
+      window.open("https://www.facebook.com/alan.winter3", "_blank");
+      break;
+    case "linkstroutco":
+      window.open("https://www.strout.co", "_blank");
       break;
     default:
       break;

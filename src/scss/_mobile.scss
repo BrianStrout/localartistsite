@@ -111,7 +111,7 @@
     padding-right: 0px;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    background-image: url("../images/commissioned.jpg");
+    background-image: url("/src/images/commissioned.jpg");
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -173,7 +173,7 @@
     background-color: var(--color-back);
     width: 60px;
     height: 60px;
-    background-image: url("../images/menubg.png");
+    background-image: url("/src/images/menubg.png");
     background-size: cover;
   }
   #mobileShower:hover {

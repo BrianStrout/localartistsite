@@ -1,7 +1,8 @@
 :root {
   --font-titles: "Aboreto", cursive;
+  --font-text: "Arial", Helvetica, sans-serif;
   --color-back: #d0cfca;
-  --timing: cubic-bezier(1, -0.01, 0.33, 1.24);
+  --timing: cubic-bezier(1, -0.01, 0.33, 1.25);
   // hi
 }
 
@@ -30,4 +31,8 @@
 .site--shell {
   width: 100vw;
   min-height: 100vh;
+}
+
+.u {
+  text-decoration: underline;
 }

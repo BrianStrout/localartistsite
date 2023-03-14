@@ -2,12 +2,12 @@
   {
     "galleryname": "showcase",
     "officialtitle": "Showcase",
-    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "mainImage": "./src/images/galleries/showcase/showcase1.jpg",
     "seriesDescription": "hi",
     "galleryArray": [
       {
         "addy": "showcase1.jpg",
-        "title": "San Miguel de Allenda",
+        "title": "San Miguel de Allende",
         "desc": "12x14, $120 - $350"
       },
       {
@@ -55,7 +55,7 @@
   {
     "galleryname": "available",
     "officialtitle": "Available",
-    "mainImage": "./src/images/array-images/fowl.jpeg",
+    "mainImage": "./src/images/galleries/available/avail1.jpg",
     "seriesDescription": "hi",
     "galleryArray": [
       {
@@ -172,20 +172,22 @@
         "title": "Ghost Bison of El Morro",
         "desc": "24x30, $130-$580"
       },
-      {
-        "addy": "earthtrees15.jpg",
-        "title": "The Path",
-        "desc": "30x40, $130-$580"
-      },
+
       {
         "addy": "earthtrees14.jpg",
         "title": "Blue Moon Bamboo",
         "desc": "22x28, $130-$560"
       },
+
       {
         "addy": "earthtrees15.jpg",
         "title": "Path to Mount Resting",
         "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "earthtrees16.jpg",
+        "title": "The Path",
+        "desc": "30x40, $130-$580"
       }
     ]
   },
