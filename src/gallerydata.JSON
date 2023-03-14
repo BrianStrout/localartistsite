@@ -8,47 +8,47 @@
       {
         "addy": "showcase1.jpg",
         "title": "San Miguel de Allenda",
-        "desc": "description one"
+        "desc": "12x14, $120 - $350"
       },
       {
         "addy": "showcase2.jpg",
         "title": "Plum Island Crab",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "showcase3.jpg",
         "title": "The Gathering",
-        "desc": "description one"
+        "desc": "24x36, $140-$620"
       },
       {
         "addy": "showcase4.jpg",
         "title": "Gold Coast",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "showcase5.jpg",
         "title": "Evolution",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "showcase6.jpg",
         "title": "Stevens Barn",
-        "desc": "description one"
+        "desc": "30x40, $140-$680"
       },
       {
         "addy": "showcase7.jpg",
-        "title": "Emerald-Isle",
-        "desc": "description one"
+        "title": "Emerald Isle",
+        "desc": "18x24, $130-$420"
       },
       {
         "addy": "showcase8.jpg",
         "title": "Night, The River",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "showcase9.jpg",
-        "title": "Skogofoss Falls",
-        "desc": "description one"
+        "title": "Skogafoss Falls",
+        "desc": "18x24, $130-$420"
       }
     ]
   },
@@ -59,44 +59,44 @@
     "seriesDescription": "hi",
     "galleryArray": [
       {
-        "addy": "avail1.jpg",
-        "title": "The Audience",
-        "desc": "description one"
+        "addy": "avail6.jpg",
+        "title": "Confetti Autumn",
+        "desc": "20x24, $950"
       },
       {
         "addy": "avail2.jpg",
-        "title": "Finlandia",
-        "desc": "description one"
+        "title": "Finlandia IN PROGRESS",
+        "desc": "24x30, $1300"
       },
       {
         "addy": "avail3.jpg",
         "title": "Shadow of Time",
-        "desc": "description one"
+        "desc": "18x24, $600"
       },
       {
         "addy": "avail4.jpg",
         "title": "Owlivia",
-        "desc": "description one"
+        "desc": "12x12, $420"
       },
       {
         "addy": "avail5.jpg",
         "title": "The Gloaming",
-        "desc": "description one"
+        "desc": "18x24, $450"
       },
       {
-        "addy": "avail6.jpg",
-        "title": "Confettit Autumn",
-        "desc": "description one"
+        "addy": "avail1.jpg",
+        "title": "The Audience",
+        "desc": "24x30, $1200"
       },
       {
         "addy": "avail7.jpg",
         "title": "Orb Origins",
-        "desc": "description one"
+        "desc": "16x20, $300"
       },
       {
         "addy": "avail8.jpg",
         "title": "Sky Gods",
-        "desc": "description one"
+        "desc": "20x20, $750"
       }
     ]
   },
@@ -105,81 +105,87 @@
     "officialtitle": "Trees Our World",
     "mainImage": "./src/images/galleries/earthtrees/earthtrees1.jpg",
     "seriesDescription": "Behind everything we see and experience in the universe is an amazing mix of chaos and mathematical unity. There’s intense and meaningful beauty in both. I’m usually trying to express some aspect of that beauty in my paintings.",
+
     "galleryArray": [
       {
         "addy": "earthtrees1.jpg",
         "title": "The Birches",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "earthtrees2.jpg",
         "title": "Second Path",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "earthtrees3.jpg",
         "title": "Thirteen Stones",
-        "desc": "description one"
+        "desc": "18x24, $130-$420"
       },
       {
         "addy": "earthtrees4.jpg",
         "title": "Heartwood Hollow",
-        "desc": "description one"
+        "desc": "36x48, $140-$800"
       },
       {
         "addy": "earthtrees5.jpg",
         "title": "Yellow Hill",
-        "desc": "description one"
+        "desc": "36x48, $140-$800"
       },
       {
         "addy": "earthtrees6.jpg",
         "title": "Vitrum Lignum Tree of Glass",
-        "desc": "description one"
+        "desc": "30x40, $140-$680"
       },
       {
         "addy": "earthtrees7.jpg",
         "title": "Amber Sunset",
-        "desc": "description one"
+        "desc": "12x14, $120-$350"
       },
       {
         "addy": "earthtrees8.jpg",
         "title": "The Dance",
-        "desc": "description one"
+        "desc": "30x48, $130-$720"
       },
       {
         "addy": "earthtrees9.jpg",
         "title": "Heartwood",
-        "desc": "description one"
+        "desc": "36x48, $140-$800"
       },
       {
         "addy": "earthtrees10.jpg",
         "title": "The Madrone",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "earthtrees11.jpg",
         "title": "Texas Tall",
-        "desc": "description one"
+        "desc": "30x40, $140-$680"
       },
       {
         "addy": "earthtrees12.jpg",
         "title": "Montana Skyline",
-        "desc": "description one"
+        "desc": "18x24, $120-$420"
       },
       {
         "addy": "earthtrees13.jpg",
         "title": "Ghost Bison of El Morro",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "earthtrees15.jpg",
+        "title": "The Path",
+        "desc": "30x40, $130-$580"
       },
       {
         "addy": "earthtrees14.jpg",
         "title": "Blue Moon Bamboo",
-        "desc": "description one"
+        "desc": "22x28, $130-$560"
       },
       {
         "addy": "earthtrees15.jpg",
         "title": "Path to Mount Resting",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       }
     ]
   },
@@ -187,97 +193,99 @@
     "galleryname": "outertrees",
     "officialtitle": "Trees Other Worlds",
     "mainImage": "./src/images/galleries/outertrees/treescape1.jpg",
+
     "seriesDescription": "Behind everything we see and experience in the universe is an amazing mix of chaos and mathematical unity. There’s intense and meaningful beauty in both. I’m usually trying to express some aspect of that beauty in my paintings.",
+
     "galleryArray": [
       {
         "addy": "treescape1.jpg",
-        "title": "The Three Within",
-        "desc": "description one"
+        "title": "The Tree Within",
+        "desc": "36x36, $130-$700"
       },
       {
         "addy": "treescape2.jpg",
         "title": "Fiboncaccis Mirror",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape3.jpg",
         "title": "Aubergine Mirror",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape4.jpg",
         "title": "Indras Net",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape5.jpg",
         "title": "I'll Hang You a Moon",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "treescape6.jpg",
         "title": "The Embrace",
-        "desc": "description one"
+        "desc": "36x48, $130-$800"
       },
       {
         "addy": "treescape7.jpg",
         "title": "Vail Divide",
-        "desc": "description one"
+        "desc": "24x36, $130-$620"
       },
       {
         "addy": "treescape8.jpg",
         "title": "Beech Tree Cathedral",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape9.jpg",
-        "title": "Blue-Agave",
-        "desc": "description one"
+        "title": "Blue Agave Moon",
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape10.jpg",
         "title": "Vermillion Divide",
-        "desc": "description one"
+        "desc": "30x48, $130-$720"
       },
       {
         "addy": "treescape11.jpg",
         "title": "Web of Life",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape12.jpg",
         "title": "Blue Moon Tree",
-        "desc": "description one"
+        "desc": "30x48, $130-$720"
       },
       {
         "addy": "treescape13.jpg",
-        "title": "Tree Rabbit Glow",
-        "desc": "description one"
+        "title": "Tree Rabbits",
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape14.jpg",
         "title": "The Pearl",
-        "desc": "description one"
+        "desc": "30x40, $130-$680"
       },
       {
         "addy": "treescape15.jpg",
         "title": "Blue Sentinels of IO",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape16.jpg",
         "title": "Silver Falls",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "treescape17.jpg",
         "title": "Third Path",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "treescape18.jpg",
         "title": "Tree of Love",
-        "desc": "description one"
+        "desc": "36x48, $130-$800"
       }
     ]
   },
@@ -289,33 +297,33 @@
     "galleryArray": [
       {
         "addy": "wings1.jpg",
-        "title": "Henrietta",
-        "desc": "description one"
+        "title": "Poulette",
+        "desc": "24x24, $130-$480"
       },
       {
         "addy": "wings2.jpg",
-        "title": "Cosmo",
-        "desc": "description one"
+        "title": "King Cosmo",
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "wings3.jpg",
         "title": "Dragonfly Nebula",
-        "desc": "description one"
+        "desc": "24x30, $130-$580"
       },
       {
         "addy": "wings4.jpg",
         "title": "Angels",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "wings5.jpg",
         "title": "The Family",
-        "desc": "description one"
+        "desc": "30x40, $130-$680"
       },
       {
         "addy": "wings6.jpg",
         "title": "Luna",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "wings7.jpg",
@@ -325,17 +333,17 @@
       {
         "addy": "wings8.jpg",
         "title": "Bunting VanGogh",
-        "desc": "description one"
+        "desc": "12x14, $120-$340"
       },
       {
         "addy": "wings9.jpg",
         "title": "Orb Origins",
-        "desc": "description one"
+        "desc": "16x20, $120-$300"
       },
       {
         "addy": "wings10.jpg",
-        "title": "Sky Gods",
-        "desc": "description one"
+        "title": "Three SkyGods",
+        "desc": "24x24, $130-$480"
       }
     ]
   },
@@ -348,27 +356,27 @@
       {
         "addy": "dewdrops1.jpg",
         "title": "Humility",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "dewdrops2.jpg",
         "title": "Hope",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "dewdrops3.jpg",
         "title": "Healing",
-        "desc": "description one"
+        "desc": "20x20, $120-$400"
       },
       {
         "addy": "dewdrops4.jpg",
         "title": "Heavens",
-        "desc": "description one"
+        "desc": "16x20, $120-$390"
       },
       {
         "addy": "dewdrops5.jpg",
         "title": "Happiness",
-        "desc": "description one"
+        "desc": "20x20, $120-$400"
       }
     ]
   }
