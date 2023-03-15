@@ -1234,13 +1234,15 @@ a {
     grid-template-rows: 40% 60%;
     padding: 0;
   }
-  .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-title {
+  .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-header .pop-up-slide-title {
     font-size: 16px;
     bottom: -20px;
+    padding: 5px;
   }
   .pop-up-gallery-case .pop-up-gallery-right {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 2rem;
   }
   .pop-up-gallery-case .pop-up-gallery-right .pop-up-gallery-thumb {
     margin-left: auto;
@@ -1295,7 +1297,7 @@ a {
   }
   .rock--comm--quotes p .quoter {
     position: absolute;
-    bottom: -10px;
+    bottom: 10px;
     right: 0;
   }
   @keyframes swing {
@@ -1312,6 +1314,14 @@ a {
       transform: translateX(-200%);
     }
   }
+  .rock--bottom {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .rock--bottom--monitor {
+    margin: 0;
+  }
   .bottom--linker--box {
     position: absolute;
     right: 0;
@@ -1322,6 +1332,17 @@ a {
   }
   .link--clickable {
     font-size: 2rem;
+  }
+  .rock--comm--quotes {
+    height: 150px;
+  }
+  .quoter {
+    position: absolute;
+    bottom: 40%;
+    right: 8px;
+  }
+  .imageshere {
+    height: 100px;
   }
   #mobileShower {
     pointer-events: all;
@@ -1341,7 +1362,10 @@ a {
   .footer {
     padding: 10px;
     padding-top: 0px;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 25% 50% 25%;
+  }
+  .business--card {
+    font-size: 8px;
   }
   .socials {
     display: flex;
@@ -1352,6 +1376,20 @@ a {
   .socials > div {
     width: 40px;
     height: 40px;
+  }
+  .strout-co {
+    width: 60px;
+    padding-bottom: 0;
+    font-size: 8px;
+  }
+  #myForm {
+    margin-top: 0;
+    width: 100%;
+  }
+  #myForm #submit {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
   }
 }
 * {
