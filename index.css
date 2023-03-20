@@ -839,6 +839,8 @@
 .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox p {
   margin-left: 26px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
 }
 .pop-up-gallery-case .pop-up-gallery-right {
   display: grid;

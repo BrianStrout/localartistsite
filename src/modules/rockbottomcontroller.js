@@ -163,33 +163,8 @@ const controller = (e) => {
         <a href="tel:617-501-5838">
         <div class = "phone-div"><div class="phone-icon"></div><h2>(617)501-5838</h2></div>
         </a>
-        
-    
         </div>`;
       break;
-
-      // case "about":
-      //   rockMonitor.innerHTML = `
-      //   <div class="about">
-      //   <div class="about-photo"></div>
-      //   <h1>About</h1>
-      //   <p>I’m a naturalist artist living in the Hill Country of Texas. My work is informed by parallels between human physiology and evolutionary processes evident in the world, and by my love of astronomy, physics, and the search for ultimate meaning in the universe.
-
-      //   My current Stained-Glass Tree and Orb series straddle the line between representation and abstraction of our unity with the natural world. The trunks and branches of my trees, rendered as counterparts to the human body and its circulatory and pulmonary systems, generally appear solid and visually 3D. But the trees’ twigs, leaves, flowers and fruit flatten into two dimensions, morphing into ‘stained-glass’ cells– tiny, individualized bits of color and emotion that surround the tree like a halo. And in the Orb series, energy lines transcend earthly bounds and become astral, hinting at divine interconnections.
-
-      //   Unity is also reflected in my creative process. I begin each new piece alone in my studio, working from reference images. But I don’t see painting as a solo sport. I often interact with other people via technology while I paint, or listen to podcasts, lectures, debates. The transformational energy of human words and ideas guides composition and color, even the actual brush strokes, of a piece. They add rhythm and vibrancy to the work, and make each piece a reflection of my life at the moment.
-
-      //   I share progressions of my paintings through social media, too, which allows me to unite with viewer experiences in almost realtime. People forever see things in my work that I don’t, and when I’m stuck, their feedback often helps me view my work with new eyes.
-
-      //   In the final stages of a painting, I’m again alone in the studio, leaving and returning, listening carefully to the Muse. At this point, the process becomes a meditative reflection, a personal connection to my own non-religious divine.
-
-      //   For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. What we focus on grows. My art focus and service is to demonstrate that beautiful divine unity between ourselves and the universe.
-
-      //   </p></div>
-
-      //  `;
-      //   break;
-      // case "exhibits":
       rockMonitor.innerHTML = `
       <h1>  EXHIBITIONS</h1>
         <ul style=" list-style: none">
