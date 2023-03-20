@@ -7,7 +7,7 @@ let hamHit = false;
 const controller = (e) => {
   // console.log(linkListArray);
 
-  console.log(e.id);
+  console.log(e);
   if (hamHit === true) {
     hamburger.classList.remove("mobile-hider");
     linkListArray.forEach((link) => {
@@ -130,7 +130,7 @@ const controller = (e) => {
     case "contact":
       rockMonitor.innerHTML = `<div class="commission">
        <h1>Contact</h1>
-          <form id="myForm">
+          <form id="myForm" onsubmit="return false">
           <!-- name -->
           <div class="form-group">
             <label for="name">Name</label>
@@ -138,7 +138,7 @@ const controller = (e) => {
               type="name"
               name="name"
               class="form-control"
-              id="name"
+              id="fromName"
               placeholder="enter your name"
             />
           </div>
@@ -149,7 +149,7 @@ const controller = (e) => {
               type="email"
               name="email"
               class="form-control"
-              id="email"
+              id="fromEmail"
               placeholder="enter your email"
             />
           </div>
@@ -213,6 +213,10 @@ const controller = (e) => {
       Marblehead, MA</li>
       </ul>
         `;
+      break;
+    case "submit":
+      break;
+
       break;
     case "linkig":
       window.open("http://www.instagram.com/winterboy76", "_blank");
