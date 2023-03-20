@@ -31,16 +31,17 @@ const controller = (e) => {
       rockMonitor.innerHTML = `<div class="commission">
       <section class="rock--comm--quotes">
         <div class="quote">
-          <p>
-          “I love what Alan Winter’s work evokes in me…”
-            <span class="quoter">-Erin W.</span>
+          <p>“I have a BFA from one of the finest art schools in the country. I’ve seen the greats, both old and new, up close. I EASILY put Alan Winter in the category of my top 20 favorite artists in the world.”
+          
+            <span class="quoter">TAMMY KIRBY, California</span>
           </p>
         </div>
         <div class="imageshere ih-comm"></div>
         <div class="quote">
           <p>
-           "My heart squeezes every time I see his work! Truly beautiful."
-            <span class="quoter">-Amanda O</span>
+          “Alan Winter is either going to have to find a new line of work, or we’re going to have to win the lottery. Our kids are already fighting over which artworks they’ll inherit!”
+
+            <span class="quoter">DAKOTA BUTTERFIELD, Vermont</span>
           </p>
         </div>
       </section>
@@ -61,17 +62,19 @@ const controller = (e) => {
       rockMonitor.innerHTML = `<div class="commission">
         <section class="rock--comm--quotes">
           <div class="quote">
-            <p>
-            “I love what Alan Winter’s work evokes in me…”
-              <span class="quoter">-Erin W.</span>
-            </p>
+          <p>
+          "I'm really excited; Indra's Net is the first original piece of art I've ever purchased. It's both beautiful to look at and the concept of interconnected energy resonates. Now I can stare at it whenever I want."
+          
+            <span class="quoter">ALYSE SETTLES, Washington</span>
+          </p>
           </div>
           <div class="imageshere ih-purch"></div>
           <div class="quote">
-            <p>
-             "My heart squeezes every time I see his work! Truly beautiful."
-              <span class="quoter">-Amanda O</span>
-            </p>
+          <p>
+          "I just received the print and it's stunning how even better it looks IRL. I'm very happy, thanks again!" 
+          
+            <span class="quoter">THIBAULT VIGORIE, France</span>
+          </p>
           </div>
         </section>
         
@@ -91,15 +94,16 @@ const controller = (e) => {
           <section class="rock--comm--quotes">
             <div class="quote">
               <p>
-              “I love what Alan Winter’s work evokes in me…”
-                <span class="quoter">-Erin W.</span>
+              “His art reflects so much of my inner person. His expressions of nature reflect my joy in it.”
+              
+                <span class="quoter">MARTHA KELLER, New Hampshire</span>
               </p>
             </div>
             <div class="imageshere ih-about"></div>
             <div class="quote">
               <p>
-               "My heart !squeezes every time I see his work! Truly beautiful."
-                <span class="quoter">-Amanda O</span>
+              “Alan Winter is the ‘Prince’ of painting–-eclectic, not bound by genres, always moving into new territory. His art is divine, touching, and awe-inspiring; it’s like there are little pieces of your soul in each of his paintings.”
+                <span class="quoter">BRANDON HAYES, California</span>
               </p>
             </div>
           </section>

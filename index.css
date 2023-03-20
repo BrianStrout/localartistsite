@@ -870,15 +870,15 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-size: contain;
-  background-position: right bottom 10vh;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding-top: 10vh;
   overflow: hidden;
-  background-image: url("/src/images/Alanbwex.png");
+  background-image: url("/src/images/Alanbwcropped.png");
 }
 
 #mobileShower {
@@ -910,7 +910,7 @@
   border: 3px solid white;
   padding: 25px;
   margin-left: 20vw;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 .rock--bottom--monitor p {
   margin-top: 25px;
@@ -955,7 +955,7 @@
 }
 
 .ih-about {
-  background-image: url("/src/images/rockbottombgs/ih-about.png");
+  background-image: url("/src/images/rockbottombgs/alancloseup.png");
 }
 
 .ih-contact {
@@ -977,7 +977,7 @@
 
 .quoter {
   position: absolute;
-  bottom: 30%;
+  bottom: 10%;
   right: 8px;
 }
 
@@ -1270,6 +1270,7 @@ a {
   .rock--bottom--monitor {
     padding: 10px 0px;
     width: 90vw;
+    overflow-y: scroll;
   }
   .rock--comm--quotes {
     display: grid;
@@ -1298,11 +1299,12 @@ a {
   .rock--comm--quotes p {
     position: relative;
     border: 0px solid black;
-    height: 100px;
+    height: 110px;
+    margin-top: 5px;
   }
   .rock--comm--quotes p .quoter {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     right: 0;
   }
   @keyframes swing {
@@ -1372,6 +1374,9 @@ a {
   }
   .business--card {
     font-size: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .socials {
     display: flex;
