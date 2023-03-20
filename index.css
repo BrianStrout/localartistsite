@@ -1227,6 +1227,7 @@ a {
   .studio {
     align-content: flex-start;
     padding-top: 0;
+    height: 85vh;
     max-height: 800px;
   }
   .pop-up-gallery-case {
@@ -1251,9 +1252,13 @@ a {
   .pop-up-gallery-title {
     transform: translateY(-50px);
   }
+  .slide-case {
+    height: 80vh;
+  }
   .slider-display {
     border: 0px;
     align-items: flex-start;
+    height: 80vh;
   }
   .slide {
     height: 400px;
@@ -1318,6 +1323,7 @@ a {
     padding-left: 0;
     display: flex;
     justify-content: center;
+    background-size: cover;
   }
   .rock--bottom--monitor {
     margin: 0;
@@ -1390,6 +1396,8 @@ a {
     position: absolute;
     bottom: 0;
     right: 50%;
+    background-color: var(--color-back);
+    color: black;
   }
 }
 * {

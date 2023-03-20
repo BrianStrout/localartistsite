@@ -56,6 +56,7 @@
   .studio {
     align-content: flex-start;
     padding-top: 0;
+    height: 85vh;
     max-height: 800px;
   }
   .pop-up-gallery-case {
@@ -92,9 +93,16 @@
   .pop-up-gallery-case {
   }
 
+  element.style {
+  }
+  .slide-case {
+    height: 80vh;
+  }
+
   .slider-display {
     border: 0px;
     align-items: flex-start;
+    height: 80vh;
   }
   .slide {
     height: 400px;
@@ -165,6 +173,7 @@
     padding-left: 0;
     display: flex;
     justify-content: center;
+    background-size: cover;
   }
   .rock--bottom--monitor {
     margin: 0;
@@ -244,6 +253,8 @@
       position: absolute;
       bottom: 0;
       right: 50%;
+      background-color: var(--color-back);
+      color: black;
     }
   }
 }

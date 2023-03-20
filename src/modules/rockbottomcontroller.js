@@ -7,7 +7,7 @@ let hamHit = false;
 const controller = (e) => {
   // console.log(linkListArray);
 
-  // console.log(e.id);
+  console.log(e.id);
   if (hamHit === true) {
     hamburger.classList.remove("mobile-hider");
     linkListArray.forEach((link) => {
@@ -218,6 +218,9 @@ const controller = (e) => {
       break;
     case "linkfb":
       window.open("https://www.facebook.com/alan.winter3", "_blank");
+      break;
+    case "linktt":
+      window.open("https://www.tiktok.com/@winterboyart", "_blank");
       break;
     case "linkstroutco":
       window.open("https://www.strout.co", "_blank");

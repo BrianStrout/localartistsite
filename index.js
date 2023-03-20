@@ -22,6 +22,7 @@ const linkSocial = [
   document.getElementById("linkig"),
   document.getElementById("linkyt"),
   document.getElementById("linkfb"),
+  document.getElementById("linktt"),
   document.getElementById("linkstroutco"),
 ];
 
