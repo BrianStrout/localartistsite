@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap");
 :root {
   --font-titles: "Aboreto", cursive;
-  --font-text: "Arial", Helvetica, sans-serif;
+  --font-text: "Open Sans", sans-serifl;
   --color-back: #d0cfca;
   --timing: cubic-bezier(1, -0.01, 0.33, 1.25);
 }
@@ -461,16 +462,11 @@
 .papermation--plot > div {
   width: 100%;
   height: 100%;
-  /* background-image: url("../images/test\ tree.png"); */
   background-size: cover;
-  filter: contrast(80%);
-  filter: blur(0.5px);
-  -webkit-filter: blur(0.5px);
   background-position: center bottom;
 }
 
 .fg2 > .fgplant {
-  /* transform: translateX(-0.5vw); */
   background-image: url("/src/images/treescapefg2.png");
 }
 
@@ -481,12 +477,14 @@
   background-size: cover;
 }
 
-.western {
+.western > div {
   filter: drop-shadow(10px 3px 0px #666666);
+  -webkit-filter: drop-shadow(10px 3px 0px #666666);
 }
 
-.eastern {
+.eastern > div {
   filter: drop-shadow(-10px 3px 0px #666666);
+  -webkit-filter: drop-shadow(-10px 3px 0px #666666);
 }
 
 .pl1 > div {
@@ -507,7 +505,6 @@
 .pl2 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-left2.png");
-  filter: drop-shadow(10px 3px 0px #666666);
 }
 
 .pl2 > div.normalize {
@@ -518,7 +515,6 @@
 .pl3 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-right2.png");
-  filter: drop-shadow(10px 3px 0px #666666);
 }
 
 .pl3 > div.normalize {
@@ -529,7 +525,6 @@
 .pl4 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-left2.png");
-  filter: drop-shadow(10px 3px 0px #666666);
 }
 
 .pl4 > div.normalize {
@@ -540,7 +535,6 @@
 .pl5 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-left2.png");
-  filter: drop-shadow(10px 3px 0px #666666);
 }
 
 .pl5 > div.normalize {
@@ -552,7 +546,6 @@
 .pl7 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-right2.png");
-  filter: drop-shadow(10px 3px 0px #666666);
 }
 
 .pl7 > div.normalize {
@@ -643,6 +636,7 @@
 .slider-display > h2 {
   font-size: 3rem;
   color: white;
+  font-family: var(--font-text);
 }
 
 .slider-display:nth-child(1) {
@@ -679,8 +673,10 @@
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
   animation: 30s linear infinite forwards slideShow;
   animation-play-state: paused;
+  font-family: var(--font-text);
 }
 .slide h1 {
+  font-family: var(--font-text);
   background: linear-gradient(to right, rgba(231, 231, 231, 0.8), transparent, transparent);
 }
 .slide:nth-child(6n+1) {
@@ -906,7 +902,7 @@
 }
 
 .rock--bottom--monitor {
-  height: 65vh;
+  height: 75vh;
   width: 60vw;
   background-color: rgba(169, 169, 169, 0.735);
   border: 3px solid white;
@@ -915,7 +911,8 @@
   overflow-y: visible;
 }
 .rock--bottom--monitor p {
-  margin-top: 25px;
+  margin-top: 10px;
+  font-family: var(--font-text);
 }
 
 .year {
@@ -927,24 +924,34 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: var(--font-text);
 }
 .commission > section {
   width: 90%;
+  font-family: var(--font-text);
 }
 .commission > h1 {
+  font-family: var(--font-text);
   text-decoration: underline;
+}
+
+.toAvail {
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
 }
 
 .rock--comm--quotes {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 200px;
+  height: 270px;
   margin-bottom: 50px;
+  font-family: var(--font-text);
 }
 
 .imageshere {
-  height: 200px;
+  height: 270px;
   background-size: cover;
 }
 
@@ -968,6 +975,7 @@
   position: relative;
   border: 3px solid black;
   height: 100px;
+  font-family: var(--font-text);
 }
 
 .quote {
@@ -975,12 +983,17 @@
   background-color: rgba(169, 169, 169, 0.747);
   padding: 8px;
   border: 3px solid black;
+  font-family: var(--font-text);
+  margin-bottom: 100px;
+  height: 270px;
 }
 
 .quoter {
-  position: absolute;
-  bottom: 10%;
-  right: 8px;
+  display: block;
+  margin-top: 1rem;
+  font-family: var(--font-text);
+  margin-left: auto;
+  text-align: end;
 }
 
 .bottom--linker--box {
@@ -1109,14 +1122,20 @@ a {
   font-family: var(--header-font);
 }
 #myForm > .form-group > textarea {
-  width: 80%;
+  width: 300px;
   resize: none;
   font-size: 16px;
 }
-#myForm #submit {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+#myForm .button--box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 326px;
+  gap: 16px;
+}
+
+p {
+  font-size: 1.25rem;
 }
 
 .footer {
@@ -1135,6 +1154,7 @@ a {
 
 .business--card > ul {
   list-style: none;
+  font-family: var(--font-text);
 }
 
 .socials {
@@ -1294,6 +1314,9 @@ a {
   .rock--comm--quotes .quote {
     width: 100%;
     padding: 5px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 0;
   }
   .rock--comm--quotes > * {
     animation: swing 7s ease-in-out 0s infinite alternate;
@@ -1301,13 +1324,7 @@ a {
   .rock--comm--quotes p {
     position: relative;
     border: 0px solid black;
-    height: 110px;
     margin-top: 5px;
-  }
-  .rock--comm--quotes p .quoter {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
   }
   @keyframes swing {
     0% {
@@ -1341,15 +1358,12 @@ a {
     overflow-x: hidden;
   }
   .link--clickable {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .rock--comm--quotes {
-    height: 150px;
-  }
-  .quoter {
-    position: absolute;
-    bottom: 40%;
-    right: 8px;
+    min-height: 150px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .imageshere {
     height: 100px;

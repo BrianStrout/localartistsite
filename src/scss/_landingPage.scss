@@ -425,16 +425,14 @@
 .papermation--plot > div {
   width: 100%;
   height: 100%;
-  /* background-image: url("../images/test\ tree.png"); */
   background-size: cover;
-  filter: contrast(80%);
-  filter: blur(0.5px);
-  -webkit-filter: blur(0.5px);
+  // filter: contrast(80%);
+  // filter: blur(0.5px);
+  // -webkit-filter: blur(0.5px);
   background-position: center bottom;
 }
 
 .fg2 > .fgplant {
-  /* transform: translateX(-0.5vw); */
   background-image: url("/src/images/treescapefg2.png");
 }
 
@@ -444,11 +442,13 @@
   background-image: url("/src/images/treescapefg.png");
   background-size: cover;
 }
-.western {
+.western > div {
   filter: drop-shadow(10px 3px 0px #666666);
+  -webkit-filter: drop-shadow(10px 3px 0px #666666);
 }
-.eastern {
+.eastern > div {
   filter: drop-shadow(-10px 3px 0px #666666);
+  -webkit-filter: drop-shadow(-10px 3px 0px #666666);
 }
 
 .pl1 > div {
@@ -469,8 +469,8 @@
 .pl2 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-left2.png");
-  -webkit-filter: drop-shadow(10px 3px 0px #666666);
-  filter: drop-shadow(10px 3px 0px #666666);
+  // -webkit-filter: drop-shadow(10px 3px 0px #666666);
+  // filter: drop-shadow(10px 3px 0px #666666);
 }
 .pl2 > div.normalize {
   transform: translateY(30%);
@@ -480,8 +480,8 @@
 .pl3 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-right2.png");
-  -webkit-filter: drop-shadow(10px 3px 0px #666666);
-  filter: drop-shadow(10px 3px 0px #666666);
+  // -webkit-filter: drop-shadow(10px 3px 0px #666666);
+  // filter: drop-shadow(10px 3px 0px #666666);
 }
 .pl3 > div.normalize {
   transform: translateY(40%);
@@ -490,8 +490,8 @@
 .pl4 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-left2.png");
-  -webkit-filter: drop-shadow(10px 3px 0px #666666);
-  filter: drop-shadow(10px 3px 0px #666666);
+  // -webkit-filter: drop-shadow(10px 3px 0px #666666);
+  // filter: drop-shadow(10px 3px 0px #666666);
 }
 .pl4 > div.normalize {
   transform: translateY(50%);
@@ -500,8 +500,8 @@
 .pl5 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-left2.png");
-  -webkit-filter: drop-shadow(10px 3px 0px #666666);
-  filter: drop-shadow(10px 3px 0px #666666);
+  // -webkit-filter: drop-shadow(10px 3px 0px #666666);
+  // filter: drop-shadow(10px 3px 0px #666666);
 }
 .pl5 > div.normalize {
   transform: translateY(40%);
@@ -513,8 +513,8 @@
 .pl7 > div {
   transform: translateY(100%);
   background-image: url("/src/images/ats-right2.png");
-  -webkit-filter: drop-shadow(10px 3px 0px #666666);
-  filter: drop-shadow(10px 3px 0px #666666);
+  // -webkit-filter: drop-shadow(10px 3px 0px #666666);
+  // filter: drop-shadow(10px 3px 0px #666666);
 }
 .pl7 > div.normalize {
   transform: translateY(40%);

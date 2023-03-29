@@ -37,7 +37,7 @@
   }
 }
 .rock--bottom--monitor {
-  height: 65vh;
+  height: 75vh;
   width: 60vw;
   background-color: rgba(169, 169, 169, 0.735);
   border: 3px solid white;
@@ -45,7 +45,8 @@
   margin-left: 20vw;
   overflow-y: visible;
   p {
-    margin-top: 25px;
+    margin-top: 10px;
+    font-family: var(--font-text);
   }
 }
 .year {
@@ -56,24 +57,34 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: var(--font-text);
   > section {
     width: 90%;
+    font-family: var(--font-text);
   }
   > h1 {
+    font-family: var(--font-text);
     text-decoration: underline;
   }
+}
+
+.toAvail {
+  margin-top: 1rem;
+  display: block;
+  text-align: center;
 }
 
 .rock--comm--quotes {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 200px;
+  height: 270px;
   margin-bottom: 50px;
+  font-family: var(--font-text);
 }
 
 .imageshere {
-  height: 200px;
+  height: 270px;
   background-size: cover;
 }
 
@@ -95,17 +106,26 @@
   position: relative;
   border: 3px solid black;
   height: 100px;
+  font-family: var(--font-text);
 }
 .quote {
   position: relative;
   background-color: rgba(169, 169, 169, 0.747);
   padding: 8px;
   border: 3px solid black;
+  font-family: var(--font-text);
+  margin-bottom: 100px;
+  height: 270px;
 }
 .quoter {
-  position: absolute;
-  bottom: 10%;
-  right: 8px;
+  // position: absolute;
+  // bottom: 10%;
+  // right: 8px;
+  display: block;
+  margin-top: 1rem;
+  font-family: var(--font-text);
+  margin-left: auto;
+  text-align: end;
 }
 
 .bottom--linker--box {
@@ -232,14 +252,29 @@ a {
       font-family: var(--header-font);
     }
     > textarea {
-      width: 80%;
+      width: 300px;
       resize: none;
       font-size: 16px;
     }
   }
-  #submit {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+
+  .button--box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 326px;
+    // padding-left: 50%;
+    gap: 16px;
+    // background-color: pink;
   }
+
+  // #submit {
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  // }
+}
+
+p {
+  font-size: 1.25rem;
 }

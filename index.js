@@ -182,7 +182,11 @@ document.addEventListener("click", (e) => {
         </div>`;
     return;
   }
-  if (e.target.classList.contains("btn")) {
+  if ((e.target.id = "formReset")) {
+    controller(e.target);
+  }
+
+  if (e.target.classList.contains("btn-primary")) {
     e.preventDefault();
     const formSelector = document.getElementById("myForm");
 

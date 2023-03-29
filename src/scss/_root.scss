@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
-
+// @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Open+Sans&display=swap");
 :root {
   --font-titles: "Aboreto", cursive;
-  --font-text: "Arial", Helvetica, sans-serif;
+  // --font-text: "Arial", Helvetica, sans-serif;
+  // --font-text: "Fira Sans", sans-serif;
+
+  --font-text: "Open Sans", sans-serifl;
   --color-back: #d0cfca;
   --timing: cubic-bezier(1, -0.01, 0.33, 1.25);
   // hi

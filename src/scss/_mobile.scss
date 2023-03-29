@@ -136,6 +136,8 @@
     .quote {
       width: 100%;
       padding: 5px;
+      height: fit-content;
+      margin-bottom: 0;
       // opacity: 0.4;
     }
     & > * {
@@ -146,14 +148,14 @@
     p {
       position: relative;
       border: 0px solid black;
-      height: 110px;
+      // height: 110px;
       margin-top: 5px;
 
-      .quoter {
-        position: absolute;
-        bottom: 0px;
-        right: 0;
-      }
+      // .quoter {
+      //   position: absolute;
+      //   bottom: 0px;
+      //   right: 0;
+      // }
     }
   }
   @keyframes swing {
@@ -190,17 +192,18 @@
     overflow-x: hidden;
   }
   .link--clickable {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .rock--comm--quotes {
-    height: 150px;
+    min-height: 150px;
+    height: fit-content;
   }
 
-  .quoter {
-    position: absolute;
-    bottom: 40%;
-    right: 8px;
-  }
+  // .quoter {
+  //   position: absolute;
+  //   bottom: 40%;
+  //   right: 8px;
+  // }
 
   .imageshere {
     height: 100px;
