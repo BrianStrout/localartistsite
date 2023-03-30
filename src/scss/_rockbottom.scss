@@ -43,7 +43,7 @@
   border: 3px solid white;
   padding: 25px;
   margin-left: 20vw;
-  overflow-y: visible;
+  overflow-y: scroll;
   p {
     margin-top: 10px;
     font-family: var(--font-text);
@@ -69,8 +69,8 @@
 }
 
 .toAvail {
-  margin-top: 1rem;
-  display: block;
+  // margin-top: 1rem;
+  // display: block;
   text-align: center;
 }
 
@@ -78,14 +78,15 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 270px;
+  height: 370px;
   margin-bottom: 50px;
   font-family: var(--font-text);
 }
 
 .imageshere {
-  height: 270px;
+  height: 370px;
   background-size: cover;
+  background-position: center;
 }
 
 .ih-comm {
@@ -115,12 +116,9 @@
   border: 3px solid black;
   font-family: var(--font-text);
   margin-bottom: 100px;
-  height: 270px;
+  height: 370px;
 }
 .quoter {
-  // position: absolute;
-  // bottom: 10%;
-  // right: 8px;
   display: block;
   margin-top: 1rem;
   font-family: var(--font-text);
@@ -260,9 +258,10 @@ a {
 
   .button--box {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
-    padding-left: 326px;
+    margin: 0px 1rem;
+    // padding-left: 326px;
     // padding-left: 50%;
     gap: 16px;
     // background-color: pink;
@@ -273,6 +272,13 @@ a {
   //   bottom: 0;
   //   right: 0;
   // }
+}
+.available--by {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // background-color: pink;
 }
 
 p {

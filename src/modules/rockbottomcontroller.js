@@ -1,6 +1,9 @@
 const rockMonitor = document.getElementById("rock--bottom--monitor");
 const hamburger = document.getElementById("mobileShower");
 const linkListArray = Array.from(document.querySelectorAll(".link--clickable"));
+const grabInputs = Array.from(document.querySelectorAll("input"));
+const textarea = document.querySelector("textarea");
+grabInputs.push(textarea);
 
 let hamHit = false;
 
@@ -81,13 +84,12 @@ const controller = (e) => {
         
         <section>
         <h1 class="abouth1">AVAILABLE WORK</h1>
-         <p> "I market aggressively, so my art is often collected by the time it's finished. But I’m creating new work all the time; keep watching this space. Prices are listed with the Available Gallery images. <span class="u cta">Contact me</span> to learn more about a piece, and for an electronic/in-person viewing of it.
+         <p> "I market aggressively, so my art is often collected by the time it's finished. I however am creating new work all the time, keep watching this space. Prices are listed with the <span class="toAvail u">Available Gallery </span> images. <span class="u cta">Contact me</span> to learn more about a piece, and for an electronic/in-person viewing of it.
        <br><br></p>
          <h1 class="abouth1">   CHOOSING YOUR PRINTS  </h1>
          <p>
          Museum-quality, limited-edition prints of WinterboyArt are available in various papers or canvas. Prices shown range from the smallest available paper print (12" short side) to full-size stretched canvas. Long-lasting archival inks reproduce precisely the color and tone of original paintings. <span class="u cta">Contact me</span> to order a print and/or ask about custom sizes. Turnaround time generally 10 days.
 
-<span class="toAvail u"> Available paintings gallery.</span>
        </p>
         </section>
        
@@ -160,14 +162,19 @@ const controller = (e) => {
             <textarea class="form-control" id="message" name="message" rows="5"></textarea>
           </div>
           <div class="button--box">
-          <button id="formReset" class="btn">Reset</button>
+          <button id="formReset" class="formReset btn">Reset</button>
           <button type="submit" id="submit" class="btn btn-primary">Submit</button>
           </div>
         </form>
         <br>
         <a href="tel:617-501-5838">
         <div class = "phone-div"><div class="phone-icon"></div><h2>(617)501-5838</h2></div>
+       
         </a>
+        <div class="available--by">
+        <span>
+        Available by </span><span> phone, text, and WhatsApp</span>
+        </div>
         </div>`;
       break;
       rockMonitor.innerHTML = `
@@ -198,15 +205,11 @@ const controller = (e) => {
       break;
     case "formReset":
       console.log("reset>?");
-      const grabInputs = Array.from(document.querySelectorAll("input"));
-      const textarea = document.querySelector("textarea");
-      grabInputs.push(textarea);
 
       grabInputs.forEach((input) => {
         input.value = "";
       });
       break;
-
     case "linkig":
       window.open("http://www.instagram.com/winterboy76", "_blank");
       break;

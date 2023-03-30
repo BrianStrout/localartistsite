@@ -3,20 +3,6 @@ import {
   slideController,
 } from "./src/modules/gallerylauncher.js";
 import { controller, hamburger } from "./src/modules/rockbottomcontroller.js";
-// import { jt } from ;
-
-// const again = import("./src/test.json", { assert: { type: "json" } });
-
-// setTimeout(() => {
-//   console.log(again);
-// }, 2000);
-
-// (async () => {
-//   const modi = await import("./src/modules/jsontest.js");
-//   console.log(modi);
-//   const foobar = await modi.json;
-//   console.log(foobar, "is foo");
-// })();
 
 const linkSocial = [
   document.getElementById("linkig"),
@@ -117,27 +103,6 @@ slidesDivArray.forEach((slide) => {
   });
 });
 
-// let linkToSlide = 2;
-
-// let url1 = "src/test.json";
-
-// async function getData(url) {
-//   console.log(url);
-//   const response = await fetch(url);
-//   console.log(typeof response);
-//   console.log(response);
-// }
-
-// async function fetchMoviesJSON() {
-//   const response = await fetch("./src/test.json");
-//   const movies = await response.json();
-//   return movies;
-// }
-// fetchMoviesJSON().then((movies) => {
-//   // console.log(",movie time!");
-//   console.log(movies);
-// });
-
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("cta")) {
     rockBottom.scrollIntoView({ behavior: "smooth" });
@@ -182,8 +147,8 @@ document.addEventListener("click", (e) => {
         </div>`;
     return;
   }
-  if ((e.target.id = "formReset")) {
-    controller(e.target);
+  if (e.target.classList.contains("formReset")) {
+    controller(e);
   }
 
   if (e.target.classList.contains("btn-primary")) {
@@ -208,10 +173,6 @@ document.addEventListener("click", (e) => {
     let bbname = formSelector.name.value;
 
     console.log("submitting");
-    // const formSelector = document.getElementById("myForm");
-
-    // console.log(formData.tes);
-    // console.log(formSelector);
     console.log(b);
 
     const serviceID = "service_cg4lo4s";
@@ -240,7 +201,9 @@ document.addEventListener("click", (e) => {
       });
     return;
   }
+
   if (e.target.classList.contains("toAvail")) {
+    console.log("avail?");
     document.getElementById("studio").scrollIntoView({ behavior: "smooth" });
     galleryLauncher("available");
   }
@@ -249,9 +212,4 @@ window.onload = () => {
   console.log("window loaded");
   animateInTreescape();
   controller(rockBottomButtons[0]);
-  // punch();
 };
-
-// sliderDispTop.addEventListener("click", () => {
-//   moveTopSlides();
-// });
