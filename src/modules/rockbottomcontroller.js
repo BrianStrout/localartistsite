@@ -146,7 +146,6 @@ const controller = (e) => {
               placeholder="enter your name"
             />
           </div>
-    
           <div class="form-group">
             <label for="email">Email</label>
             <input
@@ -169,11 +168,12 @@ const controller = (e) => {
         <br>
         <a href="tel:617-501-5838">
         <div class = "phone-div"><div class="phone-icon"></div><h2>+1(617)501-5838</h2></div>
-       
         </a>
+        <br>
         <div class="available--by">
         <span>
-        Available by </span><span> phone, text, and WhatsApp</span>
+        Available through </span><span> phone, text, and WhatsApp</span>
+        <span>&</span><span>winterboy@winterboy.net</span>
         </div>
         </div>`;
       break;
