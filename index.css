@@ -1125,11 +1125,13 @@ a {
   resize: none;
   font-size: 16px;
 }
-#myForm .button--box {
+
+.button--box {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0px 1rem;
+  width: 50%;
+  padding-right: 16px;
   gap: 16px;
 }
 

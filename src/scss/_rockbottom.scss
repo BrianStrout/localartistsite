@@ -256,22 +256,24 @@ a {
     }
   }
 
-  .button--box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0px 1rem;
-    // padding-left: 326px;
-    // padding-left: 50%;
-    gap: 16px;
-    // background-color: pink;
-  }
-
   // #submit {
   //   position: absolute;
   //   bottom: 0;
   //   right: 0;
   // }
+}
+
+.button--box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // margin: 0px 1rem;
+  width: 50%;
+  padding-right: 16px;
+  // padding-left: 326px;
+  // padding-left: 50%;
+  gap: 16px;
+  // background-color: pink;
 }
 .available--by {
   display: flex;

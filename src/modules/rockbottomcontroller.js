@@ -121,11 +121,9 @@ const controller = (e) => {
 
            Alan Winter, aka Winterboy, is a professional artist recently returned from TX to MA. He began as an art hobbyist in college, becoming more committed to painting in 2010. Since 2016, he's made his living exclusively as an artist, producing up to 40 pieces in oil or acrylic per year and finding collectors for most of them. He says,
 
-          <br>
            "My work is informed by love of trees, astronomy, physics, and flying things. Art is not a solo sport to me; other people forever show me things that I don’t see, lead me in new directions, and even give me 'new eyes' if I'm stuck.
            
-        <br>
-           "What we focus on grows. For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. I paint to focus on beautiful things, and to help others do the same."
+       What we focus on grows. For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. I paint to focus on beautiful things, and to help others do the same."
           </p>
           </section>
           
@@ -137,7 +135,7 @@ const controller = (e) => {
           <form id="myForm" onsubmit="return false">
           <!-- name -->
           <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Name:</label>
             <input
               type="name"
               name="name"
@@ -147,7 +145,7 @@ const controller = (e) => {
             />
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input
               type="email"
               name="email"
@@ -157,14 +155,15 @@ const controller = (e) => {
             />
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
+            <label for="message">Message:</label>
             <textarea class="form-control" id="message" name="message" rows="5"></textarea>
           </div>
-          <div class="button--box">
-          <button id="formReset" class="formReset btn">Reset</button>
-          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-          </div>
+        
         </form>
+        <div class="button--box">
+        <button id="formReset" class="formReset btn">Reset</button>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </div>
         <br>
         <a href="tel:617-501-5838">
         <div class = "phone-div"><div class="phone-icon"></div><h2>+1(617)501-5838</h2></div>
@@ -177,30 +176,7 @@ const controller = (e) => {
         </div>
         </div>`;
       break;
-      rockMonitor.innerHTML = `
-      <h1>  EXHIBITIONS</h1>
-        <ul style=" list-style: none">
-     <li> <span class="year">2022</span>  “Abundance” juried exhibit, Art For the People Gallery. Austin, TX</li>
-     <li> <span class="year">2022</span>  “Art Spree” juried exhibit, Art For the People Gallery. Austin, TX</li>
-     <li> <span class="year">2021</span>  “reIMAGINE” juried exhibit, Round Rocks Art Association. Round Rock, TX</li>
-     <li> <span class="year">2020</span>  Member Exhibit, The Hive Gallery.
-      Bee Cave, TX</li>
-      <li> <span class="year">2018</span>  “The October Trees” solo exhibit, Lake Travis Community Library.
-      Lakeway, TX</li>
-      <li>  <span class="year">2016</span>  “The Loving Trees”  solo exhibit, Adams Gallery.
-      Lakeway, TX</li>
-      <li> <span class="year">2014</span> “Dreamscapes” solo exhibit, Salem Film Festival.
-      Salem, MA</li> 
-      <li> <span class="year">2014</span>  “NE Regional Juried Exhibit”  Marblehead Arts Association.
-      Marblehead, MA</li>
-      <li> <span class="year">2014</span>  “Alan Winter’s Color World” solo exhibit, Atomic Gallery. Marblehead, MA</li>
-      <li> <span class="year">2013</span>  “Marblehead Festival of the Arts Juried Exhibit.”
-      Marblehead, MA</li>
-      <li> <span class="year">2012</span>  “Marblehead Festival of the Arts Juried Exhibit.”
-      Marblehead, MA</li>
-      </ul>
-        `;
-      break;
+
     case "submit":
       break;
     case "formReset":
@@ -214,7 +190,7 @@ const controller = (e) => {
       window.open("http://www.instagram.com/winterboy76", "_blank");
       break;
     case "linkyt":
-      window.open("http://www.instagram.com/winterboy76", "_blank");
+      window.open("https://www.youtube.com/c/AlanWinterboy", "_blank");
       break;
     case "linkfb":
       window.open("https://www.facebook.com/alan.winter3", "_blank");
