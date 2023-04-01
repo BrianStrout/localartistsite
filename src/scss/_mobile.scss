@@ -265,8 +265,13 @@
       color: black;
     }
   }
-}
 
+  .button--box {
+    width: 100%;
+    .button--box-padder {
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .site--shell {
   }

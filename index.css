@@ -904,8 +904,8 @@
 .rock--bottom--monitor {
   height: 75vh;
   width: 60vw;
-  background-color: rgba(169, 169, 169, 0.735);
-  border: 3px solid white;
+  border: 3px solid rgb(169, 169, 169);
+  background-color: rgba(237, 237, 237, 0.859);
   padding: 25px;
   margin-left: 20vw;
   overflow-y: scroll;
@@ -1128,10 +1128,18 @@ a {
 
 .button--box {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   width: 50%;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 16px;
+}
+.button--box .button--box-padder {
+  width: 410px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 16px;
 }
 
@@ -1146,13 +1154,16 @@ p {
   font-size: 1.25rem;
 }
 
+.no-touch {
+  pointer-events: none;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   height: 10vh;
   width: 100vw;
   border-top: 5px solid white;
-  background-color: rgba(237, 237, 237, 0.359);
   padding-left: 80px;
   padding-right: 80px;
   display: grid;
@@ -1426,6 +1437,9 @@ p {
     right: 50%;
     background-color: var(--color-back);
     color: black;
+  }
+  .button--box {
+    width: 100%;
   }
 }
 * {

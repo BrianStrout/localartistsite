@@ -3,6 +3,7 @@ const hamburger = document.getElementById("mobileShower");
 const linkListArray = Array.from(document.querySelectorAll(".link--clickable"));
 const grabInputs = Array.from(document.querySelectorAll("input"));
 const textarea = document.querySelector("textarea");
+const bottomLinkerBox = document.getElementById("bottom--linker--box");
 grabInputs.push(textarea);
 
 let hamHit = false;
@@ -13,6 +14,8 @@ const controller = (e) => {
   console.log(e);
   if (hamHit === true) {
     hamburger.classList.remove("mobile-hider");
+
+    bottomLinkerBox.classList.add("no-touch");
     linkListArray.forEach((link) => {
       link.classList.add("mobile-hider");
     });
@@ -23,10 +26,12 @@ const controller = (e) => {
     case "mobileShower":
       // console.log("mobile function!");
       hamburger.classList.add("mobile-hider");
+      bottomLinkerBox.classList.remove("no-touch");
       linkListArray.forEach((link) => {
         // console.log("link", link);
         link.classList.remove("mobile-hider");
         hamHit = true;
+
         // console.log(hamHit);
       });
       break;
@@ -161,9 +166,10 @@ const controller = (e) => {
         
         </form>
         <div class="button--box">
+        <div class="button--box-padder">
         <button id="formReset" class="formReset btn">Reset</button>
         <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-        </div>
+        </div> </div>
         <br>
         <a href="tel:617-501-5838">
         <div class = "phone-div"><div class="phone-icon"></div><h2>+1(617)501-5838</h2></div>
