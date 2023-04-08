@@ -1,0 +1,127 @@
+.pop-up-gallery-case {
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 0% 2%;
+
+  .pop-up-gallery-left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    .exit-sign {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      aspect-ratio: 1/1;
+      background-color: var(--color-back);
+      padding: 5px;
+      border: 5px solid black;
+      transform-origin: center;
+      opacity: 0.7;
+      scale: 1.2;
+      &:hover {
+        opacity: 1;
+        scale: 1;
+      }
+      h2 {
+        pointer-events: none;
+      }
+    }
+    .pop-up-gallery-title {
+      float: right;
+      font-size: 2rem;
+      // margin-right: 1.5rem;
+      background-color: var(--color-back);
+    }
+    .popUpSlideBox {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 50;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .pop-up-slide-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 1rem;
+
+        .pop-up-slide-title {
+          // position: absolute;
+          bottom: 0px;
+          // z-index: 50;
+          font-size: 2rem;
+          background-color: black;
+          padding: 10px;
+          border: 1px solid white;
+          color: white;
+        }
+        .pop-up-slide {
+          height: 40px;
+          width: 40px;
+          background-color: white;
+          background-image: url("/src/images/cta.png");
+          background-size: 70%;
+          background-position: center;
+          background-repeat: no-repeat;
+          border: 3px solid black;
+          border-radius: 50%;
+        }
+      }
+      p {
+        margin-left: 26px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2px 5px;
+      }
+    }
+  }
+
+  .pop-up-gallery-right {
+    // background-color: rgba(162, 170, 167, 0.517);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    max-width: 100vw;
+    padding: 15px;
+    gap: 15px;
+    overflow: scroll;
+    .pop-up-gallery-thumb {
+      position: relative;
+      // width: 100%;
+      width: 150px;
+      // max-width: ;
+      // height: 1
+      aspect-ratio: 1/1;
+      border: 3px solid black;
+      background-position: center;
+      background-size: cover;
+      // &:hover {
+
+      //   border: 5px solid pink;
+      // }
+      .screen {
+        // position: absolute;
+        // z-index: 51;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.226);
+        &:hover {
+          background-color: transparent;
+          // pointer-events: none;
+        }
+      }
+    }
+  }
+}

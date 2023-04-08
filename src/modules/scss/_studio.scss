@@ -1,0 +1,19 @@
+@use "slider";
+
+.studio {
+  width: 100%;
+  height: 105vh;
+  padding-top: 10vh;
+  background-color: rgb(29, 29, 29);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.studio-header {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
+}

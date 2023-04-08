@@ -963,7 +963,7 @@
 }
 
 .ih-about {
-  background-image: url("/src/images/rockbottombgs/alancloseup.png");
+  background-image: url("/src/images/rockbottombgs/alanSharp.png");
 }
 
 .ih-contact {
@@ -1168,14 +1168,19 @@ p {
   padding-right: 80px;
   display: grid;
   grid-template-columns: 30% 40% 30%;
+  grid-template-areas: "business socials strout";
 }
 
-.business--card > ul {
+.business--card {
+  grid-area: business;
+}
+.business--card ul {
   list-style: none;
   font-family: var(--font-text);
 }
 
 .socials {
+  grid-area: socials;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1201,6 +1206,7 @@ p {
 }
 
 .strout-co {
+  grid-area: strout;
   width: 100px;
   margin-left: auto;
   background-image: url("/src/images/stroutco/c3.png");
@@ -1404,13 +1410,23 @@ p {
   .footer {
     padding: 10px;
     padding-top: 0px;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 70% 30%;
+    height: 14vh;
+    grid-template-areas: "socials socials" "business strout";
   }
   .business--card {
     font-size: 8px;
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+  .business--card ul {
+    display: flex;
+  }
+  .business--card ul li {
+    margin: 2px;
   }
   .socials {
     display: flex;
@@ -1419,13 +1435,16 @@ p {
     justify-content: center;
   }
   .socials > div {
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
   }
   .strout-co {
     width: 60px;
     padding-bottom: 0;
     font-size: 8px;
+    justify-content: center;
+    align-items: center;
+    background: none;
   }
   #myForm {
     margin-top: 0;

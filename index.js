@@ -109,46 +109,55 @@ document.addEventListener("click", (e) => {
     document.getElementById(
       "rock--bottom--monitor"
     ).innerHTML = `<div class="commission">
-       <h1>Contact</h1>
-
-<div class = "phone-div"><div class="phone-icon"></div><h2>617 501 5838</h2></div>
-
-
-          <form id="myForm">
-          <!-- name -->
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input
-              type="name"
-              name="name"
-              class="form-control"
-              id="name"
-              placeholder="enter your name"
-            />
-          </div>
-    
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="email"
-              placeholder="enter your email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-          </div>
-          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-        </form>
-    
-        </div>`;
+    <h1>Contact</h1>
+       <form id="myForm" onsubmit="return false">
+       <!-- name -->
+       <div class="form-group">
+         <label for="name">Name:</label>
+         <input
+           type="name"
+           name="name"
+           class="form-control"
+           id="fromName"
+           placeholder="enter your name"
+         />
+       </div>
+       <div class="form-group">
+         <label for="email">Email:</label>
+         <input
+           type="email"
+           name="email"
+           class="form-control"
+           id="fromEmail"
+           placeholder="enter your email"
+         />
+       </div>
+       <div class="form-group">
+         <label for="message">Message:</label>
+         <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+       </div>
+     
+     </form>
+     <div class="button--box">
+     <div class="button--box-padder">
+     <button id="formReset" class="formReset btn">Reset</button>
+     <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+     </div> </div>
+     <br>
+     <a href="tel:617-501-5838">
+     <div class = "phone-div"><div class="phone-icon"></div><h2>+1(617)501-5838</h2></div>
+     </a>
+     <br>
+     <div class="available--by">
+     <span>
+     Available through </span><span> phone, text, and WhatsApp</span>
+     <span>&</span><span>winterboy@winterboy.net</span>
+     </div>
+     </div>`;
     return;
   }
   if (e.target.classList.contains("formReset")) {
-    controller(e);
+    controller(e.target);
   }
 
   if (e.target.classList.contains("btn-primary")) {
