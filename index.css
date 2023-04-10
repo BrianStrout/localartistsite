@@ -1077,7 +1077,7 @@
 a {
   color: black;
   display: inline-block;
-  margin-top: 2rem;
+  text-decoration: none;
 }
 
 .phone-div {
@@ -1333,7 +1333,6 @@ p {
   }
   .rock--comm--quotes .imageshere {
     background-color: transparent;
-    opacity: 0;
   }
   .rock--comm--quotes .quote {
     width: 100%;
@@ -1343,7 +1342,7 @@ p {
     margin-bottom: 0;
   }
   .rock--comm--quotes > * {
-    animation: swing 7s ease-in-out 0s infinite alternate;
+    animation: swing 10s ease-in-out 0s infinite alternate;
   }
   .rock--comm--quotes p {
     position: relative;
@@ -1354,10 +1353,16 @@ p {
     0% {
       transform: translateX(0);
     }
-    40% {
+    28% {
       transform: translateX(0%);
     }
-    60% {
+    35% {
+      transform: translateX(-100%);
+    }
+    64% {
+      transform: translateX(-100%);
+    }
+    72% {
       transform: translateX(-200%);
     }
     100% {
@@ -1390,7 +1395,7 @@ p {
     height: fit-content;
   }
   .imageshere {
-    height: 100px;
+    height: 300px;
   }
   #mobileShower {
     pointer-events: all;

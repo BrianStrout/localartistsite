@@ -131,7 +131,7 @@
 
     .imageshere {
       background-color: transparent;
-      opacity: 0;
+      // opacity: 0;
     }
     .quote {
       width: 100%;
@@ -143,7 +143,7 @@
     & > * {
       // box-sizing: border-box;
       // border: 3px solid black;
-      animation: swing 7s ease-in-out 0s infinite alternate;
+      animation: swing 10s ease-in-out 0s infinite alternate;
     }
     p {
       position: relative;
@@ -162,10 +162,17 @@
     0% {
       transform: translateX(0);
     }
-    40% {
+    28% {
       transform: translateX(0%);
     }
-    60% {
+    35% {
+      transform: translateX(-100%);
+    }
+    64% {
+      transform: translateX(-100%);
+    }
+
+    72% {
       transform: translateX(-200%);
     }
     100% {
@@ -206,7 +213,7 @@
   // }
 
   .imageshere {
-    height: 100px;
+    height: 300px;
   }
   #mobileShower {
     pointer-events: all;
