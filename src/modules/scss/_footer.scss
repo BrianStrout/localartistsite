@@ -31,7 +31,7 @@
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   opacity: 0.8;
   &:hover {
     scale: 1.15;
@@ -52,7 +52,7 @@
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   // border: 1px solid salmon;
   padding-bottom: 10px;
   font-size: 12px;

@@ -394,7 +394,9 @@
 .papermation--landscape {
   position: absolute;
   /* top: 10vh; */
+  z-index: 20;
   bottom: 18vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   background: linear-gradient(transparent, darkslategray);
@@ -407,6 +409,7 @@
   bottom: 0;
   z-index: 30;
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 10vw;
   overflow: hidden;
@@ -463,6 +466,7 @@
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center bottom;
 }
 
@@ -1120,7 +1124,7 @@ a {
   display: inline-block;
   font-family: var(--header-font);
 }
-#myForm > .form-group > textarea {
+#myForm textarea {
   width: 300px;
   resize: none;
   font-size: 16px;
@@ -1194,7 +1198,7 @@ p {
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   opacity: 0.8;
 }
 .socials > div:hover {
@@ -1214,7 +1218,7 @@ p {
   background-position: center;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   padding-bottom: 10px;
   font-size: 12px;
 }
@@ -1222,13 +1226,73 @@ p {
   scale: 1.15;
 }
 
+@media (orientation: landscape) {
+  .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-header .pop-up-slide-title {
+    opacity: 0.5;
+    font-size: 1.5rem;
+  }
+  .rock--bottom--monitor {
+    width: 85vw;
+    margin-left: 7.5vw;
+  }
+  .rock--bottom--monitor p {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .header--container {
+    height: 40vh !important;
+    bottom: -18vh !important;
+  }
+  .papermation--landscape {
+    bottom: 18vh;
+  }
+  .farmland {
+    bottom: 0px !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #mobileShower {
+    pointer-events: all;
+    background-color: var(--color-back);
+    width: 60px;
+    height: 60px;
+    background-image: url("/src/images/menubg.png");
+    background-size: cover;
+  }
+  #mobileShower:hover {
+    scale: 1.05;
+    border: 1px solid black;
+  }
+  .mobile-hider {
+    transform: translateX(100vw);
+  }
+  #myForm {
+    margin-top: 0;
+    width: 100%;
+  }
+  #myForm input {
+    width: 70%;
+  }
+  #myForm textarea {
+    width: 70%;
+  }
+  #myForm .form-group {
+    margin: 1rem 0 0 0;
+  }
+  .imageshere {
+    background-size: cover;
+    background-position: 30% 0%;
+    background-repeat: no-repeat;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 0.5rem;
+  }
+}
 @media only screen and (max-width: 1000px) {
-  .site--shell {
-    max-width: 600px;
-  }
-  .no-mobile {
-    display: none;
-  }
   .header--container {
     height: 28vh;
     bottom: 0;
@@ -1243,7 +1307,7 @@ p {
     bottom: 18vh;
   }
   .farmland .farm {
-    max-width: 60px;
+    max-width: 72px;
   }
   .mobile--lander--pad {
     position: absolute;
@@ -1278,7 +1342,7 @@ p {
   }
   .pop-up-gallery-case {
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 60% 40%;
     padding: 0;
   }
   .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-header .pop-up-slide-title {
@@ -1339,6 +1403,7 @@ p {
     padding: 5px;
     height: -moz-fit-content;
     height: fit-content;
+    min-height: 300px;
     margin-bottom: 0;
   }
   .rock--comm--quotes > * {
@@ -1397,21 +1462,6 @@ p {
   .imageshere {
     height: 300px;
   }
-  #mobileShower {
-    pointer-events: all;
-    background-color: var(--color-back);
-    width: 60px;
-    height: 60px;
-    background-image: url("/src/images/menubg.png");
-    background-size: cover;
-  }
-  #mobileShower:hover {
-    scale: 1.05;
-    border: 1px solid black;
-  }
-  .mobile-hider {
-    transform: translateX(100vw);
-  }
   .footer {
     padding: 10px;
     padding-top: 0px;
@@ -1468,4 +1518,8 @@ p {
 }
 * {
   scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
 }/*# sourceMappingURL=index.css.map */

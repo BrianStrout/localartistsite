@@ -1,10 +1,95 @@
 @use "root";
+
+@media (orientation: landscape) {
+  .pop-up-gallery-case {
+    .pop-up-gallery-left {
+      .popUpSlideBox {
+        .pop-up-slide-header {
+          .pop-up-slide-title {
+            opacity: 0.5;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .rock--bottom--monitor {
+    width: 85vw;
+    margin-left: 7.5vw;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .header--container {
+    height: 40vh !important;
+    bottom: -18vh !important;
+  }
+  .papermation--landscape {
+    // bottom: 38vh;
+    bottom: 18vh;
+  }
+  .farmland {
+    bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #mobileShower {
+    pointer-events: all;
+    // display: block;
+    background-color: var(--color-back);
+    width: 60px;
+    height: 60px;
+    background-image: url("/src/images/menubg.png");
+    background-size: cover;
+  }
+  #mobileShower:hover {
+    // opacity: 0.1;
+    scale: 1.05;
+    border: 1px solid black;
+  }
+  .mobile-hider {
+    transform: translateX(100vw);
+  }
+  #myForm {
+    margin-top: 0;
+    width: 100%;
+    input {
+      width: 70%;
+    }
+    textarea {
+      width: 70%;
+    }
+
+    .form-group {
+      margin: 1rem 0 0 0;
+    }
+  }
+  .imageshere {
+    // height: 370px;
+    // background-color: pink;
+    background-size: cover;
+    background-position: 30% 0%;
+    background-repeat: no-repeat;
+    // border: 5px solid pink;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 0.5rem;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .site--shell {
-    max-width: 600px;
+    // max-width: 600px;
   }
   .no-mobile {
-    display: none;
+    // display: none;
   }
 
   .header--container {
@@ -22,7 +107,7 @@
   .farmland {
     bottom: 18vh;
     .farm {
-      max-width: 60px;
+      max-width: 72px;
     }
   }
   .mobile--lander--pad {
@@ -61,7 +146,7 @@
   }
   .pop-up-gallery-case {
     grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 60% 40%;
     padding: 0;
 
     .pop-up-gallery-left {
@@ -137,6 +222,7 @@
       width: 100%;
       padding: 5px;
       height: fit-content;
+      min-height: 300px;
       margin-bottom: 0;
       // opacity: 0.4;
     }
@@ -214,23 +300,6 @@
 
   .imageshere {
     height: 300px;
-  }
-  #mobileShower {
-    pointer-events: all;
-    // display: block;
-    background-color: var(--color-back);
-    width: 60px;
-    height: 60px;
-    background-image: url("/src/images/menubg.png");
-    background-size: cover;
-  }
-  #mobileShower:hover {
-    // opacity: 0.1;
-    scale: 1.05;
-    border: 1px solid black;
-  }
-  .mobile-hider {
-    transform: translateX(100vw);
   }
 
   .footer {

@@ -90,7 +90,7 @@ const controller = (e) => {
        <br><br></p>
          <h1 class="abouth1">   CHOOSING YOUR PRINTS  </h1>
          <p>
-         Museum-quality, limited-edition prints of WinterboyArt are available in various papers or canvas. Prices shown range from the smallest available paper print (12" short side) to full-size stretched canvas. Long-lasting archival inks reproduce precisely the color and tone of original paintings.<span class="u cta"> Contact me</span> to order a print and/or ask about custom sizes. Turnaround time generally 10 days.
+         Museum-quality, limited-edition prints of WinterboyArt are available in various papers or canvas. Prices shown range from the smallest available paper print (12" short side) to full-size stretched canvas. Long-lasting archival inks reproduce precisely the color and tone of original paintings. <span class="u cta">Contact me</span> to order a print and/or ask about custom sizes. Turnaround time generally 10 days.
 
 
        </p>

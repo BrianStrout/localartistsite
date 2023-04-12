@@ -140,7 +140,7 @@ document.addEventListener("click", (e) => {
      </form>
      <div class="button--box">
      <div class="button--box-padder">
-     <button id="formReset" class="formReset btn">Reset</button>
+     <button id="formReset" class="formReset btn">Return</button>
      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
      </div> </div>
      <br>
@@ -151,7 +151,7 @@ document.addEventListener("click", (e) => {
      <div class="available--by">
      <span>
      Available through </span><span> phone, text, and WhatsApp</span>
-     <span>&</span><span>winterboy@winterboy.net</span>
+     <span>&</span><a href="mailto:alan@winterboy.art"> alan@winterboy.art</a>
      </div>
      </div>`;
     return;

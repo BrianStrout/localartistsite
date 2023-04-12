@@ -254,13 +254,12 @@ a {
       display: inline-block;
       font-family: var(--header-font);
     }
-    > textarea {
-      width: 300px;
-      resize: none;
-      font-size: 16px;
-    }
   }
-
+  textarea {
+    width: 300px;
+    resize: none;
+    font-size: 16px;
+  }
   // #submit {
   //   position: absolute;
   //   bottom: 0;
