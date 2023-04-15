@@ -18,13 +18,23 @@ const rockBottomButtons = Array.from(
 hamburger.addEventListener("click", (e) => {
   controller(e.target);
 });
+hamburger.addEventListener("touchstart", (e) => {
+  controller(e.target);
+});
+
 rockBottomButtons.forEach((rock) => {
   rock.addEventListener("click", () => {
+    controller(rock);
+  });
+  rock.addEventListener("touchstart", () => {
     controller(rock);
   });
 });
 linkSocial.forEach((link) => {
   link.addEventListener("click", (e) => {
+    controller(link);
+  });
+  link.addEventListener("touchstart", (e) => {
     controller(link);
   });
 });
@@ -101,6 +111,124 @@ slidesDivArray.forEach((slide) => {
   slide.addEventListener("click", (e) => {
     galleryLauncher(e.target.id);
   });
+  slide.addEventListener("touchstart", (e) => {
+    galleryLauncher(e.target.id);
+  });
+});
+
+document.addEventListener("touchstart", (e) => {
+  if (e.target.classList.contains("cta")) {
+    rockBottom.scrollIntoView({ behavior: "smooth" });
+    document.getElementById(
+      "rock--bottom--monitor"
+    ).innerHTML = `<div class="commission">
+    <h1>Contact</h1>
+       <form id="myForm" onsubmit="return false">
+       <!-- name -->
+       <div class="form-group">
+         <label for="name">Name:</label>
+         <input
+           type="name"
+           name="name"
+           class="form-control"
+           id="fromName"
+           placeholder="enter your name"
+         />
+       </div>
+       <div class="form-group">
+         <label for="email">Email:</label>
+         <input
+           type="email"
+           name="email"
+           class="form-control"
+           id="fromEmail"
+           placeholder="enter your email"
+         />
+       </div>
+       <div class="form-group">
+         <label for="message">Message:</label>
+         <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+       </div>
+     
+     </form>
+     <div class="button--box">
+     <div class="button--box-padder">
+     <button id="formReset" class="formReset btn">Return</button>
+     <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+     </div> </div>
+     <br>
+     <a href="tel:617-501-5838">
+     <div class = "phone-div"><div class="phone-icon"></div><h2>+1(617)501-5838</h2></div>
+     </a>
+     <br>
+     <div class="available--by">
+     <span>
+     Available through </span><span> phone, text, and WhatsApp</span>
+     <span>&</span><a href="mailto:alan@winterboy.art"> alan@winterboy.art</a>
+     </div>
+     </div>`;
+    return;
+  }
+  if (e.target.classList.contains("formReset")) {
+    controller(e.target);
+  }
+
+  if (e.target.classList.contains("btn-primary")) {
+    e.preventDefault();
+    const formSelector = document.getElementById("myForm");
+
+    let formData = {
+      tes: "test",
+      service_id: "service_cg4lo4s",
+      template_id: "template_fejt36a",
+      form: document.getElementById("myForm"),
+      user_id: "sMWYJVw_Of2YBvfKm",
+      template_params: {
+        "sender-name": "James",
+        "sender-email": "test@fake.com",
+      },
+    };
+
+    let b = {
+      bname: formSelector.name,
+    };
+    let bbname = formSelector.name.value;
+
+    console.log("submitting");
+    console.log(b);
+
+    const serviceID = "service_cg4lo4s";
+    const templateID = "template_fejt36a";
+    const tt = formData.tes;
+    const params = {
+      fromName: document.getElementById("fromName").value,
+      fromEmail: document.getElementById("fromEmail").value,
+      message: document.getElementById("message").value,
+    };
+
+    console.log(params);
+
+    console.log("^^^ params");
+
+    // "sMWYJVw_Of2YBvfKm",
+    // send the email here
+    emailjs
+      .send(serviceID, templateID, params)
+      // .sendForm(JSON.stringify(formData))
+      .then((response) => {
+        console.log(params);
+
+        // console.log("Thanks for your email!", response.status, response.text);
+        alert("Thanks for your email!");
+      });
+    return;
+  }
+
+  if (e.target.classList.contains("toAvail")) {
+    console.log("avail?");
+    document.getElementById("studio").scrollIntoView({ behavior: "smooth" });
+    galleryLauncher("available");
+  }
 });
 
 document.addEventListener("click", (e) => {

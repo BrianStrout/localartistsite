@@ -100,7 +100,7 @@
   background-image: url("/src/images/rockbottombgs/ih-purch.jpg");
 }
 .ih-about {
-  background-image: url("/src/images/rockbottombgs/alanSharp.png");
+  background-image: url("/src/images/rockbottombgs/alanSharp.jpg");
 }
 
 .ih-contact {
@@ -150,10 +150,16 @@
   color: black;
   margin-left: 10px;
   margin-right: 20px;
+
   &:hover {
     scale: 1.05;
   }
-  > p {
+  // > p {
+  //   pointer-events: none;
+  // }
+
+  > h3 {
+    // font-size: 1.25rem;
     pointer-events: none;
   }
 }
@@ -232,7 +238,8 @@ a {
 }
 #myForm {
   position: relative;
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
   padding: 1rem;
   margin-top: 32px;
   display: flex;
@@ -241,13 +248,14 @@ a {
   input {
     font-size: 16px;
     height: 30px;
-    width: 300px;
+    width: 70%;
+    max-width: 600px;
   }
   > .form-group {
     // border: 3px solid black;
     display: flex;
     align-content: flex-start;
-    margin: 1rem;
+    margin: 1rem 0 0 0;
     > label {
       width: 110px;
       text-transform: uppercase;
@@ -256,15 +264,11 @@ a {
     }
   }
   textarea {
-    width: 300px;
+    width: 70%;
+    max-width: 600px;
     resize: none;
     font-size: 16px;
   }
-  // #submit {
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  // }
 }
 
 .button--box {
@@ -296,9 +300,13 @@ a {
   // background-color: pink;
 }
 
-p {
-  font-size: 1.25rem;
-}
+// p {
+//   font-size: 0.85rem;
+// }
+// li {
+//   font-size: 0.5rem;
+//   margin-bottom: 0;
+// }
 
 .no-touch {
   pointer-events: none;

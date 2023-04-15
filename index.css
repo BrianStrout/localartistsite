@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 #launch {
   position: absolute;
   top: 0;
@@ -967,7 +971,7 @@
 }
 
 .ih-about {
-  background-image: url("/src/images/rockbottombgs/alanSharp.png");
+  background-image: url("/src/images/rockbottombgs/alanSharp.jpg");
 }
 
 .ih-contact {
@@ -1023,7 +1027,7 @@
 .link--clickable:hover {
   scale: 1.05;
 }
-.link--clickable > p {
+.link--clickable > h3 {
   pointer-events: none;
 }
 
@@ -1101,7 +1105,8 @@ a {
 
 #myForm {
   position: relative;
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
   padding: 1rem;
   margin-top: 32px;
   display: flex;
@@ -1111,12 +1116,13 @@ a {
 #myForm input {
   font-size: 16px;
   height: 30px;
-  width: 300px;
+  width: 70%;
+  max-width: 600px;
 }
 #myForm > .form-group {
   display: flex;
   align-content: flex-start;
-  margin: 1rem;
+  margin: 1rem 0 0 0;
 }
 #myForm > .form-group > label {
   width: 110px;
@@ -1125,7 +1131,8 @@ a {
   font-family: var(--header-font);
 }
 #myForm textarea {
-  width: 300px;
+  width: 70%;
+  max-width: 600px;
   resize: none;
   font-size: 16px;
 }
@@ -1152,10 +1159,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-p {
-  font-size: 1.25rem;
 }
 
 .no-touch {
@@ -1339,6 +1342,9 @@ p {
     padding-top: 0;
     height: 85vh;
     max-height: 800px;
+  }
+  .mob-block {
+    display: block;
   }
   .pop-up-gallery-case {
     grid-template-columns: 100%;
