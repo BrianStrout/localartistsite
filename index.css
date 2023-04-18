@@ -719,7 +719,7 @@ html {
   background-image: url("/src/images/galleries/showcase/showcase1.jpg");
 }
 .slide#available {
-  background-image: url("/src/images/galleries/available/avail1.jpg");
+  background-image: url("/src/images/galleries/available/avail0.jpg");
 }
 .slide#outertrees {
   background-image: url("/src/images/galleries/outertrees/treescape1.jpg");
@@ -1297,8 +1297,12 @@ a {
 }
 @media only screen and (max-width: 1000px) {
   .header--container {
-    height: 28vh;
+    height: 18vh;
     bottom: 0;
+    background-color: hotpink;
+  }
+  .papermation--landscape {
+    bottom: 5vh;
   }
   .papermation--plot {
     width: 12.5vw;
@@ -1307,7 +1311,7 @@ a {
     background-size: contain;
   }
   .farmland {
-    bottom: 18vh;
+    bottom: 5vh;
   }
   .farmland .farm {
     max-width: 72px;
@@ -1452,13 +1456,14 @@ a {
   .bottom--linker--box {
     position: absolute;
     right: 0;
-    top: 1vh;
+    top: 10vh;
     justify-content: flex-start;
     gap: 30px;
     overflow-x: hidden;
   }
   .link--clickable {
     font-size: 1.5rem;
+    padding: 15px 5px;
   }
   .rock--comm--quotes {
     min-height: 150px;

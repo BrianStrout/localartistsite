@@ -93,10 +93,13 @@
   }
 
   .header--container {
-    height: 28vh;
+    height: 18vh;
     bottom: 0;
+    background-color: hotpink;
   }
-
+  .papermation--landscape {
+    bottom: 5vh;
+  }
   .papermation--plot {
     width: 12.5vw;
     max-width: 75px;
@@ -105,7 +108,7 @@
   }
 
   .farmland {
-    bottom: 18vh;
+    bottom: 5vh;
     .farm {
       max-width: 72px;
     }
@@ -282,13 +285,14 @@
   .bottom--linker--box {
     position: absolute;
     right: 0;
-    top: 1vh;
+    top: 10vh;
     justify-content: flex-start;
     gap: 30px;
     overflow-x: hidden;
   }
   .link--clickable {
     font-size: 1.5rem;
+    padding: 15px 5px;
   }
   .rock--comm--quotes {
     min-height: 150px;
