@@ -60,7 +60,7 @@
     "galleryArray": [
       {
         "addy": "avail0.jpg",
-        "title": "The Stand",
+        "title": "Pando",
         "desc": "30x48, $3500"
       },
 
@@ -103,6 +103,11 @@
         "addy": "avail8.jpg",
         "title": "Sky Gods",
         "desc": "20x20, $750"
+      },
+      {
+        "addy": "avail9.jpg",
+        "title": "Dichotomy",
+        "desc": "24x36, $1500"
       }
     ]
   },
@@ -194,6 +199,11 @@
         "addy": "earthtrees16.jpg",
         "title": "The Path",
         "desc": "30x40, $130-$580"
+      },
+      {
+        "addy": "earthtrees17.jpg",
+        "title": "Dichotomy",
+        "desc": " 24x36, $1500"
       }
     ]
   },
@@ -213,7 +223,7 @@
 
       {
         "addy": "treescape19.jpg",
-        "title": "The Stand",
+        "title": "Pando",
         "desc": "30x48, $150-$850 "
       },
       {
@@ -300,6 +310,16 @@
         "addy": "treescape18.jpg",
         "title": "Tree of Love",
         "desc": "36x48, $130-$800"
+      },
+      {
+        "addy": "treescape20.jpg",
+        "title": "Moons Over Martha",
+        "desc": "24x24, $130-$480"
+      },
+      {
+        "addy": "treescape21.jpg",
+        "title": "Last Tango",
+        "desc": "36x48, $130-$800"
       }
     ]
   },
@@ -358,6 +378,11 @@
         "addy": "wings10.jpg",
         "title": "Three SkyGods",
         "desc": "24x24, $130-$480"
+      },
+      {
+        "addy": "wings11.jpg",
+        "title": "Owlivia",
+        "desc": "12x12, $120 - $300"
       }
     ]
   },
