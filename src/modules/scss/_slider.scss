@@ -65,7 +65,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
-  animation: 30s linear infinite forwards slideShow;
+  animation: 35s linear infinite forwards slideShow;
   animation-play-state: paused;
   font-family: var(--font-text);
   // 4s with 1s
@@ -79,7 +79,7 @@
     );
   }
 
-  $delays: 0s, 5s, 10s, 15s, 20s, 25s;
+  $delays: 0s, 5s, 10s, 15s, 20s, 25s, 30s;
   @for $i from 1 through length($delays) {
     &:nth-child(#{length($delays)}n + #{$i}) {
       animation-delay: nth($delays, $i);
@@ -97,17 +97,20 @@
   &:hover {
     opacity: 1;
   }
-  &#showcase {
-    background-image: url("/src/images/galleries/showcase/showcase1.jpg");
-  }
   &#available {
     background-image: url("/src/images/galleries/available/avail0.jpg");
   }
-  &#outertrees {
-    background-image: url("/src/images/galleries/outertrees/treescape1.jpg");
+  &#showcase {
+    background-image: url("/src/images/galleries/showcase/showcase1.jpg");
   }
-  &#earthtrees {
-    background-image: url("/src/images/galleries/earthtrees/earthtrees1.jpg");
+  &#glasstrees {
+    background-image: url("/src/images/galleries/glasstrees/glasstrees1.jpg");
+  }
+  &#orbs {
+    background-image: url("/src/images/galleries/orbs/orbs1.jpg");
+  }
+  &#landscapes {
+    background-image: url("/src/images/galleries/landscapes/landscapes1.jpg");
   }
   &#wings {
     background-image: url("/src/images/galleries/wings/wings1.jpg");
@@ -122,6 +125,6 @@
     left: 100%;
   }
   100% {
-    left: -200%;
+    left: -250%;
   }
 }

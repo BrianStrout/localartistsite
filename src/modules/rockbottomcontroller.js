@@ -52,7 +52,7 @@ const controller = (e) => {
       </section>
       
       <section>
-      <h1 class="abouth1" >Commission</h1>
+      <h1 class="abouth1">Commissions</h1>
        <p>
        Whether you’re seeking your own version of a Winterboy artwork that's already been collected by someone else, or hoping to recapture the light and energy of a treasured moment or place, I can paint that for you!
        <br><br>
@@ -64,6 +64,7 @@ const controller = (e) => {
       </div>`;
       break;
     case "purchase":
+      console.log("you have clicked purchase");
       rockMonitor.innerHTML = `<div class="commission">
         <section class="rock--comm--quotes">
           <div class="quote">
@@ -84,15 +85,13 @@ const controller = (e) => {
         <section>
         <h1 class="abouth1">AVAILABLE WORK</h1>
          <p> 
-         A lot of people follow me, so my art is often collected by the time it's finished. However, I'm creating new work all the time; keep watching this space. Prices are listed with the<span class="toAvail u"> Available Gallery</span> images. <span class="u cta">Contact me</span> to learn more about a piece, and for an electronic/in-person viewing of it.
-         
-      
-       <br><br></p>
+         My art is often collected by the time it's finished. However, I'm creating new work all the time; keep watching the Available Paintings gallery. Prices and the size of the piece are listed with each of the images. I paint the 1.5" sides of all my canvases so you don't need to frame them, and a simple drop frame is best if you want to. Each artwork comes wired for hanging, with a Certificate of Authenticity. <span class="u cta">Contact me</span> to receive more information about a piece, as well as shipping costs (if any), and/or for an electronic (via Zoom)/in-person viewing of it.
+             <br><br></p>
          <h1 class="abouth1">   CHOOSING YOUR PRINTS  </h1>
          <p>
-         Museum-quality, limited-edition prints of WinterboyArt are available in various papers or canvas. Prices shown range from the smallest available paper print (12" short side) to full-size stretched canvas. Long-lasting archival inks reproduce precisely the color and tone of original paintings. <span class="u cta">Contact me</span> to order a print and/or ask about custom sizes. Turnaround time generally 10 days.
-
-
+         Museum-quality prints of WinterboyArt are available on semi-glass photographic or matte-finish fine art papers, or on varnished stretched canvas-just like a painting. Prices shown in the Print galleries range from the smallest available paper print (12" short side) to full-size stretched canvas. Long-lasting archival inks reproduce precisely the color and tone of original paintings.
+         <br><br>
+         Consider where you want to display the print. Measure the space available. Take into account that paper prints should be matted and framed to protect them, and will need several extra inches on all sides. Stretched canvas prints won't, and come wired for hanging. All prints have my monogram embedded in them. <span class="u cta">Contact me</span> to order a print of any size, and/or to receive more information. NOTE: Shipping is often free in stretched canvas artworks. Turnaround time generally 10 business days.
        </p>
         </section>
        
@@ -120,16 +119,16 @@ const controller = (e) => {
           <section>
           <h1 class="abouth1">About the Artist</h1>
            <p>
-       
 
-           Alan Winter, aka Winterboy, is a professional artist recently returned from TX to MA. He began as an art hobbyist in college, becoming more committed to painting in 2010. Since 2016, he's made his living exclusively as an artist, producing up to 40 pieces in oil or acrylic per year and finding collectors for most of them. 
-           <br><br>
-<i>
-           "My work is informed by love of trees, astronomy, physics, and flying things. Art is not a solo sport to me; other people forever show me things that I don’t see, lead me in new directions, and even give me 'new eyes' if I'm stuck.
-   <br> 
-   <br>     
-       "What we focus on grows. For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. I paint to focus on beautiful things, and to help others do the same."
-       </i>
+
+           Alan Winter, aka Winterboy, is a professional artist recently returned from TX to New England. He began as an art hobbyist in college, becoming more committed to painting in 2010. Since 2016, he's made his living exclusively as an artist, producing up to 40 pieces in oil or acrylic per year and finding collectors for most of them.
+           <br> 
+           <br> 
+           <i>"My work is informed by love of trees, astronomy, physics, and flying things. Though painting itself is a form of meditation, art is not a solo sport to me. I love sharing my process and progress, and consider it a service to humanity. But it's not altruism, really; you forever show me things that I don’t see, lead me in new directions, and even give me 'new eyes' if I'm stuck.
+           <br> 
+           <br> 
+           "What we focus on grows. For every ugly thing demanding our attention 24×7, there are a thousand beautiful things. I paint to contemplate those beautiful things, and to help you do the same."
+           </i>
           </p>
           </section>
           
@@ -162,7 +161,7 @@ const controller = (e) => {
           </div>
           <div class="form-group">
             <label for="message">Message:</label>
-            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message here, thanks for reaching out. When writing your message please let me know the print size and/or medium you're considering, or any questions about prices, shipping, etc)   -Alan"></textarea>
           </div>
         
         </form>

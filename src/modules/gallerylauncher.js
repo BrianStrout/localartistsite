@@ -144,6 +144,8 @@ async function galleryLauncher(door) {
   const response = await fetch("./src/galleryData.JSON");
   const sheetData = await response.json();
 
+  console.log("door" + door);
+
   for (const gallery of sheetData) {
     if (gallery.galleryname === door) {
       populateGallery(gallery);

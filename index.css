@@ -679,7 +679,7 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   transition: opacity 1s ease-out, left 1s ease-in-out, scale 1s ease-in-out;
-  animation: 30s linear infinite forwards slideShow;
+  animation: 35s linear infinite forwards slideShow;
   animation-play-state: paused;
   font-family: var(--font-text);
 }
@@ -687,23 +687,26 @@ html {
   font-family: var(--font-text);
   background: linear-gradient(to right, rgba(231, 231, 231, 0.8), transparent, transparent);
 }
-.slide:nth-child(6n+1) {
+.slide:nth-child(7n+1) {
   animation-delay: 0s;
 }
-.slide:nth-child(6n+2) {
+.slide:nth-child(7n+2) {
   animation-delay: 5s;
 }
-.slide:nth-child(6n+3) {
+.slide:nth-child(7n+3) {
   animation-delay: 10s;
 }
-.slide:nth-child(6n+4) {
+.slide:nth-child(7n+4) {
   animation-delay: 15s;
 }
-.slide:nth-child(6n+5) {
+.slide:nth-child(7n+5) {
   animation-delay: 20s;
 }
-.slide:nth-child(6n+6) {
+.slide:nth-child(7n+6) {
   animation-delay: 25s;
+}
+.slide:nth-child(7n+7) {
+  animation-delay: 30s;
 }
 .slide .slide-moving {
   animation-play-state: running;
@@ -715,17 +718,20 @@ html {
 .slide:hover {
   opacity: 1;
 }
-.slide#showcase {
-  background-image: url("/src/images/galleries/showcase/showcase1.jpg");
-}
 .slide#available {
   background-image: url("/src/images/galleries/available/avail0.jpg");
 }
-.slide#outertrees {
-  background-image: url("/src/images/galleries/outertrees/treescape1.jpg");
+.slide#showcase {
+  background-image: url("/src/images/galleries/showcase/showcase1.jpg");
 }
-.slide#earthtrees {
-  background-image: url("/src/images/galleries/earthtrees/earthtrees1.jpg");
+.slide#glasstrees {
+  background-image: url("/src/images/galleries/glasstrees/glasstrees1.jpg");
+}
+.slide#orbs {
+  background-image: url("/src/images/galleries/orbs/orbs1.jpg");
+}
+.slide#landscapes {
+  background-image: url("/src/images/galleries/landscapes/landscapes1.jpg");
 }
 .slide#wings {
   background-image: url("/src/images/galleries/wings/wings1.jpg");
@@ -739,7 +745,7 @@ html {
     left: 100%;
   }
   100% {
-    left: -200%;
+    left: -250%;
   }
 }
 .studio {
@@ -830,15 +836,15 @@ html {
   color: white;
 }
 .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox .pop-up-slide-header .pop-up-slide {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 38px;
   background-color: white;
-  background-image: url("/src/images/cta.png");
-  background-size: 70%;
+  background-image: url("/src/images/cta2.png");
+  background-size: 83%;
   background-position: center;
   background-repeat: no-repeat;
   border: 3px solid black;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 .pop-up-gallery-case .pop-up-gallery-left .popUpSlideBox p {
   margin-left: 26px;
@@ -1400,7 +1406,7 @@ a {
     padding-right: 0px;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    background-image: url("/src/images/commissioned.jpg");
+    background-image: url("/src/images/rockbottombgs/ih-comm.jpg");
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -1460,6 +1466,7 @@ a {
     justify-content: flex-start;
     gap: 30px;
     overflow-x: hidden;
+    height: auto;
   }
   .link--clickable {
     font-size: 1.5rem;

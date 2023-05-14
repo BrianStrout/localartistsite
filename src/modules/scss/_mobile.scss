@@ -215,7 +215,7 @@
     padding-right: 0px;
     padding-bottom: 15px;
     margin-bottom: 10px;
-    background-image: url("/src/images/commissioned.jpg");
+    background-image: url("/src/images/rockbottombgs/ih-comm.jpg");
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -289,6 +289,7 @@
     justify-content: flex-start;
     gap: 30px;
     overflow-x: hidden;
+    height: auto;
   }
   .link--clickable {
     font-size: 1.5rem;
