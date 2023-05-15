@@ -161,7 +161,7 @@ const controller = (e) => {
           </div>
           <div class="form-group">
             <label for="message">Message:</label>
-            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message here, thanks for reaching out. When writing your message please let me know the print size and/or medium you're considering, or any questions about prices, shipping, etc)   -Alan"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Print size and/or medium you're considering, or any questions about prices, shipping, etc"></textarea>
           </div>
         
         </form>

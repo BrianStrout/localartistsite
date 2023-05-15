@@ -9,6 +9,16 @@
         "title": "Pando",
         "desc": "30x48, $3500"
       },
+      {
+        "addy": "avail10.jpg",
+        "title": "IN PROGRESS Seagull",
+        "desc": "20x24, $950"
+      },
+      {
+        "addy": "avail9.jpg",
+        "title": "Dichotomy",
+        "desc": "24x36, $1500"
+      },
 
       {
         "addy": "avail1.jpg",
@@ -49,11 +59,6 @@
         "addy": "avail8.jpg",
         "title": "Sky Gods",
         "desc": "20x20, $750"
-      },
-      {
-        "addy": "avail9.jpg",
-        "title": "Dichotomy",
-        "desc": "24x36, $1500"
       }
     ]
   },
@@ -129,7 +134,7 @@
       },
 
       {
-        "addy": "glasstrees4.jpg",
+        "addy": "glasstrees2.jpg",
         "title": "Heartwood Hollow",
         "desc": "36x48, $140-$800"
       },
@@ -193,7 +198,7 @@
     ]
   },
   {
-    "galleryname": "orbs  ",
+    "galleryname": "orbs",
     "officialtitle": "Trees Other Worlds",
     "mainImage": "./src/images/galleries/outertrees/treescape1.jpg",
     "galleryArray": [
