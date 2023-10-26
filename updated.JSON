@@ -1,0 +1,433 @@
+[
+  {
+    "galleryname": "available",
+    "officialtitle": "Available",
+    "mainImage": "./src/images/galleries/available/avail0.jpg",
+    "galleryArray": [
+      {
+        "addy": "avail0.jpg",
+        "title": "Pando",
+        "desc": "30x48, $3500"
+      },
+      {
+        "addy": "avail10.jpg",
+        "title": "IN PROGRESS Seagull",
+        "desc": "20x24, $950"
+      },
+      {
+        "addy": "avail9.jpg",
+        "title": "Dichotomy",
+        "desc": "24x36, $1500"
+      },
+
+      {
+        "addy": "avail1.jpg",
+        "title": "Confetti Autumn",
+        "desc": "20x24, $950"
+      },
+      {
+        "addy": "avail2.jpg",
+        "title": "Finlandia IN PROGRESS",
+        "desc": "24x30, $1300"
+      },
+      {
+        "addy": "avail3.jpg",
+        "title": "Shadow of Time",
+        "desc": "18x24, $600"
+      },
+      {
+        "addy": "avail4.jpg",
+        "title": "Owlivia",
+        "desc": "12x12, $420"
+      },
+      {
+        "addy": "avail5.jpg",
+        "title": "The Gloaming",
+        "desc": "18x24, $450"
+      },
+      {
+        "addy": "avail6.jpg",
+        "title": "The Audience",
+        "desc": "24x30, $1200"
+      },
+      {
+        "addy": "avail7.jpg",
+        "title": "Orb Origins",
+        "desc": "16x20, $300"
+      },
+      {
+        "addy": "avail8.jpg",
+        "title": "Sky Gods",
+        "desc": "20x20, $750"
+      }
+    ]
+  },
+  {
+    "galleryname": "showcase",
+    "officialtitle": "Showcase",
+    "mainImage": "./src/images/galleries/showcase/showcase1.jpg",
+    "galleryArray": [
+      {
+        "addy": "showcase1.jpg",
+        "title": "San Miguel de Allende",
+        "desc": "12x14, $120 - $350"
+      },
+      {
+        "addy": "showcase2.jpg",
+        "title": "Plum Island Crab",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "showcase3.jpg",
+        "title": "The Gathering",
+        "desc": "24x36, $140-$620"
+      },
+      {
+        "addy": "showcase4.jpg",
+        "title": "Gold Coast",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "showcase5.jpg",
+        "title": "Evolution",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "showcase6.jpg",
+        "title": "The Embrace",
+        "desc": "36x48, $130-$800"
+      },
+      {
+        "addy": "showcase7.jpg",
+        "title": "Tree Rabbits",
+        "desc": "24x30, $130-$580"
+      },
+
+      {
+        "addy": "showcase8.jpg",
+        "title": "Night, The River",
+        "desc": "16x20, $120-$390"
+      },
+
+      {
+        "addy": "showcase9.jpg",
+        "title": "Last Tango",
+        "desc": "36x48, $130-$800"
+      },
+      {
+        "addy": "showcase10.jpg",
+        "title": "Blue Moon Bamboo",
+        "desc": "22x28, $130-$560"
+      }
+    ]
+  },
+  {
+    "galleryname": "glasstrees",
+    "officialtitle": "Stained Glass Trees",
+    "mainImage": "./src/images/galleries/glasstrees/glasstrees1.jpg",
+
+    "galleryArray": [
+      {
+        "addy": "glasstrees1.jpg",
+        "title": "The Birches",
+        "desc": "24x30, $130-$580"
+      },
+
+      {
+        "addy": "glasstrees2.jpg",
+        "title": "Heartwood Hollow",
+        "desc": "36x48, $140-$800"
+      },
+
+      {
+        "addy": "glasstrees3.jpg",
+        "title": "Vitrum Lignum Tree of Glass",
+        "desc": "30x40, $140-$680"
+      },
+      {
+        "addy": "glasstrees4.jpg",
+        "title": "Amber Sunset",
+        "desc": "12x14, $120-$350"
+      },
+      {
+        "addy": "glasstrees5.jpg",
+        "title": "Heartwood",
+        "desc": "36x48, $140-$800"
+      },
+      {
+        "addy": "glasstrees6.jpg",
+        "title": "The Madrone",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "glasstrees7.jpg",
+        "title": "The Tree Within",
+        "desc": "36x36, $130-$700"
+      },
+
+      {
+        "addy": "glasstrees8.jpg",
+        "title": "Vail Divide",
+        "desc": "24x36, $130-$620"
+      },
+      {
+        "addy": "glasstrees9.jpg",
+        "title": "Beech Tree Cathedral",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "glasstrees10.jpg",
+        "title": "Vermillion Divide",
+        "desc": "30x48, $130-$720"
+      },
+      {
+        "addy": "glasstrees11.jpg",
+        "title": "Third Path",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "glasstrees12.jpg",
+        "title": "Tree of Love",
+        "desc": "36x48, $130-$800"
+      },
+      {
+        "addy": "glasstrees13.jpg",
+        "title": "Pando",
+        "desc": "30x48, $150-$850 "
+      }
+    ]
+  },
+  {
+    "galleryname": "orbs",
+    "officialtitle": "Trees Other Worlds",
+    "mainImage": "./src/images/galleries/outertrees/treescape1.jpg",
+    "galleryArray": [
+      {
+        "addy": "orbs1.jpg",
+        "title": "I'll Hang You a Moon",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "orbs2.jpg",
+        "title": "Fiboncaccis Mirror",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "orbs3.jpg",
+        "title": "Aubergine Mirror",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "orbs4.jpg",
+        "title": "Indras Net",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "orbs5.jpg",
+        "title": "Blue Agave Moon",
+        "desc": "24x30, $130-$580"
+      },
+
+      {
+        "addy": "orbs6.jpg",
+        "title": "Web of Life",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "orbs7.jpg",
+        "title": "Blue Moon Tree",
+        "desc": "30x48, $130-$720"
+      },
+
+      {
+        "addy": "orbs8.jpg",
+        "title": "The Pearl",
+        "desc": "30x40, $130-$680"
+      },
+      {
+        "addy": "orbs9.jpg",
+        "title": "Blue Sentinels of IO",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "orbs10.jpg",
+        "title": "Silver Falls",
+        "desc": "24x30, $130-$580"
+      },
+
+      {
+        "addy": "orbs11.jpg",
+        "title": "Moons Over Martha",
+        "desc": "24x24, $130-$480"
+      }
+    ]
+  },
+  {
+    "galleryname": "landscapes",
+    "officialtitle": "Trees Other Worlds",
+    "mainImage": "./src/images/galleries/outertrees/treescape1.jpg",
+    "galleryArray": [
+      {
+        "addy": "landscapes1.jpg",
+        "title": "Dichotomy",
+        "desc": " 24x36, $1500"
+      },
+      {
+        "addy": "landscapes2.jpg",
+        "title": "Stevens Barn",
+        "desc": "30x40, $140-$680"
+      },
+      {
+        "addy": "landscapes3.jpg",
+        "title": "Emerald Isle",
+        "desc": "18x24, $130-$420"
+      },
+      {
+        "addy": "landscapes4.jpg",
+        "title": "Skogafoss Falls",
+        "desc": "18x24, $130-$420"
+      },
+      {
+        "addy": "landscapes5.jpg",
+        "title": "Second Path",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "landscapes6.jpg",
+        "title": "Thirteen Stones",
+        "desc": "18x24, $130-$420"
+      },
+      {
+        "addy": "landscapes7.jpg",
+        "title": "Yellow Hill",
+        "desc": "36x48, $140-$800"
+      },
+      {
+        "addy": "landscapes8.jpg",
+        "title": "The Dance",
+        "desc": "30x48, $130-$720"
+      },
+
+      {
+        "addy": "landscapes9.jpg",
+        "title": "Texas Tall",
+        "desc": "30x40, $140-$680"
+      },
+      {
+        "addy": "landscapes10.jpg",
+        "title": "Montana Skyline",
+        "desc": "18x24, $120-$420"
+      },
+      {
+        "addy": "landscapes11.jpg",
+        "title": "Ghost Bison of El Morro",
+        "desc": "24x30, $130-$580"
+      },
+
+      {
+        "addy": "landscapes13.jpg",
+        "title": "Path to Mount Resting",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "landscapes14.jpg",
+        "title": "The Path",
+        "desc": "30x40, $130-$580"
+      }
+    ]
+  },
+  {
+    "galleryname": "wings",
+    "officialtitle": "With Wings Series",
+    "mainImage": "./src/images/galleries/wings/wings1.jpg",
+    "galleryArray": [
+      {
+        "addy": "wings1.jpg",
+        "title": "Poulette",
+        "desc": "24x24, $130-$480"
+      },
+      {
+        "addy": "wings2.jpg",
+        "title": "King Cosmo",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "wings3.jpg",
+        "title": "Dragonfly Nebula",
+        "desc": "24x30, $130-$580"
+      },
+      {
+        "addy": "wings4.jpg",
+        "title": "Angels",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "wings5.jpg",
+        "title": "The Family",
+        "desc": "30x40, $130-$680"
+      },
+      {
+        "addy": "wings6.jpg",
+        "title": "Luna",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "wings7.jpg",
+        "title": "Monarch",
+        "desc": "Special Order"
+      },
+      {
+        "addy": "wings8.jpg",
+        "title": "Bunting VanGogh",
+        "desc": "12x14, $120-$340"
+      },
+      {
+        "addy": "wings9.jpg",
+        "title": "Orb Origins",
+        "desc": "16x20, $120-$300"
+      },
+      {
+        "addy": "wings10.jpg",
+        "title": "Three SkyGods",
+        "desc": "24x24, $130-$480"
+      },
+      {
+        "addy": "wings11.jpg",
+        "title": "Owlivia",
+        "desc": "12x12, $120 - $300"
+      }
+    ]
+  },
+  {
+    "galleryname": "dewdrops",
+    "officialtitle": "Dewdrops",
+    "mainImage": "../src/images/galleries/dewdrops/dewdrops1.jpg",
+    "galleryArray": [
+      {
+        "addy": "dewdrops1.jpg",
+        "title": "Humility",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "dewdrops2.jpg",
+        "title": "Hope",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "dewdrops3.jpg",
+        "title": "Healing",
+        "desc": "20x20, $120-$400"
+      },
+      {
+        "addy": "dewdrops4.jpg",
+        "title": "Heavens",
+        "desc": "16x20, $120-$390"
+      },
+      {
+        "addy": "dewdrops5.jpg",
+        "title": "Happiness",
+        "desc": "20x20, $120-$400"
+      }
+    ]
+  }
+]

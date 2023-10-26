@@ -4,6 +4,8 @@ import {
 } from "./src/modules/gallerylauncher.js";
 import { controller, hamburger } from "./src/modules/rockbottomcontroller.js";
 
+console.log("updated");
+
 const linkSocial = [
   document.getElementById("linkig"),
   document.getElementById("linkyt"),
@@ -184,18 +186,21 @@ document.addEventListener("touchstart", (e) => {
       form: document.getElementById("myForm"),
       user_id: "sMWYJVw_Of2YBvfKm",
       template_params: {
-        "sender-name": "James",
-        "sender-email": "test@fake.com",
+        "sender-name": "",
+        "sender-email": "",
       },
     };
 
-    let b = {
-      bname: formSelector.name,
-    };
-    let bbname = formSelector.name.value;
+    let fromName = document.getElementById("fromName").value;
+    let fromEmail = document.getElementById("fromEmail").value;
+    let message = document.getElementById("message").value;
 
-    console.log("submitting");
-    console.log(b);
+    console.log("attempting submitting");
+
+    let regexpNAME = /^[a-z a-z]+$/gi;
+    let regexpEMAIL =
+      /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    let regexpMESG = /.{8}/;
 
     const serviceID = "service_cg4lo4s";
     const templateID = "template_fejt36a";
@@ -207,20 +212,33 @@ document.addEventListener("touchstart", (e) => {
     };
 
     console.log(params);
-
     console.log("^^^ params");
 
-    // "sMWYJVw_Of2YBvfKm",
-    // send the email here
-    emailjs
-      .send(serviceID, templateID, params)
-      // .sendForm(JSON.stringify(formData))
-      .then((response) => {
-        console.log(params);
+    if (regexpNAME.test(fromName)) {
+      console.log("passing verification step 1");
 
-        // console.log("Thanks for your email!", response.status, response.text);
-        alert("Thanks for your email!");
-      });
+      if (regexpEMAIL.test(fromEmail)) {
+        console.log("passing verification step 2");
+
+        if (regexpMESG.test(message)) {
+          console.log("passing verification step 3");
+          console.log("submitting");
+          emailjs.send(serviceID, templateID, params).then((response) => {
+            console.log(params);
+            formSelector.innerHTML =
+              "<div style='display:flex; justify-content:center'> Thank you for your email <br> I will be in touch</div>";
+            document.querySelector(".button--box").style = "display: none";
+          });
+          return;
+        } else {
+          console.log("fail message");
+          return;
+        }
+      }
+      console.log("fail email");
+      return;
+    }
+    console.log("fail name");
     return;
   }
 
@@ -336,12 +354,12 @@ document.addEventListener("click", (e) => {
         if (regexpMESG.test(message)) {
           console.log("passing verification step 3");
           console.log("submitting");
-          // emailjs.send(serviceID, templateID, params).then((response) => {
-          //   console.log(params);
-          formSelector.innerHTML =
-            "<div style='display:flex; justify-content:center'> Thank you for your email <br> I will be in touch</div>";
-          document.querySelector(".button--box").style = "display: none";
-          // });
+          emailjs.send(serviceID, templateID, params).then((response) => {
+            console.log(params);
+            formSelector.innerHTML =
+              "<div style='display:flex; justify-content:center'> Thank you for your email <br> I will be in touch</div>";
+            document.querySelector(".button--box").style = "display: none";
+          });
           return;
         } else {
           console.log("fail message");

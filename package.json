@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "contentful": "^10.6.5",
+    "emailjs": "^4.0.3",
+    "esbuild": "^0.19.5",
     "intersection-observer": "^0.12.2",
     "sass": "^1.58.0"
   },
@@ -7,8 +10,8 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
+    "build": "esbuild index.js --bundle --minify --outfile=bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
