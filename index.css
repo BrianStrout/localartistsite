@@ -379,8 +379,7 @@ html {
 #titleTrack {
   font-family: var(--font-titles);
   font-size: 10vw;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-end: 0;
   color: var(--color-back);
   transition: text-shadow 1.75s ease-out;
 }
