@@ -3,7 +3,7 @@ import {
   slideController,
 } from "./src/modules/gallerylauncher.js";
 import { controller, hamburger } from "./src/modules/rockbottomcontroller.js";
-
+import { CallToCMS } from "./src/modules/CMS_Call.js";
 console.log("updated");
 
 const linkSocial = [
@@ -383,4 +383,5 @@ window.onload = () => {
   console.log("window loaded");
   animateInTreescape();
   controller(rockBottomButtons[0]);
+  CallToCMS();
 };

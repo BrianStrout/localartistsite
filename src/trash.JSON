@@ -7,53 +7,59 @@
       {
         "addy": "avail0.jpg",
         "title": "Pando",
-        "desc": "30x48, $2500"
-      }, {
-        "addy": "avail11.jpg",
-        "title": "Forever Wild",
-        "desc": "36x48, SOLD"
-      },
-      {
-        "addy": "avail12.jpg",
-        "title": "in progress Texas Longhorn",
-        "desc": "24x30 $1500"
+        "desc": "30x48, $3500"
       },
       {
         "addy": "avail10.jpg",
-        "title": "in progress JLS by Streetlight",
-        "desc": "20x24 $900"
+        "title": "IN PROGRESS Seagull",
+        "desc": "20x24, $950"
       },
       {
         "addy": "avail9.jpg",
         "title": "Dichotomy",
-        "desc": "24x36, $900"
+        "desc": "24x36, $1500"
       },
 
       {
         "addy": "avail1.jpg",
         "title": "Confetti Autumn",
-        "desc": "20x24, SOLD"
+        "desc": "20x24, $950"
+      },
+      {
+        "addy": "avail2.jpg",
+        "title": "Finlandia IN PROGRESS",
+        "desc": "24x30, $1300"
       },
       {
         "addy": "avail3.jpg",
         "title": "Shadow of Time",
-        "desc": "18x24, $400"
+        "desc": "18x24, $600"
       },
-  
-     
+      {
+        "addy": "avail4.jpg",
+        "title": "Owlivia",
+        "desc": "12x12, $420"
+      },
+      {
+        "addy": "avail5.jpg",
+        "title": "The Gloaming",
+        "desc": "18x24, $450"
+      },
       {
         "addy": "avail6.jpg",
         "title": "The Audience",
         "desc": "24x30, $1200"
       },
-     
+      {
+        "addy": "avail7.jpg",
+        "title": "Orb Origins",
+        "desc": "16x20, $300"
+      },
       {
         "addy": "avail8.jpg",
         "title": "Sky Gods",
-        "desc": "20x20, $400"
+        "desc": "20x20, $750"
       }
-     
-
     ]
   },
   {
@@ -65,11 +71,6 @@
         "addy": "showcase1.jpg",
         "title": "San Miguel de Allende",
         "desc": "12x14, $120 - $350"
-      },
-         {
-        "addy": "showcase11.jpg",
-        "title": "Dreamlandia",
-        "desc": "24x30, $130-$580"
       },
       {
         "addy": "showcase2.jpg",
@@ -193,19 +194,7 @@
         "addy": "glasstrees13.jpg",
         "title": "Pando",
         "desc": "30x48, $150-$850 "
-      },
-      {
-        "addy": "glasstrees14.jpg",
-        "title": "Forever Wild",
-        "desc": "36x48, $150-$850 "
       }
-
-
-
-
-
-
-      
     ]
   },
   {
@@ -220,7 +209,7 @@
       },
       {
         "addy": "orbs2.jpg",
-        "title": "Fibonaccis Mirror",
+        "title": "Fiboncaccis Mirror",
         "desc": "24x30, $130-$580"
       },
       {
@@ -281,12 +270,7 @@
       {
         "addy": "landscapes1.jpg",
         "title": "Dichotomy",
-        "desc": " 24x36, $140-$680"
-      },
-        {
-        "addy": "landscapes15.jpg",
-        "title": "Dreamlandia",
-        "desc": "24x30, $130-$580"
+        "desc": " 24x36, $1500"
       },
       {
         "addy": "landscapes2.jpg",

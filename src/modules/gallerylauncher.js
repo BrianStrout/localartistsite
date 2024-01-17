@@ -1,3 +1,5 @@
+import { importedCMS_JSON } from "./CMS_Call";
+
 const slidesToPause = Array.from(document.querySelectorAll(".slide"));
 const galleryFrame = document.getElementById("slider-disp");
 let paused = false;
@@ -30,7 +32,8 @@ const callGallerySlideUp = (slide, index) => {
   let pushToDesc = document.querySelector(".pop-up-slide-desc");
   // console.log(pushTo);
 
-  pushTo.style.backgroundImage = `url("./src/images/galleries/${slide.galleryname}/${slide.galleryArray[index].addy}")`;
+  pushTo.style.backgroundImage = `url("${slide.galleryArray[index].addy}")`;
+
   pushToTitle.innerHTML = `${slide.galleryArray[index].title}`;
   pushToDesc.innerHTML = `${slide.galleryArray[index].desc}`;
   // console.log(slide.galleryArray[index]);
@@ -52,8 +55,8 @@ const populateGallery = (called) => {
   let popUpGalleryLeft = document.createElement("div");
   popUpGalleryLeft.classList.add("pop-up-gallery-left");
   popUpGalleryLeft.classList.add("pop-elem");
-  popUpGalleryLeft.style.backgroundImage = `url(${called.mainImage})`;
-  popUpGalleryLeft.innerHTML = "";
+  popUpGalleryLeft.style.backgroundImage = `url("${called.galleryCover}")`;
+
   popUpGalleryCase.appendChild(popUpGalleryLeft);
 
   let exitSign = document.createElement("div");
@@ -119,7 +122,7 @@ const populateGallery = (called) => {
       let popUpGalleryThumb = document.createElement("div");
       popUpGalleryThumb.classList.add("pop-up-gallery-thumb");
       popUpGalleryThumb.classList.add("pop-elem");
-      popUpGalleryThumb.style.backgroundImage = `url( "./src/images/galleries/${called.galleryname}/${called.galleryArray[i].addy}")`;
+      popUpGalleryThumb.style.backgroundImage = `url( "${called.galleryArray[i].addy}")`;
       popUpGalleryRight.appendChild(popUpGalleryThumb);
       let screen = document.createElement("div");
       screen.classList.add("screen");
@@ -140,14 +143,28 @@ const populateGallery = (called) => {
 };
 
 async function galleryLauncher(door) {
-  // console.log("door called: " + door);
-  const response = await fetch("./src/galleryData.JSON");
-  const sheetData = await response.json();
+  // // switch (door) {
+  // //   case "available":
+  // //     door = "Available Paintings";
+  // //     return;
+  // }
 
-  console.log("door" + door);
+  // console.log("door called: " + door);
+  // const response = await fetch("./src/galleryData.JSON");
+  const response = importedCMS_JSON;
+  // const sheetData = await response.json();
+  const sheetData = importedCMS_JSON;
+
+  // console.log("sheetdata, " + sheetData);
+
+  console.log("door " + door);
 
   for (const gallery of sheetData) {
-    if (gallery.galleryname === door) {
+    console.log("gallery of sheetdata", gallery);
+    console.log("door: ", door, "and ", gallery.galleryTag);
+    if (gallery.galleryTag === door) {
+      console.log("should be good to populate");
+
       populateGallery(gallery);
 
       return;
