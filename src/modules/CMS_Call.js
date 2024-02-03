@@ -44,14 +44,66 @@ let importedCMS_JSON = [
     galleryCover: "",
   },
 ];
+let sortedImportedCMS_JSON = [
+  {
+    galleryName: "Available Paintings",
+    galleryArray: [],
+    galleryTag: "available",
+    galleryCover: "",
+  },
+  {
+    galleryName: "Showcase Prints",
+    galleryArray: [],
+    galleryTag: "showcase",
+    galleryCover: "",
+  },
+  {
+    galleryName: "Tree Prints",
+    galleryArray: [],
+    galleryTag: "treeprints",
+    galleryCover: "",
+  },
+  {
+    galleryName: "Orb Prints",
+    galleryArray: [],
+    galleryTag: "orbs",
+    galleryCover: "",
+  },
+  {
+    galleryName: "Landscape Prints",
+    galleryArray: [],
+    galleryTag: "landscapes",
+    galleryCover: "",
+  },
+  {
+    galleryName: "Winged Things",
+    galleryArray: [],
+    galleryTag: "wings",
+    galleryCover: "",
+  },
+  {
+    galleryName: "Dewdrop Prints",
+    galleryArray: [],
+    galleryTag: "dewdrops",
+    galleryCover: "",
+  },
+];
 
-let CallToCMS = () => {
-  // let client = contentful.createClient({
-  //   space: "swfmhzk7f1cd",
-  //   environment: "master",
-  //   accessToken: "AepW4HmukTPKzv97geVrobSccEOytVfVbuNFl7xtfVM",
-  // });
+// const arraySorter = (cmsArray) => {
+//   console.log("obj/arr is now in sorter");
+//   console.log(cmsArray.length);
+//   console.log(typeof cmsArray);
 
+//   for (let i = 0; i < 7; i++) {
+//     console.log(i," index");
+//     console.log(cmsArray[i].galleryArray);
+//     console.log(cmsArray[i][2]);
+//     console.log(cmsArray[i].galleryArray.length);
+//     console.log(typeof cmsArray[i]);
+//   }
+// };
+
+const CallToCMS = () => {
   var client = contentful.createClient({
     space: "11nsjtdsk3ho",
     accessToken: "Kxa4kHjAOtAZ5v1npkn3h7TLSiFj8uNp2bXrB_nGTKY",
@@ -94,8 +146,10 @@ let CallToCMS = () => {
     });
   });
 
-  console.log(importedCMS_JSON);
+  console.log(typeof importedCMS_JSON);
   //   .catch(console.error);
+  console.log("off with you");
+  // arraySorter(importedCMS_JSON);
 };
 
 export { CallToCMS, importedCMS_JSON };

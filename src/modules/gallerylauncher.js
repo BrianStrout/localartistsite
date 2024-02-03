@@ -46,6 +46,12 @@ const populateGallery = (called) => {
   });
   slideController();
 
+  called.galleryArray.sort((a, b) => a.order - b.order);
+
+  for (const each of called.galleryArray) {
+    console.log(each.order);
+  }
+
   let popUpGalleryCase = document.createElement("div");
   popUpGalleryCase.classList.add("pop-up-gallery-case");
   popUpGalleryCase.classList.add("pop-elem");
@@ -151,11 +157,9 @@ async function galleryLauncher(door) {
 
   // console.log("door called: " + door);
   // const response = await fetch("./src/galleryData.JSON");
-  const response = importedCMS_JSON;
-  // const sheetData = await response.json();
-  const sheetData = importedCMS_JSON;
+  // const response = importedCMS_JSON;
 
-  // console.log("sheetdata, " + sheetData);
+  const sheetData = importedCMS_JSON;
 
   console.log("door " + door);
 
