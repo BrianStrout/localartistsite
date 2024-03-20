@@ -66,6 +66,7 @@
           padding: 10px;
           border: 1px solid white;
           color: white;
+          font-family: var(--font-text);
         }
         .pop-up-slide {
           height: 50px;
@@ -84,6 +85,7 @@
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 2px 5px;
+        font-family: var(--font-text);
       }
     }
   }

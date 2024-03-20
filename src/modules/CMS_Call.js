@@ -8,9 +8,9 @@ let importedCMS_JSON = [
     galleryCover: "",
   },
   {
-    galleryName: "Showcase Prints",
+    galleryName: "Legacy Prints",
     galleryArray: [],
-    galleryTag: "showcase",
+    galleryTag: "legacy",
     galleryCover: "",
   },
   {
@@ -52,9 +52,9 @@ let sortedImportedCMS_JSON = [
     galleryCover: "",
   },
   {
-    galleryName: "Showcase Prints",
+    galleryName: "Legacy Prints",
     galleryArray: [],
-    galleryTag: "showcase",
+    galleryTag: "legacy",
     galleryCover: "",
   },
   {
